@@ -1,0 +1,1013 @@
+###############################################################################
+#
+# IAR ELF Linker V7.60.2.11341/W32 for ARM                26/Sep/2016  11:05:25
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  E:\work\Follow\program-iar\Debug\Exe\NXP-program.out.tmp
+#    Map file     =  E:\work\Follow\program-iar\Debug\List\NXP-program.map
+#    Command line =  
+#        E:\work\Follow\program-iar\Debug\Obj\ADC.o
+#        E:\work\Follow\program-iar\Debug\Obj\adc_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\Angle.o
+#        E:\work\Follow\program-iar\Debug\Obj\board.o
+#        E:\work\Follow\program-iar\Debug\Obj\board_sysinit.o
+#        E:\work\Follow\program-iar\Debug\Obj\chip_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\clock_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\Compute.o
+#        E:\work\Follow\program-iar\Debug\Obj\CRC16.o
+#        E:\work\Follow\program-iar\Debug\Obj\crc_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\Data_Flash.o
+#        E:\work\Follow\program-iar\Debug\Obj\dma_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\eeprom.o
+#        E:\work\Follow\program-iar\Debug\Obj\flash.o
+#        E:\work\Follow\program-iar\Debug\Obj\Global_var.o
+#        E:\work\Follow\program-iar\Debug\Obj\gpio_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\gpiogroup_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\i2c_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\i2cm_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\iar_startup_lpc11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\IIC_polling.o
+#        E:\work\Follow\program-iar\Debug\Obj\InEEPROM.o
+#        E:\work\Follow\program-iar\Debug\Obj\InTIMER.o
+#        E:\work\Follow\program-iar\Debug\Obj\InWDT.o
+#        E:\work\Follow\program-iar\Debug\Obj\iocon_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\KEY_SCAN.o
+#        E:\work\Follow\program-iar\Debug\Obj\Logic.o
+#        E:\work\Follow\program-iar\Debug\Obj\main.o
+#        E:\work\Follow\program-iar\Debug\Obj\MODBUS.o
+#        E:\work\Follow\program-iar\Debug\Obj\Moto_ctrl.o
+#        E:\work\Follow\program-iar\Debug\Obj\pinint_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\pmu_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\PWM.o
+#        E:\work\Follow\program-iar\Debug\Obj\RealTime.o
+#        E:\work\Follow\program-iar\Debug\Obj\ring_buffer.o
+#        E:\work\Follow\program-iar\Debug\Obj\romdiv_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\RS485_Slave.o
+#        E:\work\Follow\program-iar\Debug\Obj\rtc_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\sct_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\SPI.o
+#        E:\work\Follow\program-iar\Debug\Obj\ssp_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\stopwatch_11u6.o
+#        E:\work\Follow\program-iar\Debug\Obj\syscon_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\sysinit.o
+#        E:\work\Follow\program-iar\Debug\Obj\sysinit_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\timer_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\UART.o
+#        E:\work\Follow\program-iar\Debug\Obj\UART0_process.o
+#        E:\work\Follow\program-iar\Debug\Obj\uart_0_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\uart_n_11u6x.o
+#        E:\work\Follow\program-iar\Debug\Obj\Updata.o
+#        E:\work\Follow\program-iar\Debug\Obj\WatchDog.o
+#        E:\work\Follow\program-iar\Debug\Obj\wwdt_11u6x.o -o
+#        E:\work\Follow\program-iar\Debug\Exe\NXP-program.out.tmp --redirect
+#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        E:\work\Follow\program-iar\Debug\List\NXP-program.map --config
+#        E:\work\Follow\program-iar\NXP-program-boot.icf --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x000002fb] |
+                [from 0x00000300 to 0x0003ffff] { ro };
+"P2":  place in [from 0x10000200 to 0x10007fdf] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section             Kind        Address    Size  Object
+  -------             ----        -------    ----  ------
+"A1":                                        0xc0
+  .intvec             ro code  0x00000000    0xc0  iar_startup_lpc11u6x.o [1]
+                             - 0x000000c0    0xc0
+
+"P1", part 1 of 2:                            0x8
+  .rodata             const    0x000000c0     0x0  zero_init3.o [5]
+  .rodata             const    0x000000c0     0x0  copy_init3.o [5]
+  Initializer bytes   const    0x000000c0     0x8  <for P2 s0>
+                             - 0x000000c8     0x8
+
+"P1", part 2 of 2:                         0x7970
+  .text               ro code  0x00000300   0xea2  xprintffull.o [3]
+  .text               ro code  0x000011a2    0x14  strchr.o [5]
+  .text               ro code  0x000011b6    0x10  strlen.o [5]
+  .text               ro code  0x000011c6    0x18  memchr.o [5]
+  .text               ro code  0x000011de    0x6a  I64DivMod.o [5]
+  .text               ro code  0x00001248    0x5c  ABImemcpy.o [5]
+  .text               ro code  0x000012a4    0x32  DblCmpLe.o [4]
+  .text               ro code  0x000012d6    0x32  DblCmpGe.o [4]
+  .text               ro code  0x00001308    0x80  xdscale.o [4]
+  .text               ro code  0x00001388    0x52  DblToI32.o [4]
+  .text               ro code  0x000013da     0x2  iar_startup_lpc11u6x.o [1]
+  .text               ro code  0x000013dc    0x34  I32ToDbl.o [4]
+  .text               ro code  0x00001410   0x1b4  DblAddSub.o [4]
+  .text               ro code  0x000015c4    0x58  romdiv_11u6x.o [1]
+  .text               ro code  0x0000161c   0x184  DblMul.o [4]
+  .text               ro code  0x000017a0    0xc2  DblDiv.o [4]
+  .text               ro code  0x00001862    0x20  div.o [3]
+  .text               ro code  0x00001882     0x2  iar_startup_lpc11u6x.o [1]
+  .text               ro code  0x00001884     0x2  I64DivZer.o [5]
+  .text               ro code  0x00001886     0x2  iar_startup_lpc11u6x.o [1]
+  .text               ro code  0x00001888   0x7f8  UART0_process.o [1]
+  .text               ro code  0x00002080    0x34  ABImemset.o [5]
+  .text               ro code  0x000020b4   0x4f0  UART.o [1]
+  .text               ro code  0x000025a4    0x28  memcmp.o [5]
+  .text               ro code  0x000025cc    0x24  printf.o [3]
+  .text               ro code  0x000025f0   0x594  RS485_Slave.o [1]
+  .text               ro code  0x00002b84    0x68  InEEPROM.o [1]
+  .text               ro code  0x00002bec   0x1c8  RealTime.o [1]
+  .text               ro code  0x00002db4    0x36  I32ToFlt.o [4]
+  .text               ro code  0x00002dea    0xaa  FltDiv.o [4]
+  .text               ro code  0x00002e94    0x32  FltToDbl.o [4]
+  .text               ro code  0x00002ec6     0x2  iar_startup_lpc11u6x.o [1]
+  .text               ro code  0x00002ec8    0xe8  asin.o [4]
+  .text               ro code  0x00002fb0   0x234  ring_buffer.o [1]
+  .text               ro code  0x000031e4   0x16e  uart_n_11u6x.o [1]
+  .text               ro code  0x00003352    0x4a  iocon_11u6x.o [1]
+  .text               ro code  0x0000339c    0x66  gpio_11u6x.o [1]
+  .text               ro code  0x00003402     0x2  sysinit.o [1]
+  .text               ro code  0x00003404   0x254  clock_11u6x.o [1]
+  .text               ro code  0x00003658   0x190  uart_0_11u6x.o [1]
+  .text               ro code  0x000037e8   0x664  MODBUS.o [1]
+  .text               ro code  0x00003e4c    0x68  eeprom.o [1]
+  .text               ro code  0x00003eb4    0x3c  CRC16.o [1]
+  .text               ro code  0x00003ef0    0xe4  IIC_polling.o [1]
+  .text               ro code  0x00003fd4    0xbe  sqrt.o [4]
+  .text               ro code  0x00004092    0x3c  zero_init3.o [5]
+  .text               ro code  0x000040d0   0x1e0  xatan.o [4]
+  .text               ro code  0x000042b0    0x10  errno.o [3]
+  .text               ro code  0x000042c0    0x32  I64Mul.o [5]
+  .text               ro code  0x000042f4   0x202  i2cm_11u6x.o [1]
+  .text               ro code  0x000044f8     0xc  iarEdom.o [5]
+  .text               ro code  0x00004504     0x2  xtls.o [3]
+  .text               ro code  0x00004508   0x4e0  Logic.o [1]
+  .text               ro code  0x000049e8   0x308  Moto_ctrl.o [1]
+  .text               ro code  0x00004cf0   0x14c  ADC.o [1]
+  .text               ro code  0x00004e3c   0x23c  PWM.o [1]
+  .text               ro code  0x00005078    0x90  adc_11u6x.o [1]
+  .text               ro code  0x00005108    0xb4  sct_11u6x.o [1]
+  .text               ro code  0x000051bc    0x40  syscon_11u6x.o [1]
+  .text               ro code  0x000051fc   0x4b6  main.o [1]
+  .text               ro code  0x000056b4    0x14  chip_11u6x.o [1]
+  .text               ro code  0x000056c8   0x49c  Angle.o [1]
+  .text               ro code  0x00005b64    0x24  WatchDog.o [1]
+  .text               ro code  0x00005b88   0x2e8  Updata.o [1]
+  .text               ro code  0x00005e70    0x84  KEY_SCAN.o [1]
+  .text               ro code  0x00005ef4   0x408  Compute.o [1]
+  .text               ro code  0x000062fc   0x2f8  SPI.o [1]
+  .text               ro code  0x000065f4    0x9c  atan.o [4]
+  .text               ro code  0x00006690    0x62  DblToFlt.o [4]
+  .text               ro code  0x000066f2     0xa  sin.o [4]
+  .text               ro code  0x000066fc    0xb0  FltMul.o [4]
+  .text               ro code  0x000067ac   0x120  FltAddSub.o [4]
+  .text               ro code  0x000068cc    0x3a  FltToS32.o [4]
+  .text               ro code  0x00006908    0xbc  flash.o [1]
+  .text               ro code  0x000069c4     0xa  cos.o [4]
+  .text               ro code  0x000069d0    0x26  FltCmpLe.o [4]
+  .text               ro code  0x000069f8    0x28  FltCmpGe.o [4]
+  .text               ro code  0x00006a20    0xcc  ssp_11u6x.o [1]
+  .text               ro code  0x00006aec   0x444  xsin.o [4]
+  .text               ro code  0x00006f30   0x174  xquad.o [4]
+  .text               ro code  0x000070a4    0x84  xdint.o [4]
+  .text               ro code  0x00007128    0x24  DblCmpEq.o [4]
+  .text               ro code  0x0000714c    0xc6  fmod.o [4]
+  .rodata             const    0x00007214   0x100  CRC16.o [1]
+  .rodata             const    0x00007314   0x100  CRC16.o [1]
+  .text               ro code  0x00007414    0x70  InWDT.o [1]
+  .text               ro code  0x00007484    0x1c  wwdt_11u6x.o [1]
+  .rodata             const    0x000074a0    0x68  PWM.o [1]
+  .text               ro code  0x00007508    0x50  InTIMER.o [1]
+  .rodata             const    0x00007558    0x48  UART0_process.o [1]
+  .text               ro code  0x000075a0    0x44  board.o [1]
+  .rodata             const    0x000075e4    0x40  clock_11u6x.o [1]
+  .rodata             const    0x00007624    0x30  UART0_process.o [1]
+  .text               ro code  0x00007654    0x30  copy_init3.o [5]
+  .rodata             const    0x00007684    0x28  main.o [1]
+  .rodata             const    0x000076ac    0x28  UART0_process.o [1]
+  .text               ro code  0x000076d4    0x28  data_init.o [5]
+  .rodata             const    0x000076fc    0x24  UART0_process.o [1]
+  .rodata             const    0x00007720    0x24  UART0_process.o [1]
+  .text               ro code  0x00007744    0x24  putchar.o [3]
+  .iar.init_table     const    0x00007768    0x24  - Linker created -
+  .rodata             const    0x0000778c    0x20  UART0_process.o [1]
+  .rodata             const    0x000077ac    0x20  UART0_process.o [1]
+  .rodata             const    0x000077cc    0x20  UART0_process.o [1]
+  .rodata             const    0x000077ec    0x20  UART0_process.o [1]
+  .rodata             const    0x0000780c    0x1c  UART0_process.o [1]
+  .rodata             const    0x00007828    0x1c  Updata.o [1]
+  .text               ro code  0x00007844    0x1a  cmain.o [5]
+  .text               ro code  0x0000785e     0x4  low_level_init.o [3]
+  .text               ro code  0x00007862     0x8  exit.o [3]
+  .text               ro code  0x0000786c     0xa  cexit.o [5]
+  .text               ro code  0x00007878    0x14  exit.o [6]
+  .rodata             const    0x0000788c    0x18  UART0_process.o [1]
+  .rodata             const    0x000078a4    0x18  UART0_process.o [1]
+  .rodata             const    0x000078bc    0x18  UART0_process.o [1]
+  .rodata             const    0x000078d4    0x18  UART0_process.o [1]
+  .rodata             const    0x000078ec    0x18  UART0_process.o [1]
+  .rodata             const    0x00007904    0x18  UART0_process.o [1]
+  .rodata             const    0x0000791c    0x18  UART0_process.o [1]
+  .rodata             const    0x00007934    0x18  Updata.o [1]
+  .rodata             const    0x0000794c    0x18  xprintffull.o [3]
+  .text               ro code  0x00007964    0x16  xprout.o [3]
+  .rodata             const    0x0000797c    0x14  UART0_process.o [1]
+  .rodata             const    0x00007990    0x14  UART0_process.o [1]
+  .rodata             const    0x000079a4    0x14  UART0_process.o [1]
+  .rodata             const    0x000079b8    0x14  UART0_process.o [1]
+  .rodata             const    0x000079cc    0x14  UART0_process.o [1]
+  .rodata             const    0x000079e0    0x14  UART0_process.o [1]
+  .rodata             const    0x000079f4    0x14  UART0_process.o [1]
+  .rodata             const    0x00007a08    0x14  UART0_process.o [1]
+  .rodata             const    0x00007a1c    0x14  UART0_process.o [1]
+  .rodata             const    0x00007a30    0x14  UART0_process.o [1]
+  .rodata             const    0x00007a44    0x14  UART0_process.o [1]
+  .rodata             const    0x00007a58    0x14  UART0_process.o [1]
+  .rodata             const    0x00007a6c    0x14  UART0_process.o [1]
+  .rodata             const    0x00007a80    0x14  UART0_process.o [1]
+  .rodata             const    0x00007a94    0x14  UART0_process.o [1]
+  .rodata             const    0x00007aa8    0x14  UART0_process.o [1]
+  .rodata             const    0x00007abc    0x14  UART0_process.o [1]
+  .rodata             const    0x00007ad0    0x14  UART0_process.o [1]
+  .rodata             const    0x00007ae4    0x14  UART0_process.o [1]
+  .rodata             const    0x00007af8    0x14  Updata.o [1]
+  .rodata             const    0x00007b0c    0x14  Updata.o [1]
+  .rodata             const    0x00007b20    0x14  Updata.o [1]
+  .rodata             const    0x00007b34    0x10  main.o [1]
+  .rodata             const    0x00007b44    0x10  main.o [1]
+  .rodata             const    0x00007b54    0x10  UART0_process.o [1]
+  .rodata             const    0x00007b64    0x10  UART0_process.o [1]
+  .rodata             const    0x00007b74    0x10  UART0_process.o [1]
+  .rodata             const    0x00007b84    0x10  UART0_process.o [1]
+  .rodata             const    0x00007b94    0x10  UART0_process.o [1]
+  .rodata             const    0x00007ba4    0x10  Updata.o [1]
+  .rodata             const    0x00007bb4    0x10  Updata.o [1]
+  .text               ro code  0x00007bc4    0x10  iar_startup_lpc11u6x.o [1]
+  .rodata             const    0x00007bd4     0xc  main.o [1]
+  .rodata             const    0x00007be0     0xc  main.o [1]
+  .rodata             const    0x00007bec     0xc  UART0_process.o [1]
+  .rodata             const    0x00007bf8     0xc  UART0_process.o [1]
+  .rodata             const    0x00007c04     0xc  UART0_process.o [1]
+  .rodata             const    0x00007c10     0xc  UART0_process.o [1]
+  .rodata             const    0x00007c1c     0xc  UART0_process.o [1]
+  .text               ro code  0x00007c28     0xc  cstartup_M.o [5]
+  .rodata             const    0x00007c34     0x8  UART0_process.o [1]
+  .rodata             const    0x00007c3c     0x8  UART0_process.o [1]
+  .rodata             const    0x00007c44     0x8  UART0_process.o [1]
+  .rodata             const    0x00007c4c     0x8  UART0_process.o [1]
+  .rodata             const    0x00007c54     0x8  UART0_process.o [1]
+  .rodata             const    0x00007c5c     0x8  UART0_process.o [1]
+  .rodata             const    0x00007c64     0x4  board.o [1]
+  .rodata             const    0x00007c68     0x4  board.o [1]
+  .text               ro code  0x00007c6c     0x4  iar_startup_lpc11u6x.o [1]
+                             - 0x00007c70  0x7970
+
+"P2", part 1 of 3:                            0x8
+  P2 s0                        0x10000200     0x8  <Init block>
+    __DLIB_PERTHREAD  inited   0x10000200     0x4  errno.o [3]
+    .data             inited   0x10000204     0x2  Logic.o [1]
+    .data             inited   0x10000206     0x1  PWM.o [1]
+                             - 0x10000208     0x8
+
+"P2", part 2 of 3:                          0x668
+  .bss                zero     0x10000208   0x200  UART.o [1]
+  .bss                zero     0x10000408   0x108  Updata.o [1]
+  .bss                zero     0x10000510    0x80  UART.o [1]
+  .bss                zero     0x10000590    0x80  UART.o [1]
+  .bss                zero     0x10000610    0x80  UART.o [1]
+  .bss                zero     0x10000690    0x44  RS485_Slave.o [1]
+  .bss                zero     0x100006d4    0x38  Compute.o [1]
+  .bss                zero     0x1000070c    0x34  RS485_Slave.o [1]
+  .bss                zero     0x10000740    0x34  RS485_Slave.o [1]
+  .bss                zero     0x10000774    0x14  Global_var.o [1]
+  .bss                zero     0x10000788    0x14  RS485_Slave.o [1]
+  .bss                zero     0x1000079c    0x14  UART.o [1]
+  .bss                zero     0x100007b0    0x14  UART.o [1]
+  .bss                zero     0x100007c4    0x14  UART.o [1]
+  .bss                zero     0x100007d8    0x14  UART.o [1]
+  .bss                zero     0x100007ec    0x10  IIC_polling.o [1]
+  .bss                zero     0x100007fc     0xc  Angle.o [1]
+  .bss                zero     0x10000808     0xc  Global_var.o [1]
+  .bss                zero     0x10000814     0x8  Angle.o [1]
+  .bss                zero     0x1000081c     0x8  Angle.o [1]
+  .bss                zero     0x10000824     0x8  RealTime.o [1]
+  .bss                zero     0x1000082c     0x4  Angle.o [1]
+  .bss                zero     0x10000830     0x4  Angle.o [1]
+  .bss                zero     0x10000834     0x4  chip_11u6x.o [1]
+  .bss                zero     0x10000838     0x4  UART.o [1]
+  .bss                zero     0x1000083c     0x4  UART.o [1]
+  .bss                zero     0x10000840     0x2  Angle.o [1]
+  .bss                zero     0x10000842     0x2  KEY_SCAN.o [1]
+  .bss                zero     0x10000844     0x2  KEY_SCAN.o [1]
+  .bss                zero     0x10000846     0x2  KEY_SCAN.o [1]
+  .bss                zero     0x10000848     0x2  KEY_SCAN.o [1]
+  .bss                zero     0x1000084a     0x2  Logic.o [1]
+  .bss                zero     0x1000084c     0x2  Logic.o [1]
+  .bss                zero     0x1000084e     0x2  Logic.o [1]
+  .bss                zero     0x10000850     0x2  Logic.o [1]
+  .bss                zero     0x10000852     0x2  Moto_ctrl.o [1]
+  .bss                zero     0x10000854     0x2  PWM.o [1]
+  .bss                zero     0x10000856     0x2  RS485_Slave.o [1]
+  .bss                zero     0x10000858     0x2  Updata.o [1]
+  .bss                zero     0x1000085a     0x2  Updata.o [1]
+  .bss                zero     0x1000085c     0x2  Updata.o [1]
+  .bss                zero     0x1000085e     0x1  ADC.o [1]
+  .bss                zero     0x1000085f     0x1  Angle.o [1]
+  .bss                zero     0x10000860     0x1  Angle.o [1]
+  .bss                zero     0x10000861     0x1  Logic.o [1]
+  .bss                zero     0x10000862     0x1  Logic.o [1]
+  .bss                zero     0x10000863     0x1  Logic.o [1]
+  .bss                zero     0x10000864     0x1  main.o [1]
+  .bss                zero     0x10000865     0x1  main.o [1]
+  .bss                zero     0x10000866     0x1  Moto_ctrl.o [1]
+  .bss                zero     0x10000867     0x1  Moto_ctrl.o [1]
+  .bss                zero     0x10000868     0x1  Moto_ctrl.o [1]
+  .bss                zero     0x10000869     0x1  PWM.o [1]
+  .bss                zero     0x1000086a     0x1  RS485_Slave.o [1]
+  .bss                zero     0x1000086b     0x1  RS485_Slave.o [1]
+  .bss                zero     0x1000086c     0x1  sct_11u6x.o [1]
+  .bss                zero     0x1000086d     0x1  uart_n_11u6x.o [1]
+                             - 0x1000086e   0x666
+
+"P2", part 3 of 3:                          0x400
+  CSTACK                       0x10000870   0x400  <Block>
+    CSTACK            uninit   0x10000870   0x400  <Block tail>
+                             - 0x10000c70   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x666:
+          0x10000208  0x666
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x8 (114% of destination):
+          0x000000c0    0x8
+    1 destination range, total size 0x7:
+          0x10000200    0x7
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+E:\work\Follow\program-iar\Debug\Obj: [1]
+    ADC.o                       332                 1
+    Angle.o                   1 180                40
+    CRC16.o                      60      512
+    Compute.o                 1 032                56
+    Global_var.o                                   32
+    IIC_polling.o               228                16
+    InEEPROM.o                  104
+    InTIMER.o                    80
+    InWDT.o                     112
+    KEY_SCAN.o                  132                 8
+    Logic.o                   1 248        2       13
+    MODBUS.o                  1 636
+    Moto_ctrl.o                 776                 5
+    PWM.o                       572      105        4
+    RS485_Slave.o             1 428               196
+    RealTime.o                  456                 8
+    SPI.o                       760
+    UART.o                    1 264               984
+    UART0_process.o           2 040    1 124
+    Updata.o                    744      144      270
+    WatchDog.o                   36
+    adc_11u6x.o                 144
+    board.o                      68        8
+    chip_11u6x.o                 20                 4
+    clock_11u6x.o               596       64
+    eeprom.o                    104
+    flash.o                     188
+    gpio_11u6x.o                102
+    i2cm_11u6x.o                514
+    iar_startup_lpc11u6x.o      220
+    iocon_11u6x.o                74
+    main.o                    1 206       96        2
+    ring_buffer.o               564
+    romdiv_11u6x.o               88
+    sct_11u6x.o                 180                 1
+    ssp_11u6x.o                 204
+    syscon_11u6x.o               64
+    sysinit.o                     2
+    uart_0_11u6x.o              400
+    uart_n_11u6x.o              366                 1
+    wwdt_11u6x.o                 28
+    -------------------------------------------------
+    Total:                   19 352    2 055    1 641
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    div.o                        32
+    errno.o                      16        4        4
+    exit.o                        8
+    low_level_init.o              4
+    printf.o                     36
+    putchar.o                    36
+    xprintffull.o             3 746       24
+    xprout.o                     22
+    xtls.o                        2
+    -------------------------------------------------
+    Total:                    3 902       28        4
+
+m6M_tl.a: [4]
+    DblAddSub.o                 436
+    DblCmpEq.o                   36
+    DblCmpGe.o                   50
+    DblCmpLe.o                   50
+    DblDiv.o                    194
+    DblMul.o                    388
+    DblToFlt.o                   98
+    DblToI32.o                   82
+    FltAddSub.o                 288
+    FltCmpGe.o                   40
+    FltCmpLe.o                   38
+    FltDiv.o                    170
+    FltMul.o                    176
+    FltToDbl.o                   50
+    FltToS32.o                   58
+    I32ToDbl.o                   52
+    I32ToFlt.o                   54
+    asin.o                      232
+    atan.o                      156
+    cos.o                        10
+    fmod.o                      198
+    sin.o                        10
+    sqrt.o                      190
+    xatan.o                     480
+    xdint.o                     132
+    xdscale.o                   128
+    xquad.o                     372
+    xsin.o                    1 092
+    -------------------------------------------------
+    Total:                    5 260
+
+rt6M_tl.a: [5]
+    ABImemcpy.o                  92
+    ABImemset.o                  52
+    I64DivMod.o                 106
+    I64DivZer.o                   2
+    I64Mul.o                     50
+    cexit.o                      10
+    cmain.o                      26
+    copy_init3.o                 48
+    cstartup_M.o                 12
+    data_init.o                  40
+    iarEdom.o                    12
+    memchr.o                     24
+    memcmp.o                     40
+    strchr.o                     20
+    strlen.o                     16
+    zero_init3.o                 60
+    -------------------------------------------------
+    Total:                      610
+
+shb_l.a: [6]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         20        4
+    Linker created                        37    1 024
+-----------------------------------------------------
+    Grand Total:             29 164    2 124    2 669
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x00007768          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0000778c          --   Gb  - Linker created -
+?main                   0x00007845         Code  Gb  cmain.o [5]
+ADCA_IRQHandler         0x00004d5d   0x1c  Code  Gb  ADC.o [1]
+ADC_Init                0x00004dbb   0x68  Code  Gb  ADC.o [1]
+ADC_read                0x00004d85   0x36  Code  Gb  ADC.o [1]
+ADC_start               0x00004d79    0xc  Code  Gb  ADC.o [1]
+Angle_Init              0x000056d9   0xaa  Code  Gb  Angle.o [1]
+Angle_get               0x00005783  0x32e  Code  Gb  Angle.o [1]
+Angle_get::angle_count  0x10000860    0x1  Data  Lc  Angle.o [1]
+Angle_get::angle_err    0x1000085f    0x1  Data  Lc  Angle.o [1]
+Angle_get::angle_max    0x10000814    0x8  Data  Lc  Angle.o [1]
+Angle_get::angle_min    0x1000081c    0x8  Data  Lc  Angle.o [1]
+Angle_get::angle_return
+                        0x10000840    0x2  Data  Lc  Angle.o [1]
+Angle_get::angle_sum    0x100007fc    0xc  Data  Lc  Angle.o [1]
+BOD_WDT_IRQHandler      0x0000744d   0x32  Code  Gb  InWDT.o [1]
+Board_UARTPutChar       0x000075d3    0xe  Code  Gb  board.o [1]
+COPY_CODE               0x00005b89   0xc0  Code  Gb  Updata.o [1]
+CRC16                   0x00003eb5   0x3c  Code  Gb  CRC16.o [1]
+CSTACK$$Base            0x10000870          --   Gb  - Linker created -
+CSTACK$$Limit           0x10000c70          --   Gb  - Linker created -
+Chip_ADC_ClearFlags     0x00004d55    0x4  Code  Lc  ADC.o [1]
+Chip_ADC_EnableInt      0x00005101    0x8  Code  Gb  adc_11u6x.o [1]
+Chip_ADC_EnableSequencer
+                        0x00004d29    0xe  Code  Lc  ADC.o [1]
+Chip_ADC_GetDataReg     0x00004d45    0xc  Code  Lc  ADC.o [1]
+Chip_ADC_GetFlags       0x00004d51    0x4  Code  Lc  ADC.o [1]
+Chip_ADC_Init           0x000050a3   0x1a  Code  Gb  adc_11u6x.o [1]
+Chip_ADC_IsCalibrationDone
+                        0x00004d0b   0x12  Code  Lc  ADC.o [1]
+Chip_ADC_SetClockRate   0x000050bd   0x1c  Code  Gb  adc_11u6x.o [1]
+Chip_ADC_SetDivider     0x00005089    0xe  Code  Lc  adc_11u6x.o [1]
+Chip_ADC_SetIntBits     0x00005097    0xc  Code  Gb  adc_11u6x.o [1]
+Chip_ADC_SetSequencerBits
+                        0x000050d9   0x20  Code  Gb  adc_11u6x.o [1]
+Chip_ADC_SetTrim        0x00004d59    0x4  Code  Lc  ADC.o [1]
+Chip_ADC_SetupSequencer
+                        0x00004d1d    0xc  Code  Lc  ADC.o [1]
+Chip_ADC_StartCalibration
+                        0x00004cff    0xc  Code  Lc  ADC.o [1]
+Chip_ADC_StartSequencer
+                        0x00004d37    0xe  Code  Lc  ADC.o [1]
+Chip_Clock_DisablePeriphClock
+                        0x0000514f   0x10  Code  Lc  sct_11u6x.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x00005079   0x10  Code  Lc  adc_11u6x.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x0000339d   0x10  Code  Lc  gpio_11u6x.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x0000432b   0x10  Code  Lc  i2cm_11u6x.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x000052d9   0x10  Code  Lc  main.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x0000513f   0x10  Code  Lc  sct_11u6x.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x00006333   0x10  Code  Lc  SPI.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x00003659   0x10  Code  Lc  uart_0_11u6x.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x0000321b   0x10  Code  Lc  uart_n_11u6x.o [1]
+Chip_Clock_GetIntOscRate
+                        0x0000346b    0x4  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetMainClockRate
+                        0x000035d9   0x34  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetMainOscRate
+                        0x00003465    0x6  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetPLLFreq   0x00003495    0xe  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetRTCOscRate
+                        0x0000346f    0x6  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetSSP0ClockDiv
+                        0x00006a21    0x6  Code  Lc  ssp_11u6x.o [1]
+Chip_Clock_GetSSP1ClockDiv
+                        0x00006a27    0x6  Code  Lc  ssp_11u6x.o [1]
+Chip_Clock_GetSystemClockRate
+                        0x0000360d   0x10  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetSystemPLLInClockRate
+                        0x00003597   0x30  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetSystemPLLOutClockRate
+                        0x000035c7   0x12  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetUSARTNBaseClockDiv
+                        0x00003443    0x6  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetUSARTNBaseClockRate
+                        0x000034a3   0x62  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetUSARTNFRGDivider
+                        0x00003451    0x6  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetUSARTNFRGMultiplier
+                        0x0000345f    0x6  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetWDTOSCRate
+                        0x0000358b    0xc  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetWDTRate   0x00003475   0x20  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_IsSystemPLLLocked
+                        0x000052c7    0xc  Code  Lc  main.o [1]
+Chip_Clock_SetMainClockSource
+                        0x00003577   0x14  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_SetSSP0ClockDiv
+                        0x00006343    0x6  Code  Lc  SPI.o [1]
+Chip_Clock_SetSSP1ClockDiv
+                        0x00006349    0x6  Code  Lc  SPI.o [1]
+Chip_Clock_SetSysClockDiv
+                        0x000052d3    0x6  Code  Lc  main.o [1]
+Chip_Clock_SetSystemPLLSource
+                        0x00003563   0x14  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_SetUSART0ClockDiv
+                        0x00003669    0x6  Code  Lc  uart_0_11u6x.o [1]
+Chip_Clock_SetUSARTNBaseClockDiv
+                        0x0000343b    0x8  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_SetUSARTNBaseClockRate
+                        0x00003505   0x5e  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_SetUSARTNFRGDivider
+                        0x00003449    0x8  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_SetUSARTNFRGMultiplier
+                        0x00003457    0x8  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_SetupSystemPLL
+                        0x000052b1   0x16  Code  Lc  main.o [1]
+Chip_EEPROM_Read        0x00003e81   0x2c  Code  Gb  eeprom.o [1]
+Chip_EEPROM_Write       0x00003e55   0x2c  Code  Gb  eeprom.o [1]
+Chip_FLASH_BlankCheckSector
+                        0x00006983   0x1c  Code  Gb  flash.o [1]
+Chip_FLASH_Compare      0x0000699f   0x1e  Code  Gb  flash.o [1]
+Chip_FLASH_CopyRamToFlash
+                        0x0000692d   0x2c  Code  Gb  flash.o [1]
+Chip_FLASH_EraseSector  0x00006959   0x2a  Code  Gb  flash.o [1]
+Chip_FLASH_PreSectorForReadWrite
+                        0x00006911   0x1c  Code  Gb  flash.o [1]
+Chip_FMC_SetFLASHAccess
+                        0x0000530d   0x12  Code  Lc  main.o [1]
+Chip_GPIO_Init          0x000033b1    0xa  Code  Gb  gpio_11u6x.o [1]
+Chip_GPIO_ReadPortBit   0x00005e71   0x1a  Code  Lc  KEY_SCAN.o [1]
+Chip_GPIO_ReadPortBit   0x000049f9   0x1a  Code  Lc  Moto_ctrl.o [1]
+Chip_GPIO_SetPinToggle  0x000052f9   0x14  Code  Lc  main.o [1]
+Chip_GPIO_SetPinToggle  0x00005b65   0x14  Code  Lc  WatchDog.o [1]
+Chip_GPIO_WriteDirBit   0x000033bb   0x48  Code  Gb  gpio_11u6x.o [1]
+Chip_GPIO_WritePortBit  0x000056c9   0x10  Code  Lc  Angle.o [1]
+Chip_GPIO_WritePortBit  0x000052e9   0x10  Code  Lc  main.o [1]
+Chip_GPIO_WritePortBit  0x000049e9   0x10  Code  Lc  Moto_ctrl.o [1]
+Chip_GPIO_WritePortBit  0x000020c3   0x10  Code  Lc  UART.o [1]
+Chip_I2CM_GetCurState   0x00004359    0x8  Code  Lc  i2cm_11u6x.o [1]
+Chip_I2CM_Init          0x00004361   0x22  Code  Gb  i2cm_11u6x.o [1]
+Chip_I2CM_ResetControl  0x0000434b    0x6  Code  Lc  i2cm_11u6x.o [1]
+Chip_I2CM_SendStart     0x00004345    0x6  Code  Lc  i2cm_11u6x.o [1]
+Chip_I2CM_SetBusSpeed   0x00004391   0x22  Code  Gb  i2cm_11u6x.o [1]
+Chip_I2CM_SetDutyCycle  0x0000433b    0xa  Code  Lc  i2cm_11u6x.o [1]
+Chip_I2CM_StateChanged  0x00004351    0x8  Code  Lc  i2cm_11u6x.o [1]
+Chip_I2CM_Xfer          0x000044b3   0x16  Code  Gb  i2cm_11u6x.o [1]
+Chip_I2CM_XferBlocking  0x000044c9   0x2e  Code  Gb  i2cm_11u6x.o [1]
+Chip_I2CM_XferHandler   0x000043b3  0x100  Code  Gb  i2cm_11u6x.o [1]
+Chip_IOCON_PinMuxSet    0x00003353   0x4a  Code  Gb  iocon_11u6x.o [1]
+Chip_SCT_ClearControl   0x00004ec9    0x8  Code  Lc  PWM.o [1]
+Chip_SCT_ClearEventFlag
+                        0x00004eb3    0xe  Code  Lc  PWM.o [1]
+Chip_SCT_ClearOutput    0x00004e73   0x10  Code  Lc  PWM.o [1]
+Chip_SCT_Config         0x00004e59    0x8  Code  Lc  PWM.o [1]
+Chip_SCT_DeInit         0x00005191   0x1c  Code  Gb  sct_11u6x.o [1]
+Chip_SCT_EventControl   0x00004e93   0x10  Code  Lc  PWM.o [1]
+Chip_SCT_EventState     0x00004e83   0x10  Code  Lc  PWM.o [1]
+Chip_SCT_Init           0x0000515f   0x32  Code  Gb  sct_11u6x.o [1]
+Chip_SCT_SetControl     0x00004ec1    0x8  Code  Lc  PWM.o [1]
+Chip_SCT_SetMatchReload
+                        0x00004ea3   0x10  Code  Lc  PWM.o [1]
+Chip_SCT_SetOutput      0x00004e61   0x12  Code  Lc  PWM.o [1]
+Chip_SSP_ClearIntPending
+                        0x00006385    0x6  Code  Lc  SPI.o [1]
+Chip_SSP_Enable         0x0000634f    0xa  Code  Lc  SPI.o [1]
+Chip_SSP_GetPCLKkRate   0x00006a39   0x32  Code  Lc  ssp_11u6x.o [1]
+Chip_SSP_GetRawIntStatus
+                        0x0000636f   0x16  Code  Lc  SPI.o [1]
+Chip_SSP_GetStatus      0x00006359   0x16  Code  Lc  SPI.o [1]
+Chip_SSP_ReceiveFrame   0x0000638b    0x6  Code  Lc  SPI.o [1]
+Chip_SSP_SendFrame      0x00006391    0x6  Code  Lc  SPI.o [1]
+Chip_SSP_SetBitRate     0x00006aad   0x40  Code  Gb  ssp_11u6x.o [1]
+Chip_SSP_SetClockRate   0x00006a6b   0x1a  Code  Gb  ssp_11u6x.o [1]
+Chip_SSP_SetFormat      0x00006397   0x14  Code  Lc  SPI.o [1]
+Chip_SSP_SetMaster      0x00006a95   0x18  Code  Gb  ssp_11u6x.o [1]
+Chip_SSP_Set_Mode       0x00006a2d    0xc  Code  Lc  ssp_11u6x.o [1]
+Chip_SYSCTL_AssertPeriphReset
+                        0x00003405   0x10  Code  Lc  clock_11u6x.o [1]
+Chip_SYSCTL_AssertPeriphReset
+                        0x000042f5   0x10  Code  Lc  i2cm_11u6x.o [1]
+Chip_SYSCTL_AssertPeriphReset
+                        0x00005109   0x10  Code  Lc  sct_11u6x.o [1]
+Chip_SYSCTL_AssertPeriphReset
+                        0x000062fd   0x10  Code  Lc  SPI.o [1]
+Chip_SYSCTL_AssertPeriphReset
+                        0x000031e5   0x10  Code  Lc  uart_n_11u6x.o [1]
+Chip_SYSCTL_DeassertPeriphReset
+                        0x00003415   0x10  Code  Lc  clock_11u6x.o [1]
+Chip_SYSCTL_DeassertPeriphReset
+                        0x00004305   0x10  Code  Lc  i2cm_11u6x.o [1]
+Chip_SYSCTL_DeassertPeriphReset
+                        0x00005119   0x10  Code  Lc  sct_11u6x.o [1]
+Chip_SYSCTL_DeassertPeriphReset
+                        0x0000630d   0x10  Code  Lc  SPI.o [1]
+Chip_SYSCTL_DeassertPeriphReset
+                        0x000031f5   0x10  Code  Lc  uart_n_11u6x.o [1]
+Chip_SYSCTL_PeriphReset
+                        0x00003425   0x16  Code  Lc  clock_11u6x.o [1]
+Chip_SYSCTL_PeriphReset
+                        0x00004315   0x16  Code  Lc  i2cm_11u6x.o [1]
+Chip_SYSCTL_PeriphReset
+                        0x00005129   0x16  Code  Lc  sct_11u6x.o [1]
+Chip_SYSCTL_PeriphReset
+                        0x0000631d   0x16  Code  Lc  SPI.o [1]
+Chip_SYSCTL_PeriphReset
+                        0x00003205   0x16  Code  Lc  uart_n_11u6x.o [1]
+Chip_SYSCTL_PowerDown   0x000051bd   0x1c  Code  Gb  syscon_11u6x.o [1]
+Chip_SYSCTL_PowerUp     0x000051d9   0x1a  Code  Gb  syscon_11u6x.o [1]
+Chip_SetupIrcClocking2  0x0000565d   0x56  Code  Gb  main.o [1]
+Chip_TIMER_ClearMatch   0x00007519    0x8  Code  Lc  InTIMER.o [1]
+Chip_TIMER_MatchPending
+                        0x00007509   0x10  Code  Lc  InTIMER.o [1]
+Chip_UART0_ConfigData   0x00002107    0x4  Code  Lc  UART.o [1]
+Chip_UART0_DisableDivisorAccess
+                        0x0000369d    0xa  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_EnableDivisorAccess
+                        0x00003693    0xa  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_Init         0x000036b5   0x1e  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_IntDisable   0x00003687    0x8  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_IntEnable    0x000020fb    0x8  Code  Lc  UART.o [1]
+Chip_UART0_IntEnable    0x0000367f    0x8  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_ReadByte     0x000020f5    0x6  Code  Lc  UART.o [1]
+Chip_UART0_ReadLineStatus
+                        0x0000210b    0x4  Code  Lc  UART.o [1]
+Chip_UART0_ReadLineStatus
+                        0x000036b1    0x4  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_ReadRB       0x000037db    0xe  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_Send         0x000036d3   0x2a  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_SendBlocking
+                        0x000036fd   0x24  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_SendByte     0x00003679    0x6  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_SendRB       0x0000379b   0x40  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_SetBaud      0x00003721   0x50  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_SetDivisorLatches
+                        0x000036a7    0xa  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_SetupFIFOS   0x00002103    0x4  Code  Lc  UART.o [1]
+Chip_UART0_SetupFIFOS   0x0000368f    0x4  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_TXEnable     0x000020ef    0x6  Code  Lc  UART.o [1]
+Chip_UART0_TXIntHandlerRB
+                        0x00003771   0x2a  Code  Gb  uart_0_11u6x.o [1]
+Chip_UARTN_ConfigData   0x00002133    0xc  Code  Lc  UART.o [1]
+Chip_UARTN_Enable       0x0000210f    0xa  Code  Lc  UART.o [1]
+Chip_UARTN_EnableClock  0x00003257   0x1e  Code  Lc  uart_n_11u6x.o [1]
+Chip_UARTN_GetStatus    0x0000213f    0x4  Code  Lc  UART.o [1]
+Chip_UARTN_GetStatus    0x00003239    0x4  Code  Lc  uart_n_11u6x.o [1]
+Chip_UARTN_Init         0x00003275   0x32  Code  Gb  uart_n_11u6x.o [1]
+Chip_UARTN_IntDisable   0x0000212f    0x4  Code  Lc  UART.o [1]
+Chip_UARTN_IntDisable   0x00003235    0x4  Code  Lc  uart_n_11u6x.o [1]
+Chip_UARTN_IntEnable    0x0000212b    0x4  Code  Lc  UART.o [1]
+Chip_UARTN_IntEnable    0x00003231    0x4  Code  Lc  uart_n_11u6x.o [1]
+Chip_UARTN_ReadByte     0x00002123    0x8  Code  Lc  UART.o [1]
+Chip_UARTN_ReadRB       0x00003345    0xe  Code  Gb  uart_n_11u6x.o [1]
+Chip_UARTN_SendByte     0x0000322b    0x6  Code  Lc  uart_n_11u6x.o [1]
+Chip_UARTN_SendRB       0x00003305   0x40  Code  Gb  uart_n_11u6x.o [1]
+Chip_UARTN_SetBaud      0x000032c1   0x1a  Code  Gb  uart_n_11u6x.o [1]
+Chip_UARTN_TXEnable     0x00002119    0xa  Code  Lc  UART.o [1]
+Chip_UARTN_TXIntHandlerRB
+                        0x000032db   0x2a  Code  Gb  uart_n_11u6x.o [1]
+Chip_WWDT_ClearStatusFlag
+                        0x00007485   0x1c  Code  Gb  wwdt_11u6x.o [1]
+Chip_WWDT_Feed          0x00007415    0xa  Code  Lc  InWDT.o [1]
+Chip_WWDT_GetStatus     0x00007449    0x4  Code  Lc  InWDT.o [1]
+Chip_WWDT_SetOption     0x0000741f    0x8  Code  Lc  InWDT.o [1]
+Chip_WWDT_Start         0x00007435   0x14  Code  Lc  InWDT.o [1]
+Chip_WWDT_UnsetOption   0x00007427    0xe  Code  Lc  InWDT.o [1]
+Data_Init               0x0000559d   0x66  Code  Gb  main.o [1]
+Date_Time               0x10000824    0x8  Data  Gb  RealTime.o [1]
+FEED_DOG                0x00005b79   0x10  Code  Gb  WatchDog.o [1]
+Follow_angle            0x00005ef5  0x408  Code  Gb  Compute.o [1]
+G_run                   0x10000774   0x14  Data  Gb  Global_var.o [1]
+G_status                0x10000808    0xc  Data  Gb  Global_var.o [1]
+IIC_Init                0x00003f2f   0x34  Code  Gb  IIC_polling.o [1]
+IIC_read                0x00003f63   0x48  Code  Gb  IIC_polling.o [1]
+IIC_write               0x00003fab   0x1a  Code  Gb  IIC_polling.o [1]
+KalmanFilter            0x00005ab5   0x5e  Code  Gb  Angle.o [1]
+KalmanFilter::p_last    0x10000830    0x4  Data  Lc  Angle.o [1]
+KalmanFilter::x_last    0x1000082c    0x4  Data  Lc  Angle.o [1]
+KeyDown                 0x10000842    0x2  Data  Gb  KEY_SCAN.o [1]
+KeyOn                   0x10000846    0x2  Data  Gb  KEY_SCAN.o [1]
+KeyScan                 0x00005e8b   0x58  Code  Gb  KEY_SCAN.o [1]
+KeyScan::PreKey         0x10000848    0x2  Data  Lc  KEY_SCAN.o [1]
+KeyUp                   0x10000844    0x2  Data  Gb  KEY_SCAN.o [1]
+LED_KEY_IO_Init         0x0000531f   0x8c  Code  Gb  main.o [1]
+L_moto_current_delay    0x1000084c    0x2  Data  Gb  Logic.o [1]
+L_timer                 0x1000084a    0x2  Data  Gb  Logic.o [1]
+L_timer_10ms            0x10000861    0x1  Data  Gb  Logic.o [1]
+LoadInt                 0x000008b7   0x68  Code  Lc  xprintffull.o [3]
+Logic                   0x000046fd  0x2c4  Code  Gb  Logic.o [1]
+Logic::Moto_off         0x10000204    0x2  Data  Lc  Logic.o [1]
+MODBUS_POLL             0x00003871  0x5dc  Code  Gb  MODBUS.o [1]
+Moto_Ctrl2              0x00004ae1  0x1f2  Code  Gb  Moto_ctrl.o [1]
+Moto_Ctrl2::delay       0x10000852    0x2  Data  Lc  Moto_ctrl.o [1]
+Moto_Ctrl2::err_stop    0x10000868    0x1  Data  Lc  Moto_ctrl.o [1]
+Moto_Ctrl2::run_dir     0x10000867    0x1  Data  Lc  Moto_ctrl.o [1]
+Moto_Ctrl2::step        0x10000866    0x1  Data  Lc  Moto_ctrl.o [1]
+Moto_Ctrl_Init          0x00004a83   0x5a  Code  Gb  Moto_ctrl.o [1]
+My_UARTN_RXIntHandlerRB
+                        0x00002227   0x26  Code  Gb  UART.o [1]
+My_UARTN_TXIntHandlerRB
+                        0x0000224d   0x22  Code  Gb  UART.o [1]
+NVIC_DisableIRQ         0x00003ef1    0xe  Code  Lc  IIC_polling.o [1]
+NVIC_DisableIRQ         0x00004e4b    0xe  Code  Lc  PWM.o [1]
+NVIC_EnableIRQ          0x00004cf1    0xe  Code  Lc  ADC.o [1]
+NVIC_EnableIRQ          0x00004e3d    0xe  Code  Lc  PWM.o [1]
+NVIC_EnableIRQ          0x000020b5    0xe  Code  Lc  UART.o [1]
+NVIC_SetPriority        0x000051fd   0x84  Code  Lc  main.o [1]
+OscRateIn               0x00007c64    0x4  Data  Gb  board.o [1]
+PWM_Deinit              0x00005031   0x10  Code  Gb  PWM.o [1]
+PWM_Init                0x00004f35   0xfc  Code  Gb  PWM.o [1]
+PWM_s_count             0x10000854    0x2  Data  Lc  PWM.o [1]
+PWM_s_duty              0x10000869    0x1  Data  Gb  PWM.o [1]
+PWM_s_quick             0x10000206    0x1  Data  Gb  PWM.o [1]
+RECdata                 0x10000408  0x108  Data  Lc  Updata.o [1]
+RS485_Slave_Init        0x000025f1   0x6a  Code  Gb  RS485_Slave.o [1]
+RS485_Slave_Process     0x00002a11  0x12c  Code  Gb  RS485_Slave.o [1]
+RTCOscRateIn            0x00007c68    0x4  Data  Gb  board.o [1]
+Read_data               0x00002b85   0x28  Code  Gb  InEEPROM.o [1]
+RealTime_Get            0x00002bf5   0xe0  Code  Gb  RealTime.o [1]
+RealTime_Init           0x00002bed    0x8  Code  Gb  RealTime.o [1]
+RealTime_Set            0x00002cd5   0xda  Code  Gb  RealTime.o [1]
+Region$$Table$$Base     0x00007768          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0000778c          --   Gb  - Linker created -
+RingBuffer_GetCount     0x00002fb1    0x8  Code  Lc  ring_buffer.o [1]
+RingBuffer_GetCount     0x000020d3    0x8  Code  Lc  UART.o [1]
+RingBuffer_GetFree      0x00002fb9   0x10  Code  Lc  ring_buffer.o [1]
+RingBuffer_Init         0x00002ff7   0x12  Code  Gb  ring_buffer.o [1]
+RingBuffer_Insert       0x00003009   0x38  Code  Gb  ring_buffer.o [1]
+RingBuffer_InsertMult   0x00003041   0xb4  Code  Gb  ring_buffer.o [1]
+RingBuffer_IsEmpty      0x00002fe3   0x14  Code  Lc  ring_buffer.o [1]
+RingBuffer_IsEmpty      0x000020db   0x14  Code  Lc  UART.o [1]
+RingBuffer_IsFull       0x00002fc9   0x1a  Code  Lc  ring_buffer.o [1]
+RingBuffer_Pop          0x000030f5   0x38  Code  Gb  ring_buffer.o [1]
+RingBuffer_PopMult      0x0000312d   0xb8  Code  Gb  ring_buffer.o [1]
+Run_test2               0x00004509  0x1d4  Code  Gb  Logic.o [1]
+Run_test2::delay        0x1000084e    0x2  Data  Lc  Logic.o [1]
+Run_test2::run_step     0x10000863    0x1  Data  Lc  Logic.o [1]
+Run_test2::run_time     0x10000850    0x2  Data  Lc  Logic.o [1]
+SCT0_1_IRQHandler       0x00004ed1   0x64  Code  Gb  PWM.o [1]
+SPI_Init                0x000064e3   0xae  Code  Gb  SPI.o [1]
+SPI_Read                0x000065b1   0x20  Code  Gb  SPI.o [1]
+SPI_Send                0x00006591   0x20  Code  Gb  SPI.o [1]
+SSP_ReadFrames_Blocking
+                        0x00006447   0x9c  Code  Gb  SPI.o [1]
+SSP_WriteFrames_Blocking
+                        0x000063ab   0x9c  Code  Gb  SPI.o [1]
+SUN_angle               0x100006d4   0x38  Data  Gb  Compute.o [1]
+S_curve                 0x000074a0   0x68  Data  Gb  PWM.o [1]
+Save_data               0x00002bad   0x3c  Code  Gb  InEEPROM.o [1]
+SetupXferRecAndExecute  0x00003eff   0x30  Code  Lc  IIC_polling.o [1]
+StrToInt                0x000018ed   0x7c  Code  Gb  UART0_process.o [1]
+StrToInt_time           0x00001889   0x64  Code  Gb  UART0_process.o [1]
+SysTick_Config          0x00005281   0x30  Code  Lc  main.o [1]
+SysTick_Handler         0x0000557d   0x18  Code  Gb  main.o [1]
+SystemCoreClock         0x10000834    0x4  Data  Gb  chip_11u6x.o [1]
+SystemCoreClockUpdate   0x000056b5    0xc  Code  Gb  chip_11u6x.o [1]
+SystemInit              0x00003403    0x2  Code  Gb  sysinit.o [1]
+TENms                   0x10000864    0x1  Data  Gb  main.o [1]
+TENms_count             0x10000865    0x1  Data  Gb  main.o [1]
+TIMER16_0_IRQHandler    0x00007539   0x18  Code  Gb  InTIMER.o [1]
+TIMER32_1_IRQHandler    0x00007521   0x18  Code  Gb  InTIMER.o [1]
+UART0_Init              0x00002511   0x68  Code  Gb  UART.o [1]
+UART0_PROCESS           0x00001969  0x670  Code  Gb  UART0_process.o [1]
+UART0_STATE             0x10000838    0x4  Data  Gb  UART.o [1]
+UART1_MODBUS            0x10000690   0x44  Data  Gb  RS485_Slave.o [1]
+UART1_STATE             0x1000083c    0x4  Data  Gb  UART.o [1]
+UART_ClearRxBuff        0x0000230d   0x3e  Code  Gb  UART.o [1]
+UART_GetRxCount         0x000022e1   0x2c  Code  Gb  UART.o [1]
+UART_STATE_CHECK        0x00002143   0xe4  Code  Gb  UART.o [1]
+UARTn_Init              0x0000235d   0xe4  Code  Gb  UART.o [1]
+UARTn_Read              0x000024b1   0x5c  Code  Gb  UART.o [1]
+UARTn_Send              0x0000245d   0x50  Code  Gb  UART.o [1]
+USART0_IRQHandler       0x0000226f   0x2c  Code  Gb  UART.o [1]
+USART1_4_IRQHandler     0x0000229b   0x44  Code  Gb  UART.o [1]
+USART2_3_IRQHandler     0x000022df    0x2  Code  Gb  UART.o [1]
+Updata                  0x00005c49  0x1e2  Code  Gb  Updata.o [1]
+Updata::datacount       0x10000858    0x2  Data  Lc  Updata.o [1]
+Updata::frame_all       0x1000085c    0x2  Data  Lc  Updata.o [1]
+Updata::frame_count     0x1000085a    0x2  Data  Lc  Updata.o [1]
+_GenldFull              0x00000ec5  0x2aa  Code  Lc  xprintffull.o [3]
+_LdtobFull              0x00000a4d  0x464  Code  Lc  xprintffull.o [3]
+_LitobFull              0x0000091f  0x12a  Code  Lc  xprintffull.o [3]
+_PrintfFull             0x00000301  0x5b6  Code  Gb  xprintffull.o [3]
+_Prout                  0x00007965   0x16  Code  Gb  xprout.o [3]
+_PutcharsFull           0x0000116f   0x30  Code  Lc  xprintffull.o [3]
+__MODBUS_ORDER_BACK     0x000037e9   0x88  Code  Lc  MODBUS.o [1]
+__Moto_IO               0x00004a13   0x70  Code  Gb  Moto_ctrl.o [1]
+__Vectors               0x00000000          --   Gb  iar_startup_lpc11u6x.o [1]
+__Vectors_End           0x000000c0         Data  Gb  iar_startup_lpc11u6x.o [1]
+__Vectors_Size {Abs}    0x000000c0          --   Gb  iar_startup_lpc11u6x.o [1]
+__Write_many_process    0x000027e5  0x1f2  Code  Gb  RS485_Slave.o [1]
+__Write_one_process     0x0000265b  0x142  Code  Gb  RS485_Slave.o [1]
+__aeabi_cdcmpeq         0x00007129         Code  Gb  DblCmpEq.o [4]
+__aeabi_cdcmple         0x000012a5         Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x000012d7         Code  Gb  DblCmpGe.o [4]
+__aeabi_cfcmple         0x000069d1         Code  Gb  FltCmpLe.o [4]
+__aeabi_cfrcmple        0x000069f9         Code  Gb  FltCmpGe.o [4]
+__aeabi_d2f             0x00006691         Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x00001389         Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x000013ad         Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x00001411         Code  Gb  DblAddSub.o [4]
+__aeabi_ddiv            0x000017a1         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x0000161d         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x000014d7         Code  Gb  DblAddSub.o [4]
+__aeabi_errno_addr      0x000042b1    0xa  Code  Gb  errno.o [3]
+__aeabi_f2d             0x00002e95         Code  Gb  FltToDbl.o [4]
+__aeabi_f2iz            0x000068cd         Code  Gb  FltToS32.o [4]
+__aeabi_fadd            0x000067ad         Code  Gb  FltAddSub.o [4]
+__aeabi_fdiv            0x00002deb         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x000066fd         Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x0000681d         Code  Gb  FltAddSub.o [4]
+__aeabi_i2d             0x000013dd         Code  Gb  I32ToDbl.o [4]
+__aeabi_i2f             0x00002db5         Code  Gb  I32ToFlt.o [4]
+__aeabi_idiv            0x000015c5    0xe  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_idivmod         0x000015e1   0x1c  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_ldiv0           0x00001885         Code  Gb  I64DivZer.o [5]
+__aeabi_lmul            0x000042c1         Code  Gb  I64Mul.o [5]
+__aeabi_memclr4         0x000020b1         Code  Gb  ABImemset.o [5]
+__aeabi_memclr8         0x000020b1         Code  Gb  ABImemset.o [5]
+__aeabi_memcpy          0x00001249         Code  Gb  ABImemcpy.o [5]
+__aeabi_ui2d            0x000013f1         Code  Gb  I32ToDbl.o [4]
+__aeabi_ui2f            0x00002dcd         Code  Gb  I32ToFlt.o [4]
+__aeabi_uidiv           0x000015d3    0xe  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_uidivmod        0x000015fd   0x1c  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_uldivmod        0x000011df         Code  Gb  I64DivMod.o [5]
+__bit_Package           0x000029d7    0x2  Code  Gb  RS485_Slave.o [1]
+__cmain                 0x00007845         Code  Gb  cmain.o [5]
+__exit                  0x00007879   0x14  Code  Gb  exit.o [6]
+__iar_Atan              0x000040d1  0x148  Code  Gb  xatan.o [4]
+__iar_Dint              0x000070a5   0x84  Code  Gb  xdint.o [4]
+__iar_Dscale            0x00001309   0x80  Code  Gb  xdscale.o [4]
+__iar_Errno             0x10000200    0x4  Data  Gb  errno.o [3]
+__iar_Memchr            0x000011c7   0x18  Code  Gb  memchr.o [5]
+__iar_Memset4_word      0x00002081         Code  Gb  ABImemset.o [5]
+__iar_Quad              0x00006f31  0x174  Code  Gb  xquad.o [4]
+__iar_Sin               0x00006aed  0x444  Code  Gb  xsin.o [4]
+__iar_Strchr            0x000011a3   0x14  Code  Gb  strchr.o [5]
+__iar_copy_init3        0x00007655   0x30  Code  Gb  copy_init3.o [5]
+__iar_d2uiz             0x000013b1         Code  Gb  DblToI32.o [4]
+__iar_data_init3        0x000076d5   0x28  Code  Gb  data_init.o [5]
+__iar_dlib_perthread_access
+                        0x00004505    0x2  Code  Gb  xtls.o [3]
+__iar_edom              0x000044f9         Code  Gb  iarEdom.o [5]
+__iar_fmod              0x0000714d         Code  Gb  fmod.o [4]
+__iar_fmodl             0x0000714d         Code  Gb  fmod.o [4]
+__iar_program_start     0x00007c29         Code  Gb  cstartup_M.o [5]
+__iar_sqrt              0x00003fd5         Code  Gb  sqrt.o [4]
+__iar_ui2d              0x000013f5         Code  Gb  I32ToDbl.o [4]
+__iar_ui2f              0x00002dd1         Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3        0x00004093   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0000785f    0x4  Code  Gb  low_level_init.o [3]
+__register_Package      0x000029d9   0x28  Code  Gb  RS485_Slave.o [1]
+__vector_table          0x00000000         Data  Gb  iar_startup_lpc11u6x.o [1]
+__vector_table_0x1c     0x0000001c         Data  Gb  iar_startup_lpc11u6x.o [1]
+__write                 0x000075a1   0x32  Code  Gb  board.o [1]
+_call_main              0x00007851         Code  Gb  cmain.o [5]
+_exit                   0x0000786d         Code  Gb  cexit.o [5]
+_main                   0x0000785b         Code  Gb  cmain.o [5]
+a                       0x00004270   0x40  Data  Lc  xatan.o [4]
+asin                    0x00002ec9   0xe8  Code  Gb  asin.o [4]
+atan                    0x000065f5   0x9c  Code  Gb  atan.o [4]
+auchCRCHi               0x00007214  0x100  Data  Gb  CRC16.o [1]
+auchCRCLo               0x00007314  0x100  Data  Gb  CRC16.o [1]
+cos                     0x000069c5    0xa  Code  Gb  cos.o [4]
+div                     0x00001863   0x20  Code  Gb  div.o [3]
+exit                    0x00007863    0x8  Code  Gb  exit.o [3]
+fmod                    0x0000714d         Code  Gb  fmod.o [4]
+fmodl                   0x0000714d         Code  Gb  fmod.o [4]
+getUARTClockID          0x0000323d   0x1a  Code  Lc  uart_n_11u6x.o [1]
+i2cmXferRec             0x100007ec   0x10  Data  Lc  IIC_polling.o [1]
+iap_entry               0x00003e4d    0x8  Code  Lc  eeprom.o [1]
+iap_entry               0x00006909    0x8  Code  Lc  flash.o [1]
+inbuf                   0x1000070c   0x34  Data  Lc  RS485_Slave.o [1]
+inbufcount              0x1000086a    0x1  Data  Gb  RS485_Slave.o [1]
+main                    0x000053b9  0x1c0  Code  Gb  main.o [1]
+memcmp                  0x000025a5   0x28  Code  Gb  memcmp.o [5]
+mod_bit                 0x10000856    0x2  Data  Gb  RS485_Slave.o [1]
+mod_state               0x10000788   0x14  Data  Gb  RS485_Slave.o [1]
+outbuf                  0x10000740   0x34  Data  Lc  RS485_Slave.o [1]
+outbufcount             0x1000086b    0x1  Data  Gb  RS485_Slave.o [1]
+printf                  0x000025cd   0x24  Code  Gb  printf.o [3]
+putchar                 0x00007745   0x24  Code  Gb  putchar.o [3]
+rxbuff                  0x10000510   0x80  Data  Lc  UART.o [1]
+rxring                  0x100007b0   0x14  Data  Lc  UART.o [1]
+sctUsedCount            0x1000086c    0x1  Data  Lc  sct_11u6x.o [1]
+sequenceComplete        0x1000085e    0x1  Data  Lc  ADC.o [1]
+sin                     0x000066f3    0xa  Code  Gb  sin.o [4]
+sqrt                    0x00003fd5         Code  Gb  sqrt.o [4]
+sqrtl                   0x00003fd5         Code  Gb  sqrt.o [4]
+strlen                  0x000011b7   0x10  Code  Gb  strlen.o [5]
+timer_test              0x10000862    0x1  Data  Gb  Logic.o [1]
+txbuff                  0x10000590   0x80  Data  Lc  UART.o [1]
+txring                  0x1000079c   0x14  Data  Lc  UART.o [1]
+u1_rxbuff               0x10000208  0x200  Data  Lc  UART.o [1]
+u1_rxring               0x100007d8   0x14  Data  Lc  UART.o [1]
+u1_txbuff               0x10000610   0x80  Data  Lc  UART.o [1]
+u1_txring               0x100007c4   0x14  Data  Lc  UART.o [1]
+uart_3_4_cnt            0x1000086d    0x1  Data  Lc  uart_n_11u6x.o [1]
+wdtOSCRate              0x000075e4   0x40  Data  Lc  clock_11u6x.o [1]
+
+
+[1] = E:\work\Follow\program-iar\Debug\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  29 164 bytes of readonly  code memory
+   2 124 bytes of readonly  data memory
+   2 669 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

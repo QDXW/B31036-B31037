@@ -1,0 +1,178 @@
+1、iar_startup_lpc11u6x.s  (在高版本IAR编译时可能出现告警，处理如下)
+
+        PUBWEAK Reset_Handler
+        SECTION .text:CODE:REORDER:NOROOT(2)
+Reset_Handler
+        LDR     R0, = SystemInit
+        BLX     R0
+        LDR     R0, =__iar_program_start
+        BX      R0
+   有编译报警，如上添加:NOROOT
+
+2、跳转错误，调试，死机在systeminit，初始化时钟。改用ROM_API  定义#define USE_ROM_API
+   默认系统上电就会调用systeminit，初始化内部时钟。
+
+3、APP程序，IAR编译器Options-->Linker-->Config 设置中断向量起始地址，程序ROM起始地址；由于中断向量地址需要重新映射到RAM里，
+   所以RAM地址起始0x200空出不用(实际留0x100就够)。烧写的时候设置起始ROM地址。
+
+4、Boot程序。跳转前关闭中断。
+-------------------------------------------------------------------------------
+5、boot程序里用到的跳转函数
+
+#define ApplicationAddress	0x00006000   		//第一个应用程序起始地址
+
+void JUMP_to_APP(void)
+{
+
+    uint32_t JumpAddress;
+    pFunction Jump_To_Application;
+
+    __disable_irq();        // 跳转之前关中断
+
+    if (((*(__IO uint32_t*)ApplicationAddress) & 0x10008000 ) == 0x10000000)
+    {
+        // Jump to user application
+        JumpAddress = *(__IO uint32_t*) (ApplicationAddress + 4);   //获取该地址存储的值，起始地址+4取得的是复位中断的中断向量地址，然后取得复位中断函数的入口地址
+
+        Jump_To_Application = (pFunction) JumpAddress;
+
+        // Initialize user application's Stack Pointer
+        __set_MSP(*(__IO uint32_t*) ApplicationAddress);
+
+        // Jump to application
+        Jump_To_Application();
+    }
+}
+
+---------------------------------------------------------------------------------
+6、APP程序中重新映射中断向量的函数
+#define VTOR_OFFSET         (0x00006000)
+void ReAllocateNVIC(void)
+{
+    /*__disable_irq();
+    NVIC_SetVTOR(VTOR_OFFSET);
+    __enable_irq();*/
+
+    uint32_t* src,*dst;
+    int32_t size;
+
+    __disable_irq();
+    // copy vector table
+    src = (uint32_t*)VTOR_OFFSET;
+    dst = (uint32_t*)0x10000000;
+    size = 192;
+
+    while(size > 0)
+    {
+        *dst++ = *src++;
+        size -= 4;
+    }
+     LPC_SYSCTL->SYSMEMREMAP = 0x1;    /*LPC_SYSCON remap to internal RAM */
+    //__enable_irq();
+
+}
+
+//-----------------------------------------------------------------------------
+关于2、跳转错误，调试，死机在systeminit，初始化时钟。经过调试问题解决如下：
+1、使用内部时钟时，跳转后由于已经在跳转前初始化了内部IRC作为PLL源，PLL输出作为系统主时钟，重新初始化导致问题。
+   初始化函数修改为一下测试代码，测试通过（添加中文注释的语句）。
+
+void Chip_SetupIrcClocking2(void)
+{
+
+	/* Turn on the IRC by clearing the power down bit */
+	Chip_SYSCTL_PowerUp(SYSCTL_POWERDOWN_IRC_PD);
+    
+	Chip_Clock_SetMainClockSource(SYSCTL_MAINCLKSRC_IRC);  // 主时钟设置为内部IRC
+	Chip_SYSCTL_PowerDown(SYSCTL_POWERDOWN_SYSPLL_PD);     // 关闭PLL
+
+	/* Select the PLL input in the IRC */
+	Chip_Clock_SetSystemPLLSource(SYSCTL_PLLCLKSRC_IRC);
+
+	/* Setup FLASH access */
+	Chip_FMC_SetFLASHAccess(FLASHTIM_2CLK_CPU);
+
+
+	/* Power down PLL to change the PLL divider ratio */
+	Chip_SYSCTL_PowerDown(SYSCTL_POWERDOWN_SYSPLL_PD);
+
+	/* Configure the PLL M and P dividers */
+	/* Setup PLL for main oscillator rate (FCLKIN = 12MHz) * 4 = 48MHz
+	   MSEL = 3 (this is pre-decremented), PSEL = 1 (for P = 2)
+	   FCLKOUT = FCLKIN * (MSEL + 1) = 12MHz * 4 = 48MHz
+	   FCCO = FCLKOUT * 2 * P = 48MHz * 2 * 2 = 192MHz (within FCCO range) */
+	Chip_Clock_SetupSystemPLL(3, 1);
+
+	/* Turn on the PLL by clearing the power down bit */
+	Chip_SYSCTL_PowerUp(SYSCTL_POWERDOWN_SYSPLL_PD);
+
+	/* Wait for PLL to lock */
+	while (!Chip_Clock_IsSystemPLLLocked()) {}
+
+	/* Set system clock divider to 1 */
+	Chip_Clock_SetSysClockDiv(1);
+
+	/* Set main clock source to the system PLL. This will drive 24MHz
+	   for the main clock and 24MHz for the system clock */
+	Chip_Clock_SetMainClockSource(SYSCTL_MAINCLKSRC_PLLOUT);
+}
+2、使用外部晶振时测试代码，步骤如下（测试通过）：
+
+Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_IOCON);  // 需要在初始化外部晶振引脚前初始化
+
+uint8_t Crystal_oscillator_Init(void)
+{
+	volatile int i;
+
+    	Chip_IOCON_PinMuxSet(LPC_IOCON, 2, 0, (IOCON_FUNC1 | IOCON_MODE_INACT | IOCON_ADMODE_EN)); // 外部晶振引脚
+	Chip_IOCON_PinMuxSet(LPC_IOCON, 2, 1, (IOCON_FUNC1 | IOCON_MODE_INACT | IOCON_ADMODE_EN)); // 外部晶振引脚
+
+	/* Powerup main oscillator */
+	Chip_SYSCTL_PowerUp(SYSCTL_POWERDOWN_SYSOSC_PD);
+
+
+	/* Wait for at least 580uS for osc to stabilize */
+	for (i = 0; i < 2500; i++) {}
+    
+	Chip_Clock_SetMainClockSource(SYSCTL_MAINCLKSRC_IRC);  // 主时钟设置为内部IRC
+    	Chip_SYSCTL_PowerDown(SYSCTL_POWERDOWN_SYSPLL_PD);     // 关闭PLL
+
+	/* Set system PLL input to main oscillator */
+	Chip_Clock_SetSystemPLLSource(SYSCTL_PLLCLKSRC_MAINOSC);
+
+
+	/* Setup FLASH access to 2 clocks */
+	Chip_FMC_SetFLASHAccess(FLASHTIM_2CLK_CPU);
+
+	// Power down PLL to change the PLL divider ratio
+	//Chip_SYSCTL_PowerDown(SYSCTL_POWERDOWN_SYSPLL_PD);
+
+	/* Setup PLL for main oscillator rate (FCLKIN = 12MHz) * 4 = 48MHz
+	   MSEL = 3 (this is pre-decremented), PSEL = 1 (for P = 2)
+	   FCLKOUT = FCLKIN * (MSEL + 1) = 12MHz * 4 = 48MHz
+	   FCCO = FCLKOUT * 2 * P = 48MHz * 2 * 2 = 192MHz (within FCCO range) */
+	Chip_Clock_SetupSystemPLL(3, 1);
+
+	// Powerup system PLL
+	Chip_SYSCTL_PowerUp(SYSCTL_POWERDOWN_SYSPLL_PD);
+
+	// Wait for PLL to lock
+    	i = 0;
+	while (!Chip_Clock_IsSystemPLLLocked())
+    	{
+       	 	i++;
+        	if(i>1000)
+        	{
+            		return 0;
+        	}
+    	}
+
+	// Set system clock divider to 1
+	Chip_Clock_SetSysClockDiv(1);
+
+	/* Set main clock source to the system PLL. This will drive 48MHz
+	   for the main clock and 48MHz for the system clock */
+	Chip_Clock_SetMainClockSource(SYSCTL_MAINCLKSRC_PLLOUT);
+
+    return 1;
+}

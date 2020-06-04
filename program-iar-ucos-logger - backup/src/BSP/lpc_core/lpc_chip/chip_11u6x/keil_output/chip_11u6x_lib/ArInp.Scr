@@ -1,0 +1,25 @@
+--create .\keil_output\chip_11u6x_lib\chip_11u6x_lib.lib
+.\keil_output\chip_11u6x_lib\adc_11u6x.o
+.\keil_output\chip_11u6x_lib\chip_11u6x.o
+.\keil_output\chip_11u6x_lib\clock_11u6x.o
+.\keil_output\chip_11u6x_lib\dma_11u6x.o
+.\keil_output\chip_11u6x_lib\gpio_11u6x.o
+.\keil_output\chip_11u6x_lib\gpiogroup_11u6x.o
+.\keil_output\chip_11u6x_lib\i2c_11u6x.o
+.\keil_output\chip_11u6x_lib\pinint_11u6x.o
+.\keil_output\chip_11u6x_lib\pmu_11u6x.o
+.\keil_output\chip_11u6x_lib\rtc_11u6x.o
+.\keil_output\chip_11u6x_lib\sct_11u6x.o
+.\keil_output\chip_11u6x_lib\ssp_11u6x.o
+.\keil_output\chip_11u6x_lib\syscon_11u6x.o
+.\keil_output\chip_11u6x_lib\sysinit_11u6x.o
+.\keil_output\chip_11u6x_lib\timer_11u6x.o
+.\keil_output\chip_11u6x_lib\wwdt_11u6x.o
+.\keil_output\chip_11u6x_lib\ring_buffer.o
+.\keil_output\chip_11u6x_lib\crc_11u6x.o
+.\keil_output\chip_11u6x_lib\iocon_11u6x.o
+.\keil_output\chip_11u6x_lib\uart_0_11u6x.o
+.\keil_output\chip_11u6x_lib\uart_n_11u6x.o
+.\keil_output\chip_11u6x_lib\romdiv_11u6x.o
+.\keil_output\chip_11u6x_lib\i2cm_11u6x.o
+.\keil_output\chip_11u6x_lib\stopwatch_11u6.o

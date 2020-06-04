@@ -1,0 +1,595 @@
+###############################################################################
+#
+# IAR ELF Linker V7.60.2.11341/W32 for ARM                09/Aug/2017  15:55:18
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Exe\NXP-program-ctrl.out.tmp
+#    Map file     =  
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\List\NXP-program-ctrl.map
+#    Command line =  
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\ADC.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\adc_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\board.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\board_sysinit.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\chip_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\clock_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\CRC16.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\crc_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\Data_Flash.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\dma_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\eeprom.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\flash.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\Global_var.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\gpio_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\gpiogroup_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\GPS.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\i2c_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\i2cm_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\iar_startup_lpc11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\IIC_polling.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\InEEPROM.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\InTIMER.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\InWDT.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\iocon_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\KEY_SCAN.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\LED.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\main.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\MODBUS.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\MODBUS_ctrl_box.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\MODBUS_master.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\pinint_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\pmu_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\PWM.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\RealTime.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\ring_buffer.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\romdiv_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\RS485_Slave.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\rtc_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\sct_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\SPI.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\ssp_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\stopwatch_11u6.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\SWITCH_SCAN.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\syscon_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\sysinit.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\sysinit_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\timer_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\UART.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\UART0_process.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\uart_0_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\uart_n_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\Updata.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\WatchDog.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\Weather.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\Wind.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\wwdt_11u6x.o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj\Zigbee.o
+#        -o
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Exe\NXP-program-ctrl.out.tmp
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\List\NXP-program-ctrl.map
+#        --config "E:\work\Follow\13jianfang\program-iar-ctrl-13jf\NXP-program
+#        - app.icf" --entry __iar_program_start --inline --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00006000 { ro section .intvec };
+"P1":  place in [from 0x00006000 to 0x0003ffff] { ro };
+"P2":  place in [from 0x10000200 to 0x10007fdf] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xc0
+  .intvec            ro code  0x00006000    0xc0  iar_startup_lpc11u6x.o [1]
+                            - 0x000060c0    0xc0
+
+"P1":                                     0x4668
+  .text              ro code  0x000060c0   0xc70  MODBUS_ctrl_box.o [1]
+  .text              ro code  0x00006d30    0x30  gpio_11u6x.o [1]
+  .text              ro code  0x00006d60   0x43c  LED.o [1]
+  .text              ro code  0x0000719c   0x2b8  Weather.o [1]
+  .text              ro code  0x00007454   0x1cc  MODBUS_master.o [1]
+  .text              ro code  0x00007620    0xb0  InEEPROM.o [1]
+  .text              ro code  0x000076d0   0x174  RealTime.o [1]
+  .text              ro code  0x00007844    0x2a  iocon_11u6x.o [1]
+  .text              ro code  0x0000786e     0x2  iar_startup_lpc11u6x.o [1]
+  .text              ro code  0x00007870    0xb8  Wind.o [1]
+  .text              ro code  0x00007928    0xbc  Zigbee.o [1]
+  .text              ro code  0x000079e4   0x768  UART.o [1]
+  .text              ro code  0x0000814c   0x22c  CRC16.o [1]
+  .text              ro code  0x00008378    0x3c  eeprom.o [1]
+  .text              ro code  0x000083b4    0xb0  IIC_polling.o [1]
+  .text              ro code  0x00008464    0x3c  romdiv_11u6x.o [1]
+  .text              ro code  0x000084a0    0x32  I32ToFlt.o [4]
+  .text              ro code  0x000084d2    0xb0  FltMul.o [4]
+  .text              ro code  0x00008582    0xaa  FltDiv.o [4]
+  .text              ro code  0x0000862c    0x3a  FltToS32.o [4]
+  .text              ro code  0x00008666     0x2  iar_startup_lpc11u6x.o [1]
+  .text              ro code  0x00008668    0xe4  uart_0_11u6x.o [1]
+  .text              ro code  0x0000874c   0x184  ring_buffer.o [1]
+  .text              ro code  0x000088d0    0xfe  uart_n_11u6x.o [1]
+  .text              ro code  0x000089ce     0x2  iar_startup_lpc11u6x.o [1]
+  .text              ro code  0x000089d0   0x204  clock_11u6x.o [1]
+  .text              ro code  0x00008bd4   0x14a  i2cm_11u6x.o [1]
+  .text              ro code  0x00008d1e     0x2  iar_startup_lpc11u6x.o [1]
+  .text              ro code  0x00008d20    0x5c  ABImemcpy.o [5]
+  .text              ro code  0x00008d7c    0x6a  I64DivMod.o [5]
+  .text              ro code  0x00008de6     0x2  sysinit.o [1]
+  .text              ro code  0x00008de8   0x750  RS485_Slave.o [1]
+  .text              ro code  0x00009538   0x446  MODBUS.o [1]
+  .text              ro code  0x00009980   0x3ac  main.o [1]
+  .text              ro code  0x00009d2c   0x158  KEY_SCAN.o [1]
+  .text              ro code  0x00009e84   0x130  SWITCH_SCAN.o [1]
+  .text              ro code  0x00009fb4    0x10  chip_11u6x.o [1]
+  .text              ro code  0x00009fc4    0x34  WatchDog.o [1]
+  .text              ro code  0x00009ff8   0x294  Updata.o [1]
+  .text              ro code  0x0000a28c    0x38  syscon_11u6x.o [1]
+  .text              ro code  0x0000a2c4    0xb4  InWDT.o [1]
+  .text              ro code  0x0000a378    0x86  flash.o [1]
+  .text              ro code  0x0000a400    0x46  wwdt_11u6x.o [1]
+  .rodata            const    0x0000a448    0xc8  RS485_Slave.o [1]
+  .text              ro code  0x0000a510    0xc0  PWM.o [1]
+  .text              ro code  0x0000a5d0    0x3c  zero_init3.o [5]
+  .text              ro code  0x0000a60c    0x30  copy_init3.o [5]
+  .text              ro code  0x0000a63c    0x28  data_init.o [5]
+  .iar.init_table    const    0x0000a664    0x24  - Linker created -
+  .text              ro code  0x0000a688    0x1c  ADC.o [1]
+  .text              ro code  0x0000a6a4    0x1c  InTIMER.o [1]
+  .text              ro code  0x0000a6c0    0x1a  cmain.o [5]
+  .text              ro code  0x0000a6da     0x8  exit.o [3]
+  .text              ro code  0x0000a6e4     0xa  cexit.o [5]
+  .text              ro code  0x0000a6f0     0xc  XXexit.o [5]
+  .text              ro code  0x0000a6fc    0x10  iar_startup_lpc11u6x.o [1]
+  .text              ro code  0x0000a70c     0xc  cstartup_M.o [5]
+  .rodata            const    0x0000a718     0x8  board.o [1]
+  .text              ro code  0x0000a720     0x4  iar_startup_lpc11u6x.o [1]
+  Initializer bytes  const    0x0000a724     0x4  <for P2-1>
+  .rodata            const    0x0000a728     0x0  zero_init3.o [5]
+  .rodata            const    0x0000a728     0x0  copy_init3.o [5]
+                            - 0x0000a728  0x4668
+
+"P2", part 1 of 3:                           0x4
+  P2-1                        0x10000200     0x4  <Init block>
+    .data            inited   0x10000200     0x4  PWM.o [1]
+                            - 0x10000204     0x4
+
+"P2", part 2 of 3:                         0x400
+  CSTACK                      0x10000208   0x400  <Block>
+    CSTACK           uninit   0x10000208   0x400  <Block tail>
+                            - 0x10000608   0x400
+
+"P2", part 3 of 3:                        0x1158
+  .bss               zero     0x10000608   0xbdc  UART.o [1]
+  .bss               zero     0x100011e4   0x108  Updata.o [1]
+  .bss               zero     0x100012ec    0xec  RS485_Slave.o [1]
+  .bss               zero     0x100013d8    0xc8  RS485_Slave.o [1]
+  .bss               zero     0x100014a0    0x80  RS485_Slave.o [1]
+  .bss               zero     0x10001520    0x58  MODBUS_ctrl_box.o [1]
+  .bss               zero     0x10001578    0x44  RS485_Slave.o [1]
+  .bss               zero     0x100015bc    0x34  MODBUS_ctrl_box.o [1]
+  .bss               zero     0x100015f0    0x34  MODBUS_master.o [1]
+  .bss               zero     0x10001624    0x24  MODBUS_ctrl_box.o [1]
+  .bss               zero     0x10001648    0x24  MODBUS_ctrl_box.o [1]
+  .bss               zero     0x1000166c    0x24  Wind.o [1]
+  .bss               zero     0x10001690    0x20  MODBUS_ctrl_box.o [1]
+  .bss               zero     0x100016b0    0x1c  Global_var.o [1]
+  .bss               zero     0x100016cc    0x14  Wind.o [1]
+  .bss               zero     0x100016e0    0x12  Weather.o [1]
+  .bss               zero     0x100016f2     0xa  SWITCH_SCAN.o [1]
+  .bss               zero     0x100016fc    0x10  IIC_polling.o [1]
+  .bss               zero     0x1000170c     0xe  MODBUS_ctrl_box.o [1]
+  .bss               zero     0x1000171a     0x6  Updata.o [1]
+  .bss               zero     0x10001720     0xc  GPS.o [1]
+  .bss               zero     0x1000172c     0xa  MODBUS_ctrl_box.o [1]
+  .bss               zero     0x10001736     0x2  LED.o [1]
+  .bss               zero     0x10001738     0x8  Global_var.o [1]
+  .bss               zero     0x10001740     0x8  RealTime.o [1]
+  .bss               zero     0x10001748     0x4  chip_11u6x.o [1]
+  .bss               zero     0x1000174c     0x4  Global_var.o [1]
+  .bss               zero     0x10001750     0x4  KEY_SCAN.o [1]
+  .bss               zero     0x10001754     0x4  Zigbee.o [1]
+  .bss               zero     0x10001758     0x2  MODBUS_ctrl_box.o [1]
+  .bss               zero     0x1000175a     0x1  ADC.o [1]
+  .bss               zero     0x1000175b     0x1  main.o [1]
+  .bss               zero     0x1000175c     0x1  MODBUS_ctrl_box.o [1]
+  .bss               zero     0x1000175d     0x1  uart_n_11u6x.o [1]
+                            - 0x1000175e  0x1156
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1156:
+          0x10000608  0x1156
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x4:
+          0x0000a724     0x4
+    1 destination range, total size 0x4:
+          0x10000200     0x4
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj: [1]
+    ADC.o                        28                 1
+    CRC16.o                     556
+    GPS.o                                          12
+    Global_var.o                                   40
+    IIC_polling.o               176                16
+    InEEPROM.o                  176
+    InTIMER.o                    28
+    InWDT.o                     180
+    KEY_SCAN.o                  344                 4
+    LED.o                     1 084                 2
+    MODBUS.o                  1 094
+    MODBUS_ctrl_box.o         3 184               271
+    MODBUS_master.o             460                52
+    PWM.o                       192        4        4
+    RS485_Slave.o             1 872      200      632
+    RealTime.o                  372                 8
+    SWITCH_SCAN.o               304                10
+    UART.o                    1 896             3 036
+    Updata.o                    660               270
+    WatchDog.o                   52
+    Weather.o                   696                18
+    Wind.o                      184                56
+    Zigbee.o                    188                 4
+    board.o                                8
+    chip_11u6x.o                 16                 4
+    clock_11u6x.o               516
+    eeprom.o                     60
+    flash.o                     134
+    gpio_11u6x.o                 48
+    i2cm_11u6x.o                330
+    iar_startup_lpc11u6x.o      220
+    iocon_11u6x.o                42
+    main.o                      940                 1
+    ring_buffer.o               388
+    romdiv_11u6x.o               60
+    syscon_11u6x.o               56
+    sysinit.o                     2
+    uart_0_11u6x.o              228
+    uart_n_11u6x.o              254                 1
+    wwdt_11u6x.o                 70
+    -------------------------------------------------
+    Total:                   17 090      212    4 442
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                        8
+    -------------------------------------------------
+    Total:                        8
+
+m6M_tl.a: [4]
+    FltDiv.o                    170
+    FltMul.o                    176
+    FltToS32.o                   58
+    I32ToFlt.o                   50
+    -------------------------------------------------
+    Total:                      454
+
+rt6M_tl.a: [5]
+    ABImemcpy.o                  92
+    I64DivMod.o                 106
+    XXexit.o                     12
+    cexit.o                      10
+    cmain.o                      26
+    copy_init3.o                 48
+    cstartup_M.o                 12
+    data_init.o                  40
+    zero_init3.o                 60
+    -------------------------------------------------
+    Total:                      406
+
+    Gaps                          8        2
+    Linker created                        36    1 024
+-----------------------------------------------------
+    Grand Total:             17 966      250    5 466
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x0000a664          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0000a688          --   Gb  - Linker created -
+?main                   0x0000a6c1         Code  Gb  cmain.o [5]
+ADCA_IRQHandler         0x0000a689   0x12  Code  Gb  ADC.o [1]
+AD_Box                  0x1000166c   0x24  Data  Gb  Wind.o [1]
+BOD_WDT_IRQHandler      0x0000a2c5   0x38  Code  Gb  InWDT.o [1]
+COPY_CODE               0x00009ff9   0x6a  Code  Gb  Updata.o [1]
+CRC16                   0x0000814d   0x2a  Code  Gb  CRC16.o [1]
+CSTACK$$Base            0x10000208          --   Gb  - Linker created -
+CSTACK$$Limit           0x10000608          --   Gb  - Linker created -
+CTRL_BOX_TIMER          0x10001730    0x4  Data  Gb  MODBUS_ctrl_box.o [1]
+Chip_Clock_GetMainClockRate
+                        0x00008a91   0x60  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetSystemClockRate
+                        0x00008af5   0x7a  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetUSARTNBaseClockRate
+                        0x000089d1   0x36  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetWDTOSCRate
+                        0x00008a71    0x8  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_SetMainClockSource
+                        0x00008a6b    0x4  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_SetSystemPLLSource
+                        0x00008a5b    0x4  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_SetUSARTNBaseClockRate
+                        0x00008a07   0x54  Code  Gb  clock_11u6x.o [1]
+Chip_EEPROM_Read        0x00008381    0x6  Code  Gb  eeprom.o [1]
+Chip_EEPROM_Write       0x00008379    0x8  Code  Gb  eeprom.o [1]
+Chip_FLASH_BlankCheckSector
+                        0x0000a3ad    0xe  Code  Gb  flash.o [1]
+Chip_FLASH_Compare      0x0000a3bb   0x10  Code  Gb  flash.o [1]
+Chip_FLASH_CopyRamToFlash
+                        0x0000a387   0x1e  Code  Gb  flash.o [1]
+Chip_FLASH_EraseSector  0x0000a3a5    0x8  Code  Gb  flash.o [1]
+Chip_FLASH_PreSectorForReadWrite
+                        0x0000a379    0xe  Code  Gb  flash.o [1]
+Chip_GPIO_Init          0x00006d31    0xc  Code  Gb  gpio_11u6x.o [1]
+Chip_GPIO_SetPinToggle  0x00006d61   0x10  Code  Lc  LED.o [1]
+Chip_GPIO_WriteDirBit   0x00006d41   0x20  Code  Gb  gpio_11u6x.o [1]
+Chip_I2CM_Init          0x00008bd5   0x30  Code  Gb  i2cm_11u6x.o [1]
+Chip_I2CM_SetBusSpeed   0x00008c0d   0x1e  Code  Gb  i2cm_11u6x.o [1]
+Chip_I2CM_XferBlocking  0x00008cf7   0x28  Code  Gb  i2cm_11u6x.o [1]
+Chip_I2CM_XferHandler   0x00008c2b   0xcc  Code  Gb  i2cm_11u6x.o [1]
+Chip_IOCON_PinMuxSet    0x00007845   0x2a  Code  Gb  iocon_11u6x.o [1]
+Chip_SYSCTL_PowerDown   0x0000a29b    0x8  Code  Gb  syscon_11u6x.o [1]
+Chip_SYSCTL_PowerUp     0x0000a2a3    0x6  Code  Gb  syscon_11u6x.o [1]
+Chip_SYSCTL_SetDeepSleepPD
+                        0x0000a28d    0xe  Code  Gb  syscon_11u6x.o [1]
+Chip_UART0_Init         0x00008669   0x1a  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_ReadRB       0x0000873f    0xe  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_SendRB       0x000086ef   0x50  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_SetBaud      0x00008683   0x3c  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_TXIntHandlerRB
+                        0x000086c9   0x26  Code  Gb  uart_0_11u6x.o [1]
+Chip_UARTN_Init         0x000088d1   0x5a  Code  Gb  uart_n_11u6x.o [1]
+Chip_UARTN_ReadRB       0x000089c1    0xe  Code  Gb  uart_n_11u6x.o [1]
+Chip_UARTN_SendRB       0x0000897d   0x44  Code  Gb  uart_n_11u6x.o [1]
+Chip_UARTN_SetBaud      0x00008941   0x16  Code  Gb  uart_n_11u6x.o [1]
+Chip_UARTN_TXIntHandlerRB
+                        0x00008957   0x26  Code  Gb  uart_n_11u6x.o [1]
+Chip_WWDT_ClearStatusFlag
+                        0x0000a42d   0x1a  Code  Gb  wwdt_11u6x.o [1]
+Chip_WWDT_Init          0x0000a401   0x1e  Code  Gb  wwdt_11u6x.o [1]
+Crystal_oscillator_Init2
+                        0x00009bf1   0xaa  Code  Gb  main.o [1]
+CtrlBox                 0x10001624   0x24  Data  Gb  MODBUS_ctrl_box.o [1]
+CtrlBox_North           0x10001648   0x24  Data  Gb  MODBUS_ctrl_box.o [1]
+Ctrl_box_cmd_init       0x00006105   0x46  Code  Gb  MODBUS_ctrl_box.o [1]
+Ctrl_box_com            0x0000614b  0x21a  Code  Gb  MODBUS_ctrl_box.o [1]
+Ctrl_box_com::Default_timer
+                        0x10001734    0x2  Data  Lc  MODBUS_ctrl_box.o [1]
+Ctrl_box_com::step      0x1000172c    0x1  Data  Lc  MODBUS_ctrl_box.o [1]
+DataRange               0x0000a448   0xc8  Data  Gb  RS485_Slave.o [1]
+Data_Init               0x00009b2b   0x9a  Code  Gb  main.o [1]
+Data_rec                0x100015bc   0x34  Data  Gb  MODBUS_ctrl_box.o [1]
+Data_send               0x10001690   0x20  Data  Gb  MODBUS_ctrl_box.o [1]
+Date_Time               0x10001740    0x8  Data  Gb  RealTime.o [1]
+FEED_DOG                0x00009fdb   0x14  Code  Gb  WatchDog.o [1]
+GPS_Wind_Init           0x0000719d   0x12  Code  Gb  Weather.o [1]
+GPS_inf                 0x10001720    0xc  Data  Gb  GPS.o [1]
+G_run                   0x10001738    0x8  Data  Gb  Global_var.o [1]
+G_status                0x100016b0   0x1c  Data  Gb  Global_var.o [1]
+GetWeather              0x000071b5  0x27e  Code  Gb  Weather.o [1]
+GetWeather::line_break_timer
+                        0x100016f0    0x2  Data  Lc  Weather.o [1]
+IIC_Init                0x000083b5   0x36  Code  Gb  IIC_polling.o [1]
+IIC_read                0x000083eb   0x44  Code  Gb  IIC_polling.o [1]
+IIC_write               0x0000842f   0x24  Code  Gb  IIC_polling.o [1]
+InWDT_Init              0x0000a2fd   0x6a  Code  Gb  InWDT.o [1]
+KeyDown                 0x10001750    0x1  Data  Gb  KEY_SCAN.o [1]
+KeyOn                   0x10001752    0x1  Data  Gb  KEY_SCAN.o [1]
+KeyScan                 0x00009df7   0x78  Code  Gb  KEY_SCAN.o [1]
+KeyScan::PreKey         0x10001753    0x1  Data  Lc  KEY_SCAN.o [1]
+KeyUp                   0x10001751    0x1  Data  Gb  KEY_SCAN.o [1]
+LED_Ctrl                0x00006e2f   0xea  Code  Gb  LED.o [1]
+LED_Init                0x00006d71   0xbe  Code  Gb  LED.o [1]
+LED_KEY_IO_Init         0x00009d2d   0xca  Code  Gb  KEY_SCAN.o [1]
+MODBUS_MASTER_process   0x00007455  0x1cc  Code  Gb  MODBUS_master.o [1]
+MODBUS_POLL             0x000095af  0x3d0  Code  Gb  MODBUS.o [1]
+OscRateIn               0x0000a718    0x4  Data  Gb  board.o [1]
+PWM_s_count             0x10000202    0x2  Data  Lc  PWM.o [1]
+PWM_s_duty              0x10000200    0x1  Data  Gb  PWM.o [1]
+PWM_s_quick             0x10000201    0x1  Data  Gb  PWM.o [1]
+RECdata                 0x100011e4  0x108  Data  Lc  Updata.o [1]
+RS485_Slave_Init        0x00008de9   0x5e  Code  Gb  RS485_Slave.o [1]
+RS485_Slave_Process     0x000093fd  0x118  Code  Gb  RS485_Slave.o [1]
+RTCOscRateIn            0x0000a71c    0x4  Data  Gb  board.o [1]
+ReAllocateNVIC          0x00009981   0x2c  Code  Gb  main.o [1]
+Read165                 0x00009f25   0x7c  Code  Lc  SWITCH_SCAN.o [1]
+Read_data               0x00007621   0x26  Code  Gb  InEEPROM.o [1]
+RealTime_Get            0x000076d9   0x9e  Code  Gb  RealTime.o [1]
+RealTime_Init           0x000076d1    0x8  Code  Gb  RealTime.o [1]
+RealTime_Set            0x00007777   0xca  Code  Gb  RealTime.o [1]
+Region$$Table$$Base     0x0000a664          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0000a688          --   Gb  - Linker created -
+RingBuffer_Init         0x0000874d   0x10  Code  Gb  ring_buffer.o [1]
+RingBuffer_Insert       0x0000875d   0x30  Code  Gb  ring_buffer.o [1]
+RingBuffer_InsertMult   0x0000878d   0x8e  Code  Gb  ring_buffer.o [1]
+RingBuffer_Pop          0x0000881b   0x30  Code  Gb  ring_buffer.o [1]
+RingBuffer_PopMult      0x0000884b   0x86  Code  Gb  ring_buffer.o [1]
+SCT0_1_IRQHandler       0x0000a511   0x4a  Code  Gb  PWM.o [1]
+SWITCH_IO_Init          0x00009e85   0x3e  Code  Gb  SWITCH_SCAN.o [1]
+S_curve                 0x0000a568   0x68  Data  Gb  PWM.o [1]
+Save_data               0x00007647   0x86  Code  Gb  InEEPROM.o [1]
+Send_Data               0x100015f0   0x34  Data  Gb  MODBUS_master.o [1]
+SwitchDown              0x100016f4    0x2  Data  Gb  SWITCH_SCAN.o [1]
+SwitchOn                0x100016f8    0x2  Data  Gb  SWITCH_SCAN.o [1]
+SwitchScan              0x00009ec3   0x62  Code  Gb  SWITCH_SCAN.o [1]
+SwitchScan::PreKey      0x100016fa    0x2  Data  Lc  SWITCH_SCAN.o [1]
+SwitchScan::uDelay      0x100016f2    0x1  Data  Lc  SWITCH_SCAN.o [1]
+SwitchUp                0x100016f6    0x2  Data  Gb  SWITCH_SCAN.o [1]
+SysTick_Handler         0x00009b19   0x12  Code  Gb  main.o [1]
+SystemCoreClock         0x10001748    0x4  Data  Gb  chip_11u6x.o [1]
+SystemCoreClockUpdate   0x00009fb5    0xc  Code  Gb  chip_11u6x.o [1]
+SystemInit              0x00008de7    0x2  Code  Gb  sysinit.o [1]
+TENms_count             0x1000175b    0x1  Data  Gb  main.o [1]
+TIMER16_0_IRQHandler    0x0000a6a9    0x2  Code  Gb  InTIMER.o [1]
+TIMER32_1_IRQHandler    0x0000a6a5    0x4  Code  Gb  InTIMER.o [1]
+Timer_mark              0x1000174c    0x4  Data  Gb  Global_var.o [1]
+UART0_Init              0x00008095   0x70  Code  Gb  UART.o [1]
+UART0_STATE             0x10000608    0x4  Data  Gb  UART.o [1]
+UART1_STATE             0x1000060c    0x4  Data  Gb  UART.o [1]
+UART2_MODBUS            0x10001578   0x44  Data  Gb  RS485_Slave.o [1]
+UART2_STATE             0x10000610    0x4  Data  Gb  UART.o [1]
+UART3_STATE             0x10000614    0x4  Data  Gb  UART.o [1]
+UART4_STATE             0x10000618    0x4  Data  Gb  UART.o [1]
+UART_ClearRxBuff        0x00007d19   0xcc  Code  Gb  UART.o [1]
+UART_GetRxCount         0x00007cdd   0x2e  Code  Gb  UART.o [1]
+UART_STATE_CHECK        0x000079e5  0x140  Code  Gb  UART.o [1]
+UARTn_Init              0x00007dfd  0x1a6  Code  Gb  UART.o [1]
+UARTn_Read              0x00008039   0x54  Code  Gb  UART.o [1]
+UARTn_Send              0x00007fc9   0x5a  Code  Gb  UART.o [1]
+USART0_IRQHandler       0x00007b25   0x52  Code  Gb  UART.o [1]
+USART1_4_IRQHandler     0x00007b77   0xa8  Code  Gb  UART.o [1]
+USART2_3_IRQHandler     0x00007c2d   0xa6  Code  Gb  UART.o [1]
+Updata                  0x0000a063  0x20a  Code  Gb  Updata.o [1]
+Updata::datacount       0x1000171c    0x2  Data  Lc  Updata.o [1]
+Updata::frame_count     0x1000171e    0x2  Data  Lc  Updata.o [1]
+Updata::received_all    0x1000171b    0x1  Data  Lc  Updata.o [1]
+WIND_inf                0x100016d8    0x4  Data  Gb  Wind.o [1]
+WatchDog_Init           0x00009fc5   0x16  Code  Gb  WatchDog.o [1]
+Wdata_rec               0x100016cc    0xc  Data  Gb  Wind.o [1]
+Wdata_send              0x100016dc    0x4  Data  Gb  Wind.o [1]
+Wind_Init               0x00007871   0x34  Code  Gb  Wind.o [1]
+Zigbee_Init             0x00007929   0x5c  Code  Gb  Zigbee.o [1]
+Zigbee_fault            0x00007985   0x46  Code  Gb  Zigbee.o [1]
+Zigbee_fault::fault_count
+                        0x10001754    0x1  Data  Lc  Zigbee.o [1]
+Zigbee_fault::fault_timer
+                        0x10001756    0x2  Data  Lc  Zigbee.o [1]
+__Ctrl_box_data_inquire
+                        0x00006561   0x92  Code  Gb  MODBUS_ctrl_box.o [1]
+__Ctrl_box_data_inquire::ctrl_box_no
+                        0x10001759    0x1  Data  Lc  MODBUS_ctrl_box.o [1]
+__Ctrl_box_manual       0x00006621  0x5d4  Code  Gb  MODBUS_ctrl_box.o [1]
+__Ctrl_box_manual::pre_cmd
+                        0x10001710    0x8  Data  Lc  MODBUS_ctrl_box.o [1]
+__Ctrl_box_manual::wind_step
+                        0x1000170d    0x1  Data  Lc  MODBUS_ctrl_box.o [1]
+__Ctrl_box_manual::wind_timer_m
+                        0x1000170c    0x1  Data  Lc  MODBUS_ctrl_box.o [1]
+__Ctrl_box_manual::wind_timer_s
+                        0x10001718    0x2  Data  Lc  MODBUS_ctrl_box.o [1]
+__Ctrl_box_manual_cmd   0x00006c09   0xf2  Code  Gb  MODBUS_ctrl_box.o [1]
+__Ctrl_box_manual_cmd::box_no
+                        0x1000175c    0x1  Data  Lc  MODBUS_ctrl_box.o [1]
+__Ctrl_box_process      0x000064a1   0xba  Code  Gb  MODBUS_ctrl_box.o [1]
+__LED_Show              0x00006f25  0x262  Code  Gb  LED.o [1]
+__LED_Show::timer_fast  0x10001736    0x1  Data  Lc  LED.o [1]
+__LED_Show::timer_slow  0x10001737    0x1  Data  Lc  LED.o [1]
+__MODBUS_ORDER_BACK     0x00009539   0x76  Code  Lc  MODBUS.o [1]
+__North_GPS_Process     0x000063a1   0xee  Code  Gb  MODBUS_ctrl_box.o [1]
+__Realy_Init            0x000060c1   0x44  Code  Gb  MODBUS_ctrl_box.o [1]
+__Vectors               0x00006000          --   Gb  iar_startup_lpc11u6x.o [1]
+__Vectors_End           0x000060c0         Data  Gb  iar_startup_lpc11u6x.o [1]
+__Vectors_Size {Abs}    0x000000c0          --   Gb  iar_startup_lpc11u6x.o [1]
+__Wind_data_process     0x000078a5   0x62  Code  Gb  Wind.o [1]
+__Write_many_process    0x00009075  0x27e  Code  Gb  RS485_Slave.o [1]
+__Write_one_process     0x00008e47  0x1ea  Code  Gb  RS485_Slave.o [1]
+__aeabi_f2iz            0x0000862d         Code  Gb  FltToS32.o [4]
+__aeabi_fdiv            0x00008583         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x000084d3         Code  Gb  FltMul.o [4]
+__aeabi_i2f             0x000084a1         Code  Gb  I32ToFlt.o [4]
+__aeabi_idiv            0x00008465    0xe  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_idivmod         0x00008481   0x1c  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_memcpy          0x00008d21         Code  Gb  ABImemcpy.o [5]
+__aeabi_uidiv           0x00008473    0xe  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_uldivmod        0x00008d7d         Code  Gb  I64DivMod.o [5]
+__cmain                 0x0000a6c1         Code  Gb  cmain.o [5]
+__exit                  0x0000a6f1         Code  Gb  XXexit.o [5]
+__iar_copy_init3        0x0000a60d   0x30  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x0000a63d   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x0000a70d         Code  Gb  cstartup_M.o [5]
+__iar_ui2f              0x000084b9         Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3        0x0000a5d1   0x3c  Code  Gb  zero_init3.o [5]
+__register_Package      0x00009309   0xd4  Code  Gb  RS485_Slave.o [1]
+__vector_table          0x00006000         Data  Gb  iar_startup_lpc11u6x.o [1]
+__vector_table_0x1c     0x0000601c         Data  Gb  iar_startup_lpc11u6x.o [1]
+_call_main              0x0000a6cd         Code  Gb  cmain.o [5]
+_exit                   0x0000a6e5         Code  Gb  cexit.o [5]
+_main                   0x0000a6d7         Code  Gb  cmain.o [5]
+auchCRCHi               0x00008178  0x100  Data  Gb  CRC16.o [1]
+auchCRCLo               0x00008278  0x100  Data  Gb  CRC16.o [1]
+ctrl_box                0x10001520   0x58  Data  Gb  MODBUS_ctrl_box.o [1]
+ctrl_box_checked        0x10001758    0x1  Data  Gb  MODBUS_ctrl_box.o [1]
+exit                    0x0000a6db    0x8  Code  Gb  exit.o [3]
+i2cmXferRec             0x100016fc   0x10  Data  Lc  IIC_polling.o [1]
+inbuf                   0x100014a0   0x80  Data  Lc  RS485_Slave.o [1]
+inbufcount              0x100012ec    0x1  Data  Gb  RS485_Slave.o [1]
+main                    0x000099ad  0x16c  Code  Gb  main.o [1]
+mod_bit                 0x10001356    0x2  Data  Gb  RS485_Slave.o [1]
+mod_read                0x100013d8   0xc8  Data  Gb  RS485_Slave.o [1]
+mod_write               0x100012f0   0x64  Data  Gb  RS485_Slave.o [1]
+outbuf                  0x10001358   0x80  Data  Lc  RS485_Slave.o [1]
+outbufcount             0x10001354    0x1  Data  Gb  RS485_Slave.o [1]
+rxbuff                  0x10000694   0x80  Data  Lc  UART.o [1]
+rxring                  0x10000680   0x14  Data  Lc  UART.o [1]
+sequenceComplete        0x1000175a    0x1  Data  Lc  ADC.o [1]
+txbuff                  0x10000714   0x80  Data  Lc  UART.o [1]
+txring                  0x1000061c   0x14  Data  Lc  UART.o [1]
+u1_rxbuff               0x100007a8   0x80  Data  Lc  UART.o [1]
+u1_rxring               0x10000794   0x14  Data  Lc  UART.o [1]
+u1_txbuff               0x10000828   0x80  Data  Lc  UART.o [1]
+u1_txring               0x10000630   0x14  Data  Lc  UART.o [1]
+u2_rxbuff               0x100008bc  0x200  Data  Lc  UART.o [1]
+u2_rxring               0x100008a8   0x14  Data  Lc  UART.o [1]
+u2_txbuff               0x10000abc  0x200  Data  Lc  UART.o [1]
+u2_txring               0x10000644   0x14  Data  Lc  UART.o [1]
+u3_rxbuff               0x10000cd0   0x80  Data  Lc  UART.o [1]
+u3_rxring               0x10000cbc   0x14  Data  Lc  UART.o [1]
+u3_txbuff               0x10000d50   0x80  Data  Lc  UART.o [1]
+u3_txring               0x10000658   0x14  Data  Lc  UART.o [1]
+u4_rxbuff               0x10000de4  0x200  Data  Lc  UART.o [1]
+u4_rxring               0x10000dd0   0x14  Data  Lc  UART.o [1]
+u4_txbuff               0x10000fe4  0x200  Data  Lc  UART.o [1]
+u4_txring               0x1000066c   0x14  Data  Lc  UART.o [1]
+uUpdataSide             0x1000171a    0x1  Data  Gb  Updata.o [1]
+uart_3_4_cnt            0x1000175d    0x1  Data  Lc  uart_n_11u6x.o [1]
+wdtOSCRate              0x00008b94   0x40  Data  Lc  clock_11u6x.o [1]
+weather_inf             0x100016e0   0x10  Data  Gb  Weather.o [1]
+
+
+[1] = E:\work\Follow\13jianfang\program-iar-ctrl-13jf\Release\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+
+  17 966 bytes of readonly  code memory
+     250 bytes of readonly  data memory
+   5 466 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

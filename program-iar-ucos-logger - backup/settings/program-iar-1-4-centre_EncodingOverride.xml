@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<userOverrides>
+  <override>
+    <path>E:\work\Follow\OneCtrlFour - DCS\code\program-iar-one-four-centre\src\APP\Zigbee.c</path>
+    <encoding>GB2312</encoding>
+  </override>
+  <override>
+    <path>E:\work\Follow\OneCtrlFour\program-iar-one-four-centre\src\APP\Global_var.c</path>
+    <encoding>GB2312</encoding>
+  </override>
+  <override>
+    <path>E:\work\Follow\OneCtrlFour\program-iar-one-four-centre\src\APP\ModbusMaster.c</path>
+    <encoding>GB2312</encoding>
+  </override>
+  <override>
+    <path>E:\work\Follow\OneCtrlFour\program-iar-one-four-centre\src\APP\ModbusMaster.h</path>
+    <encoding>GB2312</encoding>
+  </override>
+</userOverrides>
+
+

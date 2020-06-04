@@ -1,0 +1,130 @@
+---- sSouth Matches (160 in 5 files) ----
+GlobalVar.c (src\APP) line 62 : SOUTH_ALARM_T              *g_psSouthAlarm[MAX_device]={0,0,0,0,0,0,0,0,0,0};
+GlobalVar.c (src\APP) line 63 : SOUTH_ALARM_T              *g_psSouthAlarmCopy[MAX_device]={0,0,0,0,0,0,0,0,0,0};
+ReadEepData in GlobalVar.c (src\APP) :                 /*if(NULL!=g_psSouthAlarm[i])
+ReadEepData in GlobalVar.c (src\APP) :                     g_psSouthAlarm[i] = WMemFree(g_psSouthAlarm[i]);
+ReadEepData in GlobalVar.c (src\APP) :                 if(NULL!=g_psSouthAlarmCopy[i])
+ReadEepData in GlobalVar.c (src\APP) :                     g_psSouthAlarmCopy[i] = WMemFree(g_psSouthAlarmCopy[i]);
+ReadEepData in GlobalVar.c (src\APP) :                 g_psSouthAlarm[i] = (SOUTH_ALARM_T*)WMemMalloc(g_psSouthAlarm[i],space);   // 申请空间
+ReadEepData in GlobalVar.c (src\APP) :                 g_psSouthAlarmCopy[i] = (SOUTH_ALARM_T*)WMemMalloc(g_psSouthAlarmCopy[i],space);   // 申请空间
+ReadEepData in GlobalVar.c (src\APP) :                 if(NULL!=g_psSouthAlarm[i] && NULL!=g_psSouthAlarmCopy[i])
+ReadEepData in GlobalVar.c (src\APP) :                     result = EepReadData(eep_addr,(uint8_t *)&g_psSouthAlarm[i][0],space,NULL);
+ReadEepData in GlobalVar.c (src\APP) :                     result = EepReadData(eep_addr,(uint8_t *)&g_psSouthAlarmCopy[i][0],space,NULL);
+SaveEepData in GlobalVar.c (src\APP) : 				if(NULL!=g_psSouthAlarm[i])
+SaveEepData in GlobalVar.c (src\APP) :                     result = EepSavedata(eep_addr,(uint8_t *)&g_psSouthAlarm[i][0],space,NULL);
+AllReset in GlobalVar.c (src\APP) :         g_psSouthAlarm[i] = WMemFree(g_psSouthAlarm[i]);
+AllReset in GlobalVar.c (src\APP) :         g_psSouthAlarmCopy[i] = WMemFree(g_psSouthAlarmCopy[i]);
+GlobalVar.h (src\APP) line 360 : extern SOUTH_ALARM_T             *g_psSouthAlarm[MAX_device];
+GlobalVar.h (src\APP) line 361 : extern SOUTH_ALARM_T             *g_psSouthAlarmCopy[MAX_device];
+Iec104TableState in IEC104.c (src\APP) :                 /*if(NULL!=g_psSouthAlarm[i])
+Iec104TableState in IEC104.c (src\APP) :                     g_psSouthAlarm[i] = WMemFree(g_psSouthAlarm[i]);
+Iec104TableState in IEC104.c (src\APP) :                 g_psSouthAlarm[i] = (SOUTH_ALARM_T*)WMemMalloc(g_psSouthAlarm[i],space);   // 申请空间
+Iec104TableState in IEC104.c (src\APP) :                 /*if(NULL!=g_psSouthAlarmCopy[i])
+Iec104TableState in IEC104.c (src\APP) :                     g_psSouthAlarmCopy[i] = WMemFree(g_psSouthAlarmCopy[i]);
+Iec104TableState in IEC104.c (src\APP) :                 g_psSouthAlarmCopy[i] = (SOUTH_ALARM_T*)WMemMalloc(g_psSouthAlarmCopy[i],space);   // 申请空间
+Iec104TableState in IEC104.c (src\APP) :                 if(NULL!=g_psSouthAlarm[i])
+Iec104TableState in IEC104.c (src\APP) :                             g_psSouthAlarm[i][temp].mdbus_addr  = g_pRegPoint[rel_num][j].reg_addr;
+Iec104TableState in IEC104.c (src\APP) :                             g_psSouthAlarm[i][temp].alarm_value = 0x00;
+Iec104TableState in IEC104.c (src\APP) :                             g_psSouthAlarmCopy[i][temp].mdbus_addr  = g_pRegPoint[rel_num][j].reg_addr;
+Iec104TableState in IEC104.c (src\APP) :                             g_psSouthAlarmCopy[i][temp].alarm_value = 0x00;
+Iec104TableState in IEC104.c (src\APP) :                 EepSavedata(addr,(uint8_t *)&g_psSouthAlarm[i][0],space,NULL);
+SlaveUnit.c (src\APP) line 123 : static DEVICE_INQUIRE_INFO_T sSouth;  // 查询信息记录
+SouthRecDeal in SlaveUnit.c (src\APP) :         if((RUNNING_WORK_READ!=g_LoggerRun.run_status) || (uRecBuffer[0] != sSouth.uAddr) || (uRelAddr>=MAX_device))
+SouthRecDeal in SlaveUnit.c (src\APP) :         switch(sSouth.uType)
+SouthRecDeal in SlaveUnit.c (src\APP) :             uIecAddr = g_DeviceSouth.device_inf[uRelAddr].yx_start_addr-1 + (sSouth.uYxCount - sSouth.uPointSum);
+SouthRecDeal in SlaveUnit.c (src\APP) :             point = sSouth.uPointHead;//Slave_sent.send_point_count;
+SouthRecDeal in SlaveUnit.c (src\APP) :             uIecAddr = g_DeviceSouth.device_inf[uRelAddr].yc_start_addr-0x4001 + (sSouth.uYcCount - sSouth.uPointSum);
+SouthRecDeal in SlaveUnit.c (src\APP) :             point = sSouth.uPointHead;//Slave_sent.send_point_count;
+SouthRecDeal in SlaveUnit.c (src\APP) :             uIecAddr = g_DeviceSouth.device_inf[uRelAddr].dd_start_addr-0x6401 + (sSouth.uDdCount - sSouth.uPointSum);
+SouthRecDeal in SlaveUnit.c (src\APP) :             point = sSouth.uPointHead;//Slave_sent.send_point_count;
+SouthRecDeal in SlaveUnit.c (src\APP) :             point = sSouth.uPointHead;
+SouthRecDeal in SlaveUnit.c (src\APP) :                                 (sSouth.uRegAddr+i/2),
+SouthRecDeal in SlaveUnit.c (src\APP) :         if((RUNNING_WORK_READ!=g_LoggerRun.run_status) || (uRecBuffer[0] != sSouth.uAddr) || (uRelAddr>=MAX_device))
+SouthRecDeal in SlaveUnit.c (src\APP) :         if(65534 != sSouth.uRegAddr)
+SouthRecDeal in SlaveUnit.c (src\APP) :             uIecAddr = g_DeviceSouth.device_inf[uRelAddr].yx_start_addr-1 + (sSouth.uYxCount - sSouth.uPointSum);
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uAddr       = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uFun        = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uRegAddr    = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uRegCount   = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uType       = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uPointCount = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uYcCount    = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uYxCount    = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uDdCount    = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uPointHead  = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uPointSum   = 0;
+SouthInquire in SlaveUnit.c (src\APP) :             for(; sSouth.uPointCount < uMessPointSum; sSouth.uPointCount++)
+SouthInquire in SlaveUnit.c (src\APP) :                 sSouth.uType = g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_type.type.mess;
+SouthInquire in SlaveUnit.c (src\APP) :                 if(TYPE_YX == sSouth.uType)//YX:0x02  YC:0x01  YK:0x04  SD:0x05   DD:0x03
+SouthInquire in SlaveUnit.c (src\APP) :                     sCom.uRegAddr = g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_addr;  // 寄存器地址
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uYxCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                     sCom.uRegCount += g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_count;
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uPointHead = sSouth.uPointCount;
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uPointCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uPointSum = 1;
+SouthInquire in SlaveUnit.c (src\APP) :                 else if(TYPE_YC == sSouth.uType)//0x01
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uYcCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                     if(g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_count <= 2)// 信息点长度大于2，不查询
+SouthInquire in SlaveUnit.c (src\APP) :                         sCom.uRegAddr = g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_addr;  // 寄存器地址
+SouthInquire in SlaveUnit.c (src\APP) :                         sCom.uRegCount += g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_count;
+SouthInquire in SlaveUnit.c (src\APP) :                         sSouth.uPointHead = sSouth.uPointCount;
+SouthInquire in SlaveUnit.c (src\APP) :                         sSouth.uPointSum = 1;
+SouthInquire in SlaveUnit.c (src\APP) :                         sSouth.uPointCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                 else if(TYPE_DD == sSouth.uType)
+SouthInquire in SlaveUnit.c (src\APP) :                     sCom.uRegAddr = g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_addr;  // 寄存器地址
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uDdCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                     sCom.uRegCount += g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_count;
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uPointHead = sSouth.uPointCount;
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uPointCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uPointSum = 1;
+SouthInquire in SlaveUnit.c (src\APP) :               else if(TYPE_GJ == sSouth.uType)
+SouthInquire in SlaveUnit.c (src\APP) :                     sCom.uRegAddr = g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_addr;  // 寄存器地址
+SouthInquire in SlaveUnit.c (src\APP) :                     sCom.uRegCount += g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_count;
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uPointHead = sSouth.uPointCount;
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uPointCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                     sSouth.uPointSum = 1;
+SouthInquire in SlaveUnit.c (src\APP) :             for(i = sSouth.uPointCount; i < uMessPointSum; i++)
+SouthInquire in SlaveUnit.c (src\APP) :                 if((sSouth.uType == g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_type.type.mess)  // 信息类型相同
+SouthInquire in SlaveUnit.c (src\APP) :                    && ((g_pRegPoint[uRelativePointNum][sSouth.uPointCount-1].reg_addr + g_pRegPoint[uRelativePointNum][sSouth.uPointCount-1].reg_count) == g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_addr) // 前一个点与后一个点地址连续
+SouthInquire in SlaveUnit.c (src\APP) :                    && (sSouth.uPointCount>0) 
+SouthInquire in SlaveUnit.c (src\APP) :                    && (g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_count <= 2)  // 信息点长度不大于2
+SouthInquire in SlaveUnit.c (src\APP) :                     if((sCom.uRegCount + g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_count) <= 25)
+SouthInquire in SlaveUnit.c (src\APP) :                         sCom.uRegCount += g_pRegPoint[uRelativePointNum][sSouth.uPointCount].reg_count;
+SouthInquire in SlaveUnit.c (src\APP) :                         if(TYPE_YX == sSouth.uType)
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uYxCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uPointSum++;
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uPointCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                         else if(TYPE_YC == sSouth.uType)
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uYcCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uPointSum++;
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uPointCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                         else if(TYPE_DD == sSouth.uType)
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uDdCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uPointSum++;
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uPointCount++;
+SouthInquire in SlaveUnit.c (src\APP) :                         else if(TYPE_GJ == sSouth.uType)
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uPointSum++;
+SouthInquire in SlaveUnit.c (src\APP) :                             sSouth.uPointCount++;
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uRegAddr  = sCom.uRegAddr;       // 寄存器地址
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uBaudRate = SetBaudRate(sSouth.uBaudRate,g_DeviceSouth.device_inf[uRelativeAddr].baud_rate);
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uAddr          = sCom.uDevAddr;      // 绝对地址
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uFun           = sCom.uFun;          // 发送的功能指令
+SouthInquire in SlaveUnit.c (src\APP) :             sSouth.uRegCount      = sCom.uRegCount;     // 查询寄存器个数
+SouthInquire in SlaveUnit.c (src\APP) :         if((0 == uNextDev) && (sSouth.uPointCount >= uMessPointSum))
+TaskSouthInquire in SlaveUnit.c (src\APP) :     sSouth.uBaudRate = BAUDRATE_9600;  	// 波特率9600
+TaskSouthInquire in SlaveUnit.c (src\APP) :                 sSouth.uBaudRate = SetBaudRate(sSouth.uBaudRate,BAUDRATE_9600);// 波特率切换到9600，用于搜索南向设备
+TaskSouthInquire in SlaveUnit.c (src\APP) :                 sSouth.uBaudRate = SetBaudRate(sSouth.uBaudRate,BAUDRATE_9600);// 波特率切换到9600，用于搜索南向设备
+AlarmAddDev in SlaveUnit.c (src\APP) :     if(NULL==g_psSouthAlarmCopy[uRelAddr])
+AlarmAddDev in SlaveUnit.c (src\APP) :         if(g_psSouthAlarmCopy[uRelAddr][temp].mdbus_addr == uModAddr)
+AlarmAddDev in SlaveUnit.c (src\APP) : //    if (0xFF != g_psSouthAlarmCopy[uRelAddr][temp].alarm_value)
+AlarmAddDev in SlaveUnit.c (src\APP) :         g_psSouthAlarmCopy[uRelAddr][temp].alarm_value =uValue;
+AlarmCheckout in SlaveUnit.c (src\APP) : 			uNewAlarm = g_psSouthAlarmCopy[i][j].alarm_value;
+AlarmCheckout in SlaveUnit.c (src\APP) :             uOldAlarm = g_psSouthAlarm[i][j].alarm_value;
+AlarmCheckout in SlaveUnit.c (src\APP) : 								   g_psSouthAlarmCopy[i][j].mdbus_addr,  // MODBUS寄存器地址
+AlarmCheckout in SlaveUnit.c (src\APP) : 					g_psSouthAlarm[i][j].alarm_value |= (1<<uBit);
+AlarmAck in SlaveUnit.c (src\APP) :             if(NULL==g_psSouthAlarm[uRelAddr])
+AlarmAck in SlaveUnit.c (src\APP) :                 if(g_psSouthAlarm[uRelAddr][temp].mdbus_addr == uModAddr)
+AlarmAck in SlaveUnit.c (src\APP) :                 //g_psSouthAlarm[uRelAddr][temp].alarm_value |= (1<<puData[i+4]);
+AlarmAck in SlaveUnit.c (src\APP) :                 g_psSouthAlarm[uRelAddr][temp].alarm_value &= ~(1<<puData[i+4]);
+AlarmAck in SlaveUnit.c (src\APP) :             //DEBUGOUT("g_psSouthAlarm[uRelAddr][temp].alarm_value:%d i:%d",g_psSouthAlarm[uRelAddr][temp].alarm_value,i);
+DealCmd in Uart0Process.c (src\APP) :                 WDEBUGOUT("MOD:%d,%d:NEW:0x%04X,ACK:0x%04X\n",g_psSouthAlarmCopy[i][j].mdbus_addr,g_psSouthAlarm[i][j].mdbus_addr,g_psSouthAlarmCopy[i][j].alarm_value,g_psSouthAlarm[i][j].alarm_value);

@@ -1,0 +1,1845 @@
+###############################################################################
+#
+# IAR ELF Linker V7.60.2.11341/W32 for ARM                02/Nov/2019  16:31:04
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger -
+#        backup\Debug\Exe\program-iar-ucos-logger.out.tmp
+#    Map file     =  
+#        E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger -
+#        backup\Debug\List\program-iar-ucos-logger.map
+#    Command line =  
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\adc_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\app_hooks.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\board.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\board_sysinit.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\chip_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\clock_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\CM.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\CRC16.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\crc_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\DataFlash.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\DataTransferArea.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\dma_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\eeprom.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\flash.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\GlobalVar.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\gpio_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\gpiogroup_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\i2c_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\i2cm_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger -
+#        backup\Debug\Obj\iar_startup_lpc11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\IEC104.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\IIC_polling.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\InEeprom.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\InRtc.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\InTIMER.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\InWDT.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\iocon_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\KEY_SCAN.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\LED.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\log.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\main.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\Memory.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\ModbusMaster.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_core.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_cpu_a.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_cpu_c.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_dbg.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_flag.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_mbox.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_mem.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_mutex.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_q.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_sem.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_task.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_time.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\os_tmr.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\pinint_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\pmu_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\RealTime.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\Record.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\romdiv_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\rtc_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\sct_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\SlaveUnit.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\SPI.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\ssp_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\stopwatch_11u6.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\SubCollection.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\syscon_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\sysinit.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\sysinit_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\timer_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\tool.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\Uart0Process.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\uart_0_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\uart_n_11u6x.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\Update.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\Usart.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\WatchDog.o"
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\Debug\Obj\wwdt_11u6x.o" -o
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger -
+#        backup\Debug\Exe\program-iar-ucos-logger.out.tmp" --redirect
+#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger -
+#        backup\Debug\List\program-iar-ucos-logger.map" --config
+#        "E:\energy\program-iar-ucos-logger - backup-B31010&B31011
+#        (2)(1)\program-iar-ucos-logger - backup\NXP-program - app-A.icf"
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = Basic
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00006000 { ro section .intvec };
+"P1":  place in [from 0x00006000 to 0x0003ffff] { ro };
+"P2":  place in [from 0x10000200 to 0x10007fff] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section             Kind        Address     Size  Object
+  -------             ----        -------     ----  ------
+"A1":                                         0xc0
+  .intvec             ro code  0x00006000     0xc0  iar_startup_lpc11u6x.o [1]
+                             - 0x000060c0     0xc0
+
+"P1":                                      0x14fe3
+  .text               ro code  0x000060c0   0x4098  SlaveUnit.o [1]
+  .text               ro code  0x0000a158     0x58  ABImemset.o [5]
+  .text               ro code  0x0000a1b0     0x5c  ABImemcpy.o [5]
+  .text               ro code  0x0000a20c     0x28  memcmp.o [5]
+  .text               ro code  0x0000a234   0x3fc4  IEC104.o [1]
+  .text               ro code  0x0000e1f8     0xcc  os_time.o [1]
+  .text               ro code  0x0000e2c4   0x1068  ModbusMaster.o [1]
+  .text               ro code  0x0000f32c     0x24  printf.o [3]
+  .text               ro code  0x0000f350     0x10  strlen.o [5]
+  .text               ro code  0x0000f360     0x36  I32ToFlt.o [4]
+  .text               ro code  0x0000f396      0xa  xsprout.o [3]
+  .text               ro code  0x0000f3a0     0x58  romdiv_11u6x.o [1]
+  .text               ro code  0x0000f3f8    0x43c  DataFlash.o [1]
+  .text               ro code  0x0000f834    0x120  Memory.o [1]
+  .text               ro code  0x0000f954     0x7c  CRC16.o [1]
+  .text               ro code  0x0000f9d0    0x97c  Usart.o [1]
+  .text               ro code  0x0001034c     0x44  WatchDog.o [1]
+  .text               ro code  0x00010390    0x470  os_mutex.o [1]
+  .text               ro code  0x00010800   0x13d4  Uart0Process.o [1]
+  .text               ro code  0x00011bd4    0x354  Record.o [1]
+  .text               ro code  0x00011f28    0x664  log.o [1]
+  .text               ro code  0x0001258c     0xc0  RealTime.o [1]
+  .text               ro code  0x0001264c     0xc0  localtim.o [3]
+  .text               ro code  0x0001270c    0x25c  os_q.o [1]
+  .text               ro code  0x00012968     0xda  tool.o [1]
+  .rodata             const    0x00012a42      0x2  os_dbg.o [1]
+  .text               ro code  0x00012a44    0x6d4  GlobalVar.o [1]
+  .text               ro code  0x00013118     0x20  srand.o [3]
+  .text               ro code  0x00013138     0xcc  rand.o [3]
+  .text               ro code  0x00013204    0x2bc  DataTransferArea.o [1]
+  .text               ro code  0x000134c0     0x9c  InEeprom.o [1]
+  .text               ro code  0x0001355c     0x24  strncpy.o [5]
+  .text               ro code  0x00013580     0x26  FltToU32.o [4]
+  .text               ro code  0x000135a6      0x2  iar_startup_lpc11u6x.o [1]
+  .text               ro code  0x000135a8    0x34c  SubCollection.o [1]
+  CODE                ro code  0x000138f4    0x130  os_cpu_a.o [1]
+  .text               ro code  0x00013a24    0x6a8  os_core.o [1]
+  .text               ro code  0x000140cc    0xea2  xprintffull.o [3]
+  .text               ro code  0x00014f6e      0x2  iar_startup_lpc11u6x.o [1]
+  .text               ro code  0x00014f70     0x66  gpio_11u6x.o [1]
+  .text               ro code  0x00014fd6     0x4a  iocon_11u6x.o [1]
+  .text               ro code  0x00015020    0x2ac  SPI.o [1]
+  .text               ro code  0x000152cc    0x108  uart_0_11u6x.o [1]
+  .text               ro code  0x000153d4    0x254  clock_11u6x.o [1]
+  .text               ro code  0x00015628     0xe2  uart_n_11u6x.o [1]
+  .text               ro code  0x0001570a      0x2  iar_startup_lpc11u6x.o [1]
+  .text               ro code  0x0001570c     0x2c  vsprintf.o [3]
+  .text               ro code  0x00015738     0x18  vprintf.o [3]
+  .text               ro code  0x00015750      0x8  Uart0Process.o [1]
+  .text               ro code  0x00015758    0x15a  os_task.o [1]
+  .text               ro code  0x000158b2      0x2  sysinit.o [1]
+  .text               ro code  0x000158b4     0xf8  mktime.o [3]
+  .text               ro code  0x000159ac     0xe4  InRtc.o [1]
+  .text               ro code  0x00015a90      0x2  xtls.o [3]
+  .text               ro code  0x00015a94     0x29  setlocale.o [3]
+  .text               ro code  0x00015ac0      0x6  getzone.o [3]
+  .text               ro code  0x00015ac6     0x44  xgettime.o [3]
+  .text               ro code  0x00015b0c     0x94  xstol.o [3]
+  .text               ro code  0x00015ba0    0x190  xttotm.o [3]
+  .text               ro code  0x00015d30     0x10  strcpy.o [5]
+  .text               ro code  0x00015d40     0x68  eeprom.o [1]
+  .text               ro code  0x00015da8     0x1c  difftime.o [4]
+  .text               ro code  0x00015dc4     0x62  DblToFlt.o [4]
+  .text               ro code  0x00015e28     0x26  FltCmpLe.o [4]
+  .text               ro code  0x00015e50     0x28  FltCmpGe.o [4]
+  .text               ro code  0x00015e78     0xaa  FltDiv.o [4]
+  .text               ro code  0x00015f24     0xc4  os_cpu_c.o [1]
+  .text               ro code  0x00015fe8     0x4c  os_flag.o [1]
+  .text               ro code  0x00016034     0x14  strchr.o [5]
+  .text               ro code  0x00016048     0x18  memchr.o [5]
+  .text               ro code  0x00016060     0x6a  I64DivMod.o [5]
+  .text               ro code  0x000160ca     0x32  DblCmpLe.o [4]
+  .text               ro code  0x000160fc     0x32  DblCmpGe.o [4]
+  .text               ro code  0x00016130     0x80  xdscale.o [4]
+  .text               ro code  0x000161b0     0x52  DblToI32.o [4]
+  .text               ro code  0x00016204     0x34  I32ToDbl.o [4]
+  .text               ro code  0x00016238    0x1a8  DblAddSub.o [4]
+  .text               ro code  0x000163e0    0x184  DblMul.o [4]
+  .text               ro code  0x00016564     0xc2  DblDiv.o [4]
+  .text               ro code  0x00016626     0x20  div.o [3]
+  .text               ro code  0x00016648     0xcc  ssp_11u6x.o [1]
+  .text               ro code  0x00016714     0x32  I64Mul.o [5]
+  .text               ro code  0x00016746     0x38  strstr.o [3]
+  .text               ro code  0x00016780     0x1e  rtc_11u6x.o [1]
+  .text               ro code  0x000167a0    0x178  xstoul.o [3]
+  .text               ro code  0x00016918     0x10  errno.o [3]
+  .text               ro code  0x00016928    0x140  xisdst.o [3]
+  .text               ro code  0x00016a68      0x2  I64DivZer.o [5]
+  .text               ro code  0x00016a6c    0x174  xgetdst.o [3]
+  .text               ro code  0x00016be0     0x88  xxmemxfree.o [3]
+  .text               ro code  0x00016c68     0xb8  xxmemxmalloc.o [3]
+  .text               ro code  0x00016d20     0x2c  xgetmemchunk.o [3]
+  .text               ro code  0x00016d4c   0x167c  CM.o [1]
+  .text               ro code  0x000183c8     0x48  snprintf.o [3]
+  .text               ro code  0x00018410     0x1c  strcat.o [3]
+  .text               ro code  0x0001842c    0x672  main.o [1]
+  .text               ro code  0x00018aa0     0x14  chip_11u6x.o [1]
+  .text               ro code  0x00018ab4     0x40  syscon_11u6x.o [1]
+  .text               ro code  0x00018af4    0x3b8  LED.o [1]
+  .rodata             const    0x00018eac    0x200  CRC16.o [1]
+  .rodata             const    0x000190ac    0x100  CRC16.o [1]
+  .rodata             const    0x000191ac    0x100  CRC16.o [1]
+  .rodata             const    0x000192ac    0x100  os_core.o [1]
+  .text               ro code  0x000193ac     0x70  InWDT.o [1]
+  .text               ro code  0x0001941c     0x1c  wwdt_11u6x.o [1]
+  .rodata             const    0x00019438     0x50  IEC104.o [1]
+  .rodata             const    0x00019488     0x50  IEC104.o [1]
+  .rodata             const    0x000194d8     0x50  IEC104.o [1]
+  .rodata             const    0x00019528     0x50  Uart0Process.o [1]
+  .text               ro code  0x00019578     0x50  InTIMER.o [1]
+  .rodata             const    0x000195c8     0x48  Uart0Process.o [1]
+  .text               ro code  0x00019610     0x44  board.o [1]
+  .rodata             const    0x00019654     0x40  clock_11u6x.o [1]
+  .rodata             const    0x00019694     0x40  IEC104.o [1]
+  .text               ro code  0x000196d4     0x3c  zero_init3.o [5]
+  .text               ro code  0x00019710     0x3c  packbits_init_single.o [5]
+  .rodata             const    0x0001974c     0x38  SlaveUnit.o [1]
+  .rodata             const    0x00019784     0x38  Uart0Process.o [1]
+  .rodata             const    0x000197bc     0x38  Uart0Process.o [1]
+  .rodata             const    0x000197f4     0x34  IEC104.o [1]
+  .rodata             const    0x00019828     0x34  SlaveUnit.o [1]
+  .rodata             const    0x0001985c     0x34  SlaveUnit.o [1]
+  .rodata             const    0x00019890     0x30  Record.o [1]
+  .rodata             const    0x000198c0     0x30  SlaveUnit.o [1]
+  .rodata             const    0x000198f0     0x30  SlaveUnit.o [1]
+  .rodata             const    0x00019920     0x30  SlaveUnit.o [1]
+  .rodata             const    0x00019950     0x30  Uart0Process.o [1]
+  .rodata             const    0x00019980     0x30  Uart0Process.o [1]
+  .rodata             const    0x000199b0     0x30  Uart0Process.o [1]
+  .rodata             const    0x000199e0     0x30  Uart0Process.o [1]
+  .rodata             const    0x00019a10     0x30  Uart0Process.o [1]
+  .rodata             const    0x00019a40     0x30  Uart0Process.o [1]
+  .rodata             const    0x00019a70     0x30  Uart0Process.o [1]
+  .rodata             const    0x00019aa0     0x2c  CM.o [1]
+  .rodata             const    0x00019acc     0x2c  CM.o [1]
+  .rodata             const    0x00019af8     0x2c  main.o [1]
+  .rodata             const    0x00019b24     0x28  CM.o [1]
+  .rodata             const    0x00019b4c     0x28  Record.o [1]
+  .rodata             const    0x00019b74     0x28  SlaveUnit.o [1]
+  .text               ro code  0x00019b9c     0x28  data_init.o [5]
+  .rodata             const    0x00019bc4     0x24  CM.o [1]
+  .rodata             const    0x00019be8     0x24  IEC104.o [1]
+  .rodata             const    0x00019c0c     0x24  IEC104.o [1]
+  .rodata             const    0x00019c30     0x24  IEC104.o [1]
+  .rodata             const    0x00019c54     0x24  SlaveUnit.o [1]
+  .rodata             const    0x00019c78     0x24  SlaveUnit.o [1]
+  .rodata             const    0x00019c9c     0x24  SlaveUnit.o [1]
+  .rodata             const    0x00019cc0     0x24  SlaveUnit.o [1]
+  .rodata             const    0x00019ce4     0x24  SlaveUnit.o [1]
+  .rodata             const    0x00019d08     0x24  Uart0Process.o [1]
+  .rodata             const    0x00019d2c     0x24  Uart0Process.o [1]
+  .text               ro code  0x00019d50     0x24  putchar.o [3]
+  .iar.init_table     const    0x00019d74     0x30  - Linker created -
+  .rodata             const    0x00019da4     0x20  CM.o [1]
+  .rodata             const    0x00019dc4     0x20  DataFlash.o [1]
+  .rodata             const    0x00019de4     0x20  IEC104.o [1]
+  .rodata             const    0x00019e04     0x20  IEC104.o [1]
+  .rodata             const    0x00019e24     0x20  Record.o [1]
+  .rodata             const    0x00019e44     0x20  Record.o [1]
+  .rodata             const    0x00019e64     0x20  SlaveUnit.o [1]
+  .rodata             const    0x00019e84     0x20  SlaveUnit.o [1]
+  .rodata             const    0x00019ea4     0x20  SlaveUnit.o [1]
+  .rodata             const    0x00019ec4     0x20  SlaveUnit.o [1]
+  .rodata             const    0x00019ee4     0x20  SlaveUnit.o [1]
+  .rodata             const    0x00019f04     0x20  SlaveUnit.o [1]
+  .rodata             const    0x00019f24     0x20  SlaveUnit.o [1]
+  .rodata             const    0x00019f44     0x20  SlaveUnit.o [1]
+  .rodata             const    0x00019f64     0x20  Uart0Process.o [1]
+  .rodata             const    0x00019f84     0x20  Uart0Process.o [1]
+  .rodata             const    0x00019fa4     0x20  Uart0Process.o [1]
+  .rodata             const    0x00019fc4     0x20  Uart0Process.o [1]
+  .rodata             const    0x00019fe4     0x20  Uart0Process.o [1]
+  .rodata             const    0x0001a004     0x1c  IEC104.o [1]
+  .rodata             const    0x0001a020     0x1c  IEC104.o [1]
+  .rodata             const    0x0001a03c     0x1c  IEC104.o [1]
+  .rodata             const    0x0001a058     0x1c  log.o [1]
+  .rodata             const    0x0001a074     0x1c  Record.o [1]
+  .rodata             const    0x0001a090     0x1c  SlaveUnit.o [1]
+  .rodata             const    0x0001a0ac     0x1c  SlaveUnit.o [1]
+  .rodata             const    0x0001a0c8     0x1c  SlaveUnit.o [1]
+  .rodata             const    0x0001a0e4     0x1c  SlaveUnit.o [1]
+  .rodata             const    0x0001a100     0x1c  SlaveUnit.o [1]
+  .rodata             const    0x0001a11c     0x1c  SubCollection.o [1]
+  .rodata             const    0x0001a138     0x1c  SubCollection.o [1]
+  .rodata             const    0x0001a154     0x1c  Uart0Process.o [1]
+  .rodata             const    0x0001a170     0x1c  Uart0Process.o [1]
+  .rodata             const    0x0001a18c     0x1c  Uart0Process.o [1]
+  .rodata             const    0x0001a1a8     0x1c  Uart0Process.o [1]
+  .text               ro code  0x0001a1c4     0x1c  xsnprout.o [3]
+  .text               ro code  0x0001a1e0     0x1a  cmain.o [5]
+  .text               ro code  0x0001a1fa      0x4  low_level_init.o [3]
+  .text               ro code  0x0001a1fe      0x8  exit.o [3]
+  .text               ro code  0x0001a208      0xa  cexit.o [5]
+  .text               ro code  0x0001a214     0x14  exit.o [6]
+  .rodata             const    0x0001a228     0x18  CM.o [1]
+  .rodata             const    0x0001a240     0x18  GlobalVar.o [1]
+  .rodata             const    0x0001a258     0x18  IEC104.o [1]
+  .rodata             const    0x0001a270     0x18  IEC104.o [1]
+  .rodata             const    0x0001a288     0x18  IEC104.o [1]
+  .rodata             const    0x0001a2a0     0x18  log.o [1]
+  .rodata             const    0x0001a2b8     0x18  log.o [1]
+  .rodata             const    0x0001a2d0     0x18  ModbusMaster.o [1]
+  .rodata             const    0x0001a2e8     0x18  SlaveUnit.o [1]
+  .rodata             const    0x0001a300     0x18  SlaveUnit.o [1]
+  .rodata             const    0x0001a318     0x18  SlaveUnit.o [1]
+  .rodata             const    0x0001a330     0x18  SlaveUnit.o [1]
+  .rodata             const    0x0001a348     0x18  SlaveUnit.o [1]
+  .rodata             const    0x0001a360     0x18  SlaveUnit.o [1]
+  .rodata             const    0x0001a378     0x18  SubCollection.o [1]
+  .rodata             const    0x0001a390     0x18  Uart0Process.o [1]
+  .rodata             const    0x0001a3a8     0x18  Uart0Process.o [1]
+  .rodata             const    0x0001a3c0     0x18  xprintffull.o [3]
+  .text               ro code  0x0001a3d8     0x16  xprout.o [3]
+  .rodata             const    0x0001a3f0     0x14  CM.o [1]
+  .rodata             const    0x0001a404     0x14  CM.o [1]
+  .rodata             const    0x0001a418     0x14  CM.o [1]
+  .rodata             const    0x0001a42c     0x14  DataFlash.o [1]
+  .rodata             const    0x0001a440     0x14  DataTransferArea.o [1]
+  .rodata             const    0x0001a454     0x14  GlobalVar.o [1]
+  .rodata             const    0x0001a468     0x14  IEC104.o [1]
+  .rodata             const    0x0001a47c     0x14  IEC104.o [1]
+  .rodata             const    0x0001a490     0x14  IEC104.o [1]
+  .rodata             const    0x0001a4a4     0x14  IEC104.o [1]
+  .rodata             const    0x0001a4b8     0x14  IEC104.o [1]
+  .rodata             const    0x0001a4cc     0x14  IEC104.o [1]
+  .rodata             const    0x0001a4e0     0x14  log.o [1]
+  .rodata             const    0x0001a4f4     0x14  log.o [1]
+  .rodata             const    0x0001a508     0x14  log.o [1]
+  .rodata             const    0x0001a51c     0x14  main.o [1]
+  .rodata             const    0x0001a530     0x14  ModbusMaster.o [1]
+  .rodata             const    0x0001a544     0x14  ModbusMaster.o [1]
+  .rodata             const    0x0001a558     0x14  SlaveUnit.o [1]
+  .rodata             const    0x0001a56c     0x14  SlaveUnit.o [1]
+  .rodata             const    0x0001a580     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a594     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a5a8     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a5bc     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a5d0     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a5e4     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a5f8     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a60c     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a620     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a634     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a648     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a65c     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a670     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a684     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a698     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a6ac     0x14  Uart0Process.o [1]
+  .rodata             const    0x0001a6c0     0x10  CM.o [1]
+  .rodata             const    0x0001a6d0     0x10  CM.o [1]
+  .rodata             const    0x0001a6e0     0x10  CM.o [1]
+  .rodata             const    0x0001a6f0     0x10  CM.o [1]
+  .rodata             const    0x0001a700     0x10  CM.o [1]
+  .rodata             const    0x0001a710     0x10  CM.o [1]
+  .rodata             const    0x0001a720     0x10  CM.o [1]
+  .rodata             const    0x0001a730     0x10  CM.o [1]
+  .rodata             const    0x0001a740     0x10  CM.o [1]
+  .rodata             const    0x0001a750     0x10  CM.o [1]
+  .rodata             const    0x0001a760     0x10  CM.o [1]
+  .rodata             const    0x0001a770     0x10  CM.o [1]
+  .rodata             const    0x0001a780     0x10  CM.o [1]
+  .rodata             const    0x0001a790     0x10  CM.o [1]
+  .rodata             const    0x0001a7a0     0x10  CM.o [1]
+  .rodata             const    0x0001a7b0     0x10  CM.o [1]
+  .rodata             const    0x0001a7c0     0x10  CM.o [1]
+  .rodata             const    0x0001a7d0     0x10  CM.o [1]
+  .rodata             const    0x0001a7e0     0x10  CM.o [1]
+  .rodata             const    0x0001a7f0     0x10  CM.o [1]
+  .rodata             const    0x0001a800     0x10  CM.o [1]
+  .rodata             const    0x0001a810     0x10  DataTransferArea.o [1]
+  .rodata             const    0x0001a820     0x10  GlobalVar.o [1]
+  .rodata             const    0x0001a830     0x10  GlobalVar.o [1]
+  .rodata             const    0x0001a840     0x10  GlobalVar.o [1]
+  .rodata             const    0x0001a850     0x10  IEC104.o [1]
+  .rodata             const    0x0001a860     0x10  IEC104.o [1]
+  .rodata             const    0x0001a870     0x10  IEC104.o [1]
+  .rodata             const    0x0001a880     0x10  IEC104.o [1]
+  .rodata             const    0x0001a890     0x10  IEC104.o [1]
+  .rodata             const    0x0001a8a0     0x10  IEC104.o [1]
+  .rodata             const    0x0001a8b0     0x10  IEC104.o [1]
+  .rodata             const    0x0001a8c0     0x10  IEC104.o [1]
+  .rodata             const    0x0001a8d0     0x10  IEC104.o [1]
+  .rodata             const    0x0001a8e0     0x10  IEC104.o [1]
+  .rodata             const    0x0001a8f0     0x10  IEC104.o [1]
+  .rodata             const    0x0001a900     0x10  ModbusMaster.o [1]
+  .rodata             const    0x0001a910     0x10  ModbusMaster.o [1]
+  .rodata             const    0x0001a920     0x10  SlaveUnit.o [1]
+  .rodata             const    0x0001a930     0x10  SlaveUnit.o [1]
+  .rodata             const    0x0001a940     0x10  SlaveUnit.o [1]
+  .rodata             const    0x0001a950     0x10  SlaveUnit.o [1]
+  .rodata             const    0x0001a960     0x10  SlaveUnit.o [1]
+  .rodata             const    0x0001a970     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001a980     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001a990     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001a9a0     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001a9b0     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001a9c0     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001a9d0     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001a9e0     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001a9f0     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001aa00     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001aa10     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001aa20     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001aa30     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001aa40     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001aa50     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001aa60     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001aa70     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001aa80     0x10  Uart0Process.o [1]
+  .rodata             const    0x0001aa90     0x10  Uart0Process.o [1]
+  .text               ro code  0x0001aaa0     0x10  iar_startup_lpc11u6x.o [1]
+  .rodata             const    0x0001aab0      0xc  CM.o [1]
+  .rodata             const    0x0001aabc      0xc  CM.o [1]
+  .rodata             const    0x0001aac8      0xc  CM.o [1]
+  .rodata             const    0x0001aad4      0xc  CM.o [1]
+  .rodata             const    0x0001aae0      0xc  CM.o [1]
+  .rodata             const    0x0001aaec      0xc  CM.o [1]
+  .rodata             const    0x0001aaf8      0xc  CM.o [1]
+  .rodata             const    0x0001ab04      0xc  CM.o [1]
+  .rodata             const    0x0001ab10      0xc  CM.o [1]
+  .rodata             const    0x0001ab1c      0xc  CM.o [1]
+  .rodata             const    0x0001ab28      0xc  CM.o [1]
+  .rodata             const    0x0001ab34      0xc  CM.o [1]
+  .rodata             const    0x0001ab40      0xc  CM.o [1]
+  .rodata             const    0x0001ab4c      0xc  CM.o [1]
+  .rodata             const    0x0001ab58      0xc  CM.o [1]
+  .rodata             const    0x0001ab64      0xc  CM.o [1]
+  .rodata             const    0x0001ab70      0xc  CM.o [1]
+  .rodata             const    0x0001ab7c      0xc  CM.o [1]
+  .rodata             const    0x0001ab88      0xc  CM.o [1]
+  .rodata             const    0x0001ab94      0xc  CM.o [1]
+  .rodata             const    0x0001aba0      0xc  CM.o [1]
+  .rodata             const    0x0001abac      0xc  CM.o [1]
+  .rodata             const    0x0001abb8      0xc  CM.o [1]
+  .rodata             const    0x0001abc4      0xc  CM.o [1]
+  .rodata             const    0x0001abd0      0xc  CM.o [1]
+  .rodata             const    0x0001abdc      0xc  GlobalVar.o [1]
+  .rodata             const    0x0001abe8      0xc  IEC104.o [1]
+  .rodata             const    0x0001abf4      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac00      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac0c      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac18      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac24      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac30      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac3c      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac48      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac54      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac60      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac6c      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac78      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac84      0xc  IEC104.o [1]
+  .rodata             const    0x0001ac90      0xc  ModbusMaster.o [1]
+  .rodata             const    0x0001ac9c      0xc  ModbusMaster.o [1]
+  .rodata             const    0x0001aca8      0xc  SlaveUnit.o [1]
+  .rodata             const    0x0001acb4      0xc  SlaveUnit.o [1]
+  .rodata             const    0x0001acc0      0xc  SlaveUnit.o [1]
+  .rodata             const    0x0001accc      0xc  SlaveUnit.o [1]
+  .rodata             const    0x0001acd8      0xc  SlaveUnit.o [1]
+  .rodata             const    0x0001ace4      0xc  SlaveUnit.o [1]
+  .rodata             const    0x0001acf0      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001acfc      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad08      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad14      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad20      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad2c      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad38      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad44      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad50      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad5c      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad68      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad74      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad80      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad8c      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ad98      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ada4      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001adb0      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001adbc      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001adc8      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001add4      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ade0      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001adec      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001adf8      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ae04      0xc  Uart0Process.o [1]
+  .rodata             const    0x0001ae10      0xc  Usart.o [1]
+  .text               ro code  0x0001ae1c      0xc  cstartup_M.o [5]
+  .rodata             const    0x0001ae28      0x8  CM.o [1]
+  .rodata             const    0x0001ae30      0x8  CM.o [1]
+  .rodata             const    0x0001ae38      0x8  CM.o [1]
+  .rodata             const    0x0001ae40      0x8  CM.o [1]
+  .rodata             const    0x0001ae48      0x8  CM.o [1]
+  .rodata             const    0x0001ae50      0x8  CM.o [1]
+  .rodata             const    0x0001ae58      0x8  CM.o [1]
+  .rodata             const    0x0001ae60      0x8  CM.o [1]
+  .rodata             const    0x0001ae68      0x8  CM.o [1]
+  .rodata             const    0x0001ae70      0x8  CM.o [1]
+  .rodata             const    0x0001ae78      0x8  CM.o [1]
+  .rodata             const    0x0001ae80      0x8  CM.o [1]
+  .rodata             const    0x0001ae88      0x8  CM.o [1]
+  .rodata             const    0x0001ae90      0x8  CM.o [1]
+  .rodata             const    0x0001ae98      0x8  CM.o [1]
+  .rodata             const    0x0001aea0      0x8  CM.o [1]
+  .rodata             const    0x0001aea8      0x8  CM.o [1]
+  .rodata             const    0x0001aeb0      0x8  CM.o [1]
+  .rodata             const    0x0001aeb8      0x8  CM.o [1]
+  .rodata             const    0x0001aec0      0x8  CM.o [1]
+  .rodata             const    0x0001aec8      0x8  GlobalVar.o [1]
+  .rodata             const    0x0001aed0      0x8  IEC104.o [1]
+  .rodata             const    0x0001aed8      0x8  IEC104.o [1]
+  .rodata             const    0x0001aee0      0x8  IEC104.o [1]
+  .rodata             const    0x0001aee8      0x8  IEC104.o [1]
+  .rodata             const    0x0001aef0      0x8  IEC104.o [1]
+  .rodata             const    0x0001aef8      0x8  IEC104.o [1]
+  .rodata             const    0x0001af00      0x8  IEC104.o [1]
+  .rodata             const    0x0001af08      0x8  IEC104.o [1]
+  .rodata             const    0x0001af10      0x8  LED.o [1]
+  .rodata             const    0x0001af18      0x8  ModbusMaster.o [1]
+  .rodata             const    0x0001af20      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af28      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af30      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af38      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af40      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af48      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af50      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af58      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af60      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af68      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af70      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af78      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af80      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af88      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af90      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001af98      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001afa0      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001afa8      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001afb0      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001afb8      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001afc0      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001afc8      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001afd0      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001afd8      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001afe0      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001afe8      0x8  Uart0Process.o [1]
+  .rodata             const    0x0001aff0      0x4  board.o [1]
+  .rodata             const    0x0001aff4      0x4  board.o [1]
+  .text               ro code  0x0001aff8      0x4  iar_startup_lpc11u6x.o [1]
+  .rodata             const    0x0001affc      0x0  zero_init3.o [5]
+  .rodata             const    0x0001affc      0x0  packbits_init_single.o [5]
+  Initializer bytes   const    0x0001affc     0xa7  <for P2-1>
+                             - 0x0001b0a3  0x14fe3
+
+"P2", part 1 of 3:                           0x3bf
+  P2-1                         0x10000200    0x3bf  <Init block>
+    .data             inited   0x10000200    0x214  CM.o [1]
+    .data             inited   0x10000414      0x4  IEC104.o [1]
+    .data             inited   0x10000418     0x3c  Usart.o [1]
+    .data             inited   0x10000454     0x3c  Usart.o [1]
+    .data             inited   0x10000490     0x3c  Usart.o [1]
+    .data             inited   0x100004cc     0x14  Usart.o [1]
+    __DLIB_PERTHREAD  inited   0x100004e0      0x8  localtim.o [3]
+    __DLIB_PERTHREAD  inited   0x100004e8     0x8c  rand.o [3]
+    __DLIB_PERTHREAD  inited   0x10000574      0x8  setlocale.o [3]
+    __DLIB_PERTHREAD  inited   0x1000057c     0x2c  xttotm.o [3]
+    __DLIB_PERTHREAD  inited   0x100005a8      0x4  errno.o [3]
+    __DLIB_PERTHREAD  inited   0x100005ac      0x4  xisdst.o [3]
+    __DLIB_PERTHREAD  inited   0x100005b0      0x4  xisdstData.o [3]
+    .data             inited   0x100005b4      0x2  ModbusMaster.o [1]
+    .data             inited   0x100005b6      0x1  CM.o [1]
+    .data             inited   0x100005b7      0x1  CM.o [1]
+    .data             inited   0x100005b8      0x1  IEC104.o [1]
+    .data             inited   0x100005b9      0x1  IEC104.o [1]
+    .data             inited   0x100005ba      0x1  IEC104.o [1]
+    .data             inited   0x100005bb      0x1  IEC104.o [1]
+    .data             inited   0x100005bc      0x1  ModbusMaster.o [1]
+    .data             inited   0x100005bd      0x1  SlaveUnit.o [1]
+    .data             inited   0x100005be      0x1  SlaveUnit.o [1]
+                             - 0x100005bf    0x3bf
+
+"P2", part 2 of 3:                           0xc00
+  CSTACK                       0x100005c0    0x400  <Block>
+    CSTACK            uninit   0x100005c0    0x400  <Block tail>
+  HEAP                         0x100009c0    0x800  <Block>
+    HEAP              uninit   0x100009c0    0x800  <Block tail>
+                             - 0x100011c0    0xc00
+
+"P2", part 3 of 3:                          0x6d5c
+  .bss                zero     0x100011c0   0x4400  Memory.o [1]
+  .bss                zero     0x100055c0    0x400  SlaveUnit.o [1]
+  .bss                zero     0x100059c0    0x318  os_core.o [1]
+  .bss                zero     0x10005cd8    0x2e0  SlaveUnit.o [1]
+  .bss                zero     0x10005fb8    0x220  Memory.o [1]
+  .bss                zero     0x100061d8    0x200  IEC104.o [1]
+  .bss                zero     0x100063d8    0x200  Usart.o [1]
+  .bss                zero     0x100065d8    0x200  Usart.o [1]
+  .bss                zero     0x100067d8    0x200  Usart.o [1]
+  .bss                zero     0x100069d8    0x160  CM.o [1]
+  .bss                zero     0x10006b38    0x140  os_core.o [1]
+  .bss                zero     0x10006c78    0x13c  GlobalVar.o [1]
+  .bss                zero     0x10006db4    0x100  CM.o [1]
+  .bss                zero     0x10006eb4    0x100  CM.o [1]
+  .bss                zero     0x10006fb4    0x100  LED.o [1]
+  .bss                zero     0x100070b4    0x100  ModbusMaster.o [1]
+  .bss                zero     0x100071b4    0x100  os_core.o [1]
+  .bss                zero     0x100072b4    0x100  SlaveUnit.o [1]
+  .bss                zero     0x100073b4    0x100  SlaveUnit.o [1]
+  .bss                zero     0x100074b4    0x100  Usart.o [1]
+  .bss                zero     0x100075b4     0xd8  GlobalVar.o [1]
+  .bss                zero     0x1000768c     0xc8  IEC104.o [1]
+  .bss                zero     0x10007754     0xc8  ModbusMaster.o [1]
+  .bss                zero     0x1000781c     0xc8  Uart0Process.o [1]
+  .bss                zero     0x100078e4     0xc0  IEC104.o [1]
+  .bss                zero     0x100079a4     0xb8  GlobalVar.o [1]
+  .bss                zero     0x10007a5c     0x88  GlobalVar.o [1]
+  .bss                zero     0x10007ae4     0x78  os_core.o [1]
+  .bss                zero     0x10007b5c     0x5c  DataTransferArea.o [1]
+  .bss                zero     0x10007bb8     0x50  IEC104.o [1]
+  .bss                zero     0x10007c08     0x50  os_core.o [1]
+  .bss                zero     0x10007c58     0x40  Usart.o [1]
+  .bss                zero     0x10007c98     0x2c  os_core.o [1]
+  .bss                zero     0x10007cc4     0x28  GlobalVar.o [1]
+  .bss                zero     0x10007cec     0x28  GlobalVar.o [1]
+  .bss                zero     0x10007d14     0x28  GlobalVar.o [1]
+  .bss                zero     0x10007d3c     0x24  GlobalVar.o [1]
+  .bss                zero     0x10007d60     0x20  Usart.o [1]
+  .bss                zero     0x10007d80     0x1c  GlobalVar.o [1]
+  .bss                zero     0x10007d9c     0x18  SlaveUnit.o [1]
+  .bss                zero     0x10007db4     0x10  GlobalVar.o [1]
+  .bss                zero     0x10007dc4     0x10  SlaveUnit.o [1]
+  .bss                zero     0x10007dd4     0x10  SlaveUnit.o [1]
+  .bss                zero     0x10007de4      0x8  IEC104.o [1]
+  .bss                zero     0x10007dec      0x8  IEC104.o [1]
+  .bss                zero     0x10007df4      0x8  IEC104.o [1]
+  .bss                zero     0x10007dfc      0x8  log.o [1]
+  .bss                zero     0x10007e04      0x8  RealTime.o [1]
+  .bss                zero     0x10007e0c      0x8  Record.o [1]
+  .bss                zero     0x10007e14      0x8  xxmemxmalloc.o [3]
+  .bss                zero     0x10007e1c      0x4  chip_11u6x.o [1]
+  .bss                zero     0x10007e20      0x4  CM.o [1]
+  .bss                zero     0x10007e24      0x4  CM.o [1]
+  .bss                zero     0x10007e28      0x4  CM.o [1]
+  .bss                zero     0x10007e2c      0x4  CM.o [1]
+  .bss                zero     0x10007e30      0x4  CM.o [1]
+  .bss                zero     0x10007e34      0x4  DataFlash.o [1]
+  .bss                zero     0x10007e38      0x4  DataTransferArea.o [1]
+  .bss                zero     0x10007e3c      0x4  DataTransferArea.o [1]
+  .bss                zero     0x10007e40      0x4  DataTransferArea.o [1]
+  .bss                zero     0x10007e44      0x4  DataTransferArea.o [1]
+  .bss                zero     0x10007e48      0x4  DataTransferArea.o [1]
+  .bss                zero     0x10007e4c      0x4  GlobalVar.o [1]
+  .bss                zero     0x10007e50      0x4  IEC104.o [1]
+  .bss                zero     0x10007e54      0x4  IEC104.o [1]
+  .bss                zero     0x10007e58      0x4  IEC104.o [1]
+  .bss                zero     0x10007e5c      0x4  IEC104.o [1]
+  .bss                zero     0x10007e60      0x4  IEC104.o [1]
+  .bss                zero     0x10007e64      0x4  IEC104.o [1]
+  .bss                zero     0x10007e68      0x4  IEC104.o [1]
+  .bss                zero     0x10007e6c      0x4  IEC104.o [1]
+  .bss                zero     0x10007e70      0x4  IEC104.o [1]
+  .bss                zero     0x10007e74      0x4  IEC104.o [1]
+  .bss                zero     0x10007e78      0x4  IEC104.o [1]
+  .bss                zero     0x10007e7c      0x4  IEC104.o [1]
+  .bss                zero     0x10007e80      0x4  IEC104.o [1]
+  .bss                zero     0x10007e84      0x4  InRtc.o [1]
+  .bss                zero     0x10007e88      0x4  LED.o [1]
+  .bss                zero     0x10007e8c      0x4  log.o [1]
+  .bss                zero     0x10007e90      0x4  os_core.o [1]
+  .bss                zero     0x10007e94      0x4  os_core.o [1]
+  .bss                zero     0x10007e98      0x4  os_core.o [1]
+  .bss                zero     0x10007e9c      0x4  os_core.o [1]
+  .bss                zero     0x10007ea0      0x4  os_core.o [1]
+  .bss                zero     0x10007ea4      0x4  os_core.o [1]
+  .bss                zero     0x10007ea8      0x4  os_core.o [1]
+  .bss                zero     0x10007eac      0x4  os_core.o [1]
+  .bss                zero     0x10007eb0      0x4  os_core.o [1]
+  .bss                zero     0x10007eb4      0x4  os_core.o [1]
+  .bss                zero     0x10007eb8      0x4  RealTime.o [1]
+  .bss                zero     0x10007ebc      0x4  SlaveUnit.o [1]
+  .bss                zero     0x10007ec0      0x4  SlaveUnit.o [1]
+  .bss                zero     0x10007ec4      0x4  SlaveUnit.o [1]
+  .bss                zero     0x10007ec8      0x4  SlaveUnit.o [1]
+  .bss                zero     0x10007ecc      0x4  SlaveUnit.o [1]
+  .bss                zero     0x10007ed0      0x4  SlaveUnit.o [1]
+  .bss                zero     0x10007ed4      0x4  Uart0Process.o [1]
+  .bss                zero     0x10007ed8      0x4  xgetmemchunk.o [3]
+  .bss                zero     0x10007edc      0x2  IEC104.o [1]
+  .bss                zero     0x10007ede      0x2  IEC104.o [1]
+  .bss                zero     0x10007ee0      0x2  IEC104.o [1]
+  .bss                zero     0x10007ee2      0x2  IEC104.o [1]
+  .bss                zero     0x10007ee4      0x2  IEC104.o [1]
+  .bss                zero     0x10007ee6      0x2  IEC104.o [1]
+  .bss                zero     0x10007ee8      0x2  IEC104.o [1]
+  .bss                zero     0x10007eea      0x2  IEC104.o [1]
+  .bss                zero     0x10007eec      0x2  IEC104.o [1]
+  .bss                zero     0x10007eee      0x2  IEC104.o [1]
+  .bss                zero     0x10007ef0      0x2  os_core.o [1]
+  .bss                zero     0x10007ef2      0x2  Uart0Process.o [1]
+  .bss                zero     0x10007ef4      0x1  CM.o [1]
+  .bss                zero     0x10007ef5      0x1  CM.o [1]
+  .bss                zero     0x10007ef6      0x1  CM.o [1]
+  .bss                zero     0x10007ef7      0x1  CM.o [1]
+  .bss                zero     0x10007ef8      0x1  CM.o [1]
+  .bss                zero     0x10007ef9      0x1  CM.o [1]
+  .bss                zero     0x10007efa      0x1  GlobalVar.o [1]
+  .bss                zero     0x10007efb      0x1  GlobalVar.o [1]
+  .bss                zero     0x10007efc      0x1  IEC104.o [1]
+  .bss                zero     0x10007efd      0x1  IEC104.o [1]
+  .bss                zero     0x10007efe      0x1  IEC104.o [1]
+  .bss                zero     0x10007eff      0x1  IEC104.o [1]
+  .bss                zero     0x10007f00      0x1  IEC104.o [1]
+  .bss                zero     0x10007f01      0x1  IEC104.o [1]
+  .bss                zero     0x10007f02      0x1  IEC104.o [1]
+  .bss                zero     0x10007f03      0x1  IEC104.o [1]
+  .bss                zero     0x10007f04      0x1  os_core.o [1]
+  .bss                zero     0x10007f05      0x1  os_core.o [1]
+  .bss                zero     0x10007f06      0x1  os_core.o [1]
+  .bss                zero     0x10007f07      0x1  os_core.o [1]
+  .bss                zero     0x10007f08      0x1  os_core.o [1]
+  .bss                zero     0x10007f09      0x1  os_core.o [1]
+  .bss                zero     0x10007f0a      0x1  os_core.o [1]
+  .bss                zero     0x10007f0b      0x1  os_core.o [1]
+  .bss                zero     0x10007f0c      0x1  Record.o [1]
+  .bss                zero     0x10007f0d      0x1  SlaveUnit.o [1]
+  .bss                zero     0x10007f0e      0x1  SlaveUnit.o [1]
+  .bss                zero     0x10007f0f      0x1  SlaveUnit.o [1]
+  .bss                zero     0x10007f10      0x1  SlaveUnit.o [1]
+  .bss                zero     0x10007f11      0x1  SlaveUnit.o [1]
+  .bss                zero     0x10007f12      0x1  SlaveUnit.o [1]
+  .bss                zero     0x10007f13      0x1  SlaveUnit.o [1]
+  .bss                zero     0x10007f14      0x1  SlaveUnit.o [1]
+  .bss                zero     0x10007f15      0x1  SlaveUnit.o [1]
+  .bss                zero     0x10007f16      0x1  SlaveUnit.o [1]
+  .bss                zero     0x10007f17      0x1  Uart0Process.o [1]
+  .bss                zero     0x10007f18      0x1  Uart0Process.o [1]
+  .bss                zero     0x10007f19      0x1  uart_n_11u6x.o [1]
+  .bss                zero     0x10007f1a      0x1  WatchDog.o [1]
+                             - 0x10007f1b   0x6d5b
+
+Absolute sections, part 1 of 2:              0x800
+  .bss                zero     0x20000000    0x400  CM.o [1]
+  .bss                zero     0x20000400    0x400  IEC104.o [1]
+                             - 0x20000800    0x800
+
+Absolute sections, part 2 of 2:              0x600
+  .bss                zero     0x20004000    0x400  SlaveUnit.o [1]
+  .bss                zero     0x20004400    0x200  Uart0Process.o [1]
+                             - 0x20004600    0x600
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    3 destination ranges, total size 0x7b5b:
+          0x100011c0  0x6d5b
+          0x20000000   0x800
+          0x20004000   0x600
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0xa7 (17% of destination):
+          0x0001affc    0xa7
+    1 destination range, total size 0x3bf:
+          0x10000200   0x3bf
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data  rw data
+                                                        (abs)
+    ------                  -------  -------  -------  -------
+E:\energy\program-iar-ucos-logger - backup-B31010&B31011 (2)(1)\program-iar-ucos-logger - backup\Debug\Obj: [1]
+    CM.o                      5 756    1 168    1 424    1 024
+    CRC16.o                     124    1 024
+    DataFlash.o               1 084       52        4
+    DataTransferArea.o          700       36      112
+    GlobalVar.o               1 748      112    1 058
+    IEC104.o                 16 324    1 214    1 096    1 024
+    InEeprom.o                  156
+    InRtc.o                     228                 4
+    InTIMER.o                    80
+    InWDT.o                     112
+    LED.o                       952        8      260
+    Memory.o                    288            17 952
+    ModbusMaster.o            4 200      128      459
+    RealTime.o                  192                12
+    Record.o                    852      180        9
+    SPI.o                       684
+    SlaveUnit.o              16 536    1 257    2 364    1 024
+    SubCollection.o             844       80
+    Uart0Process.o            5 084    2 112      208      512
+    Usart.o                   2 428       47    2 088
+    WatchDog.o                   68                 1
+    board.o                      68        8
+    chip_11u6x.o                 20                 4
+    clock_11u6x.o               596       64
+    eeprom.o                    104
+    gpio_11u6x.o                102
+    iar_startup_lpc11u6x.o      218
+    iocon_11u6x.o                74
+    log.o                     1 636      136       12
+    main.o                    1 650       64
+    os_core.o                 1 704      256    1 662
+    os_cpu_a.o                  304
+    os_cpu_c.o                  196
+    os_dbg.o                               2
+    os_flag.o                    76
+    os_mutex.o                1 136
+    os_q.o                      604
+    os_task.o                   346
+    os_time.o                   204
+    romdiv_11u6x.o               88
+    rtc_11u6x.o                  30
+    ssp_11u6x.o                 204
+    syscon_11u6x.o               64
+    sysinit.o                     2
+    tool.o                      218
+    uart_0_11u6x.o              264
+    uart_n_11u6x.o              226                 1
+    wwdt_11u6x.o                 28
+    ----------------------------------------------------------
+    Total:                   68 602    7 948   28 730    3 584
+
+command line: [2]
+    ----------------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    div.o                        32
+    errno.o                      16        1        4
+    exit.o                        8
+    getzone.o                     6
+    localtim.o                  192        1        8
+    low_level_init.o              4
+    mktime.o                    248
+    printf.o                     36
+    putchar.o                    36
+    rand.o                      204       24      140
+    setlocale.o                  41        2        8
+    snprintf.o                   72
+    srand.o                      32
+    strcat.o                     28
+    strstr.o                     56
+    vprintf.o                    24
+    vsprintf.o                   44
+    xgetdst.o                   372
+    xgetmemchunk.o               44                 4
+    xgettime.o                   68
+    xisdst.o                    320        1        4
+    xisdstData.o                           1        4
+    xprintffull.o             3 746       24
+    xprout.o                     22
+    xsnprout.o                   28
+    xsprout.o                    10
+    xstol.o                     148
+    xstoul.o                    376
+    xtls.o                        2
+    xttotm.o                    400        7       44
+    xxmemxfree.o                136
+    xxmemxmalloc.o              184                 8
+    ----------------------------------------------------------
+    Total:                    6 935       61      224
+
+m6M_tl.a: [4]
+    DblAddSub.o                 424
+    DblCmpGe.o                   50
+    DblCmpLe.o                   50
+    DblDiv.o                    194
+    DblMul.o                    388
+    DblToFlt.o                   98
+    DblToI32.o                   82
+    FltCmpGe.o                   40
+    FltCmpLe.o                   38
+    FltDiv.o                    170
+    FltToU32.o                   38
+    I32ToDbl.o                   52
+    I32ToFlt.o                   54
+    difftime.o                   28
+    xdscale.o                   128
+    ----------------------------------------------------------
+    Total:                    1 834
+
+rt6M_tl.a: [5]
+    ABImemcpy.o                  92
+    ABImemset.o                  88
+    I64DivMod.o                 106
+    I64DivZer.o                   2
+    I64Mul.o                     50
+    cexit.o                      10
+    cmain.o                      26
+    cstartup_M.o                 12
+    data_init.o                  40
+    memchr.o                     24
+    memcmp.o                     40
+    packbits_init_single.o       60
+    strchr.o                     20
+    strcpy.o                     16
+    strlen.o                     16
+    strncpy.o                    36
+    zero_init3.o                 60
+    ----------------------------------------------------------
+    Total:                      698
+
+shb_l.a: [6]
+    exit.o                       20
+    ----------------------------------------------------------
+    Total:                       20
+
+    Gaps                         31        2
+    Linker created                        48    3 072
+--------------------------------------------------------------
+    Grand Total:             78 120    8 059   32 026    3 584
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x00019d74           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00019da4           --   Gb  - Linker created -
+?main                   0x0001a1e1          Code  Gb  cmain.o [5]
+AlarmAck                0x00009c31   0x186  Code  Gb  SlaveUnit.o [1]
+AlarmAddDev             0x0000983f    0x52  Code  Gb  SlaveUnit.o [1]
+AlarmCheckout           0x000098b9   0x364  Code  Gb  SlaveUnit.o [1]
+AlarmCheckout::s_uAlarmTimeOut
+                        0x10007ec8     0x4  Data  Lc  SlaveUnit.o [1]
+AlarmCheckout::s_uPowerOffAlarmTimeOut
+                        0x10007ecc     0x4  Data  Lc  SlaveUnit.o [1]
+AlarmReport             0x00009dc1   0x10e  Code  Gb  SlaveUnit.o [1]
+AllReset                0x00012e3d   0x26a  Code  Gb  GlobalVar.o [1]
+BOD_WDT_IRQHandler      0x000193e5    0x32  Code  Gb  InWDT.o [1]
+Board_UARTPutChar       0x00019643     0xe  Code  Gb  board.o [1]
+CRC16                   0x0000f955    0x34  Code  Gb  CRC16.o [1]
+CSTACK$$Base            0x100005c0           --   Gb  - Linker created -
+CSTACK$$Limit           0x100009c0           --   Gb  - Linker created -
+CalculateCRC            0x0000f989    0x3c  Code  Gb  CRC16.o [1]
+CheckDevState           0x00009ffd    0x5a  Code  Gb  SlaveUnit.o [1]
+CheckTarget             0x0001363b    0x76  Code  Gb  SubCollection.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x00014f71    0x10  Code  Lc  gpio_11u6x.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x00018509    0x10  Code  Lc  main.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x00016781    0x10  Code  Lc  rtc_11u6x.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x00015057    0x10  Code  Lc  SPI.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x000152cd    0x10  Code  Lc  uart_0_11u6x.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x0001565f    0x10  Code  Lc  uart_n_11u6x.o [1]
+Chip_Clock_EnableRTCOsc
+                        0x000159ad     0x8  Code  Lc  InRtc.o [1]
+Chip_Clock_GetIntOscRate
+                        0x0001543b     0x4  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetMainClockRate
+                        0x000155a9    0x34  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetMainOscRate
+                        0x00015435     0x6  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetPLLFreq   0x00015465     0xe  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetRTCOscRate
+                        0x0001543f     0x6  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetSSP0ClockDiv
+                        0x00016649     0x6  Code  Lc  ssp_11u6x.o [1]
+Chip_Clock_GetSSP1ClockDiv
+                        0x0001664f     0x6  Code  Lc  ssp_11u6x.o [1]
+Chip_Clock_GetSystemClockRate
+                        0x000155dd    0x10  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetSystemPLLInClockRate
+                        0x00015567    0x30  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetSystemPLLOutClockRate
+                        0x00015597    0x12  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetUSARTNBaseClockDiv
+                        0x00015413     0x6  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetUSARTNBaseClockRate
+                        0x00015473    0x62  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetUSARTNFRGDivider
+                        0x00015421     0x6  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetUSARTNFRGMultiplier
+                        0x0001542f     0x6  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_GetWDTOSCRate
+                        0x0001555b     0xc  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_GetWDTRate   0x00015445    0x20  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_IsSystemPLLLocked
+                        0x000184f7     0xc  Code  Lc  main.o [1]
+Chip_Clock_SetMainClockSource
+                        0x00015547    0x14  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_SetSSP0ClockDiv
+                        0x00015067     0x6  Code  Lc  SPI.o [1]
+Chip_Clock_SetSSP1ClockDiv
+                        0x0001506d     0x6  Code  Lc  SPI.o [1]
+Chip_Clock_SetSysClockDiv
+                        0x00018503     0x6  Code  Lc  main.o [1]
+Chip_Clock_SetSystemPLLSource
+                        0x00015533    0x14  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_SetUSART0ClockDiv
+                        0x000152dd     0x6  Code  Lc  uart_0_11u6x.o [1]
+Chip_Clock_SetUSARTNBaseClockDiv
+                        0x0001540b     0x8  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_SetUSARTNBaseClockRate
+                        0x000154d5    0x5e  Code  Gb  clock_11u6x.o [1]
+Chip_Clock_SetUSARTNFRGDivider
+                        0x00015419     0x8  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_SetUSARTNFRGMultiplier
+                        0x00015427     0x8  Code  Lc  clock_11u6x.o [1]
+Chip_Clock_SetupSystemPLL
+                        0x000184e1    0x16  Code  Lc  main.o [1]
+Chip_EEPROM_Read        0x00015d75    0x2c  Code  Gb  eeprom.o [1]
+Chip_EEPROM_Write       0x00015d49    0x2c  Code  Gb  eeprom.o [1]
+Chip_FMC_SetFLASHAccess
+                        0x00018529    0x12  Code  Lc  main.o [1]
+Chip_GPIO_Init          0x00014f85     0xa  Code  Gb  gpio_11u6x.o [1]
+Chip_GPIO_SetPinToggle  0x00016d5d    0x14  Code  Lc  CM.o [1]
+Chip_GPIO_SetPinToggle  0x00018b05    0x14  Code  Lc  LED.o [1]
+Chip_GPIO_SetPinToggle  0x0001034d    0x14  Code  Lc  WatchDog.o [1]
+Chip_GPIO_WriteDirBit   0x00014f8f    0x48  Code  Gb  gpio_11u6x.o [1]
+Chip_GPIO_WritePortBit  0x00016d4d    0x10  Code  Lc  CM.o [1]
+Chip_GPIO_WritePortBit  0x0000f3f9    0x10  Code  Lc  DataFlash.o [1]
+Chip_GPIO_WritePortBit  0x00018af5    0x10  Code  Lc  LED.o [1]
+Chip_GPIO_WritePortBit  0x00018519    0x10  Code  Lc  main.o [1]
+Chip_GPIO_WritePortBit  0x0000f9df    0x10  Code  Lc  Usart.o [1]
+Chip_IOCON_PinMuxSet    0x00014fd7    0x4a  Code  Gb  iocon_11u6x.o [1]
+Chip_RTC_Disable        0x000159e5     0xa  Code  Lc  InRtc.o [1]
+Chip_RTC_DisableOptions
+                        0x000159bd     0x8  Code  Lc  InRtc.o [1]
+Chip_RTC_Enable         0x000159db     0xa  Code  Lc  InRtc.o [1]
+Chip_RTC_Enable1KHZ     0x000159ef     0xa  Code  Lc  InRtc.o [1]
+Chip_RTC_EnableOptions  0x000159b5     0x8  Code  Lc  InRtc.o [1]
+Chip_RTC_GetCount       0x00015a05     0x4  Code  Lc  InRtc.o [1]
+Chip_RTC_GetStatus      0x000159f9     0x4  Code  Lc  InRtc.o [1]
+Chip_RTC_Init           0x00016795     0xa  Code  Gb  rtc_11u6x.o [1]
+Chip_RTC_Reset          0x000159c5    0x16  Code  Lc  InRtc.o [1]
+Chip_RTC_SetAlarm       0x000159fd     0x4  Code  Lc  InRtc.o [1]
+Chip_RTC_SetCount       0x00015a01     0x4  Code  Lc  InRtc.o [1]
+Chip_SSP_ClearIntPending
+                        0x000150a9     0x6  Code  Lc  SPI.o [1]
+Chip_SSP_Enable         0x00015073     0xa  Code  Lc  SPI.o [1]
+Chip_SSP_GetPCLKkRate   0x00016661    0x32  Code  Lc  ssp_11u6x.o [1]
+Chip_SSP_GetRawIntStatus
+                        0x00015093    0x16  Code  Lc  SPI.o [1]
+Chip_SSP_GetStatus      0x0001507d    0x16  Code  Lc  SPI.o [1]
+Chip_SSP_ReceiveFrame   0x000150af     0x6  Code  Lc  SPI.o [1]
+Chip_SSP_SendFrame      0x000150b5     0x6  Code  Lc  SPI.o [1]
+Chip_SSP_SetBitRate     0x000166d5    0x40  Code  Gb  ssp_11u6x.o [1]
+Chip_SSP_SetClockRate   0x00016693    0x1a  Code  Gb  ssp_11u6x.o [1]
+Chip_SSP_SetFormat      0x000150bb    0x14  Code  Lc  SPI.o [1]
+Chip_SSP_SetMaster      0x000166bd    0x18  Code  Gb  ssp_11u6x.o [1]
+Chip_SSP_Set_Mode       0x00016655     0xc  Code  Lc  ssp_11u6x.o [1]
+Chip_SYSCTL_AssertPeriphReset
+                        0x000153d5    0x10  Code  Lc  clock_11u6x.o [1]
+Chip_SYSCTL_AssertPeriphReset
+                        0x00015021    0x10  Code  Lc  SPI.o [1]
+Chip_SYSCTL_AssertPeriphReset
+                        0x00015629    0x10  Code  Lc  uart_n_11u6x.o [1]
+Chip_SYSCTL_DeassertPeriphReset
+                        0x000153e5    0x10  Code  Lc  clock_11u6x.o [1]
+Chip_SYSCTL_DeassertPeriphReset
+                        0x00015031    0x10  Code  Lc  SPI.o [1]
+Chip_SYSCTL_DeassertPeriphReset
+                        0x00015639    0x10  Code  Lc  uart_n_11u6x.o [1]
+Chip_SYSCTL_PeriphReset
+                        0x000153f5    0x16  Code  Lc  clock_11u6x.o [1]
+Chip_SYSCTL_PeriphReset
+                        0x00015041    0x16  Code  Lc  SPI.o [1]
+Chip_SYSCTL_PeriphReset
+                        0x00015649    0x16  Code  Lc  uart_n_11u6x.o [1]
+Chip_SYSCTL_PowerDown   0x00018ab5    0x1c  Code  Gb  syscon_11u6x.o [1]
+Chip_SYSCTL_PowerUp     0x00018ad1    0x1a  Code  Gb  syscon_11u6x.o [1]
+Chip_TIMER_ClearMatch   0x00019589     0x8  Code  Lc  InTIMER.o [1]
+Chip_TIMER_MatchPending
+                        0x00019579    0x10  Code  Lc  InTIMER.o [1]
+Chip_UART0_ConfigData   0x0000fa15     0x4  Code  Lc  Usart.o [1]
+Chip_UART0_DisableDivisorAccess
+                        0x00015301     0xa  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_EnableDivisorAccess
+                        0x000152f7     0xa  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_Init         0x00015319    0x1e  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_IntDisable   0x0000fa09     0x8  Code  Lc  Usart.o [1]
+Chip_UART0_IntEnable    0x0000fa01     0x8  Code  Lc  Usart.o [1]
+Chip_UART0_ReadByte     0x0000f9fb     0x6  Code  Lc  Usart.o [1]
+Chip_UART0_ReadLineStatus
+                        0x00015315     0x4  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_ReadLineStatus
+                        0x0000fa19     0x4  Code  Lc  Usart.o [1]
+Chip_UART0_Send         0x00015337    0x2a  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_SendBlocking
+                        0x00015361    0x24  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_SendByte     0x000152ed     0x6  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_SendByte     0x0000f9f5     0x6  Code  Lc  Usart.o [1]
+Chip_UART0_SetBaud      0x00015385    0x50  Code  Gb  uart_0_11u6x.o [1]
+Chip_UART0_SetDivisorLatches
+                        0x0001530b     0xa  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_SetupFIFOS   0x000152f3     0x4  Code  Lc  uart_0_11u6x.o [1]
+Chip_UART0_SetupFIFOS   0x0000fa11     0x4  Code  Lc  Usart.o [1]
+Chip_UART0_TXEnable     0x0000f9ef     0x6  Code  Lc  Usart.o [1]
+Chip_UARTN_ConfigData   0x0000fa47     0xc  Code  Lc  Usart.o [1]
+Chip_UARTN_Enable       0x0000fa1d     0xa  Code  Lc  Usart.o [1]
+Chip_UARTN_EnableClock  0x00015689    0x1e  Code  Lc  uart_n_11u6x.o [1]
+Chip_UARTN_GetStatus    0x0000fa53     0x4  Code  Lc  Usart.o [1]
+Chip_UARTN_Init         0x000156a7    0x32  Code  Gb  uart_n_11u6x.o [1]
+Chip_UARTN_IntDisable   0x0000fa43     0x4  Code  Lc  Usart.o [1]
+Chip_UARTN_IntEnable    0x0000fa3f     0x4  Code  Lc  Usart.o [1]
+Chip_UARTN_ReadByte     0x0000fa37     0x8  Code  Lc  Usart.o [1]
+Chip_UARTN_SendByte     0x0000fa31     0x6  Code  Lc  Usart.o [1]
+Chip_UARTN_SetBaud      0x000156f1    0x1a  Code  Gb  uart_n_11u6x.o [1]
+Chip_UARTN_TXEnable     0x0000fa27     0xa  Code  Lc  Usart.o [1]
+Chip_WWDT_ClearStatusFlag
+                        0x0001941d    0x1c  Code  Gb  wwdt_11u6x.o [1]
+Chip_WWDT_Feed          0x000193ad     0xa  Code  Lc  InWDT.o [1]
+Chip_WWDT_Feed          0x00010361     0xa  Code  Lc  WatchDog.o [1]
+Chip_WWDT_GetStatus     0x000193e1     0x4  Code  Lc  InWDT.o [1]
+Chip_WWDT_SetOption     0x000193b7     0x8  Code  Lc  InWDT.o [1]
+Chip_WWDT_Start         0x000193cd    0x14  Code  Lc  InWDT.o [1]
+Chip_WWDT_UnsetOption   0x000193bf     0xe  Code  Lc  InWDT.o [1]
+CmDelRecLink            0x0001332b    0x24  Code  Gb  DataTransferArea.o [1]
+CmDelSendLink           0x0001334f    0x24  Code  Gb  DataTransferArea.o [1]
+CmInit                  0x00017055   0xc8c  Code  Gb  CM.o [1]
+CmInit::s_uReOpen       0x10007ef6     0x1  Data  Lc  CM.o [1]
+CmInit::s_uRinitCount   0x10007ef5     0x1  Data  Lc  CM.o [1]
+CmInit::s_uRound        0x10007ef4     0x1  Data  Lc  CM.o [1]
+CmInit::s_uStep         0x100005b6     0x1  Data  Lc  CM.o [1]
+CmLinkInit              0x00013215    0x2e  Code  Gb  DataTransferArea.o [1]
+CmReadRecLink           0x00013291    0x32  Code  Gb  DataTransferArea.o [1]
+CmReadSendLink          0x000132f9    0x32  Code  Gb  DataTransferArea.o [1]
+CmRecLinkLen            0x00013243     0xc  Code  Gb  DataTransferArea.o [1]
+CmSendLinkLen           0x0001324f     0xc  Code  Gb  DataTransferArea.o [1]
+CmStoreRecLink          0x0001325b    0x36  Code  Gb  DataTransferArea.o [1]
+CmStoreSendLink         0x000132c3    0x36  Code  Gb  DataTransferArea.o [1]
+CollectData             0x000136b1   0x206  Code  Gb  SubCollection.o [1]
+ComMasterRead           0x0000e9e9   0x6f0  Code  Gb  ModbusMaster.o [1]
+ComMasterRead::check_crc
+                        0x100005b4     0x2  Data  Lc  ModbusMaster.o [1]
+ComMasterReadDiscovery  0x0000f0f5   0x210  Code  Gb  ModbusMaster.o [1]
+ComMasterReadDiscovery::uSetAddr
+                        0x100005bc     0x1  Data  Lc  ModbusMaster.o [1]
+ComMasterWrite          0x0000e2ed   0x6e2  Code  Gb  ModbusMaster.o [1]
+CopyData                0x00011f29    0x94  Code  Gb  log.o [1]
+Crystal_oscillator_Init2
+                        0x00018909   0x11a  Code  Gb  main.o [1]
+DT1000ReadDataflashData
+                        0x00007eed    0x80  Code  Gb  SlaveUnit.o [1]
+DT1000ReadDataflashData::nAllDataLen
+                        0x10007ec4     0x4  Data  Lc  SlaveUnit.o [1]
+DTEsnChange             0x000060f7    0x4e  Code  Gb  SlaveUnit.o [1]
+DataFlashInit           0x0000f421    0x56  Code  Gb  DataFlash.o [1]
+DataFlash_Block_Erase   0x0000f58d    0x7e  Code  Gb  DataFlash.o [1]
+DataFlash_Read          0x0000f799    0x94  Code  Gb  DataFlash.o [1]
+DataFlash_Read_ID       0x0000f477    0x86  Code  Gb  DataFlash.o [1]
+DataFlash_Sector_Erase  0x0000f60b    0x7e  Code  Gb  DataFlash.o [1]
+DataFlash_WaitBusy      0x0000f531    0x5c  Code  Gb  DataFlash.o [1]
+DataFlash_Write         0x0000f705    0x8a  Code  Gb  DataFlash.o [1]
+DataFlash_WriteEnable   0x0000f4fd    0x34  Code  Gb  DataFlash.o [1]
+DataFlash_WritePP       0x0000f691    0x74  Code  Gb  DataFlash.o [1]
+DataInit                0x0001874d   0x174  Code  Gb  main.o [1]
+Data_resend_count       0x10007efc     0x1  Data  Gb  IEC104.o [1]
+DealCmd                 0x00010b71   0xdf8  Code  Gb  Uart0Process.o [1]
+DealCmd::uPreSet        0x10007f18     0x1  Data  Lc  Uart0Process.o [1]
+DeviceInit              0x00018649    0xbe  Code  Gb  main.o [1]
+EepReadData             0x000134c1    0x3e  Code  Gb  InEeprom.o [1]
+EepSavedata             0x000134ff    0x5e  Code  Gb  InEeprom.o [1]
+EepUpdataMes            0x00018a39    0x66  Code  Gb  main.o [1]
+EmptyAddr               0x00006621    0x24  Code  Gb  SlaveUnit.o [1]
+FEED_DOG                0x0001036b    0x1e  Code  Gb  WatchDog.o [1]
+FreeRamSpace            0x0000f91b    0x28  Code  Gb  Memory.o [1]
+GetCsq                  0x00016fa7    0x7e  Code  Gb  CM.o [1]
+GetInRtcCount           0x00015a5f     0xa  Code  Gb  InRtc.o [1]
+GetRecordAllow          0x00011bdb     0x6  Code  Gb  Record.o [1]
+GetVerS1                0x00012a49     0x4  Code  Gb  GlobalVar.o [1]
+GetVerS2                0x00012a4d     0x4  Code  Gb  GlobalVar.o [1]
+GetVerS3                0x00012a51     0x4  Code  Gb  GlobalVar.o [1]
+GetVerType              0x00012a45     0x4  Code  Gb  GlobalVar.o [1]
+HEAP$$Base              0x100009c0           --   Gb  - Linker created -
+HEAP$$Limit             0x100011c0           --   Gb  - Linker created -
+HardFault_Handler       0x00010315     0xa  Code  Gb  Usart.o [1]
+HwDeviceEsn             0x00006145    0xa4  Code  Gb  SlaveUnit.o [1]
+HwDeviceNew             0x000065d9    0x48  Code  Gb  SlaveUnit.o [1]
+HwDeviceReport          0x000064c5   0x114  Code  Gb  SlaveUnit.o [1]
+HwDeviceReport::uDataHead
+                        0x10007f0f     0x1  Data  Lc  SlaveUnit.o [1]
+HwDeviceSoft            0x000061e9    0x88  Code  Gb  SlaveUnit.o [1]
+HwSoftChange            0x00006271    0xf8  Code  Gb  SlaveUnit.o [1]
+I2Str                   0x000129d5    0x6e  Code  Gb  tool.o [1]
+IEC104_DATA_DD          0x10007e60     0x4  Data  Gb  IEC104.o [1]
+IEC104_DATA_SD          0x10007e5c     0x4  Data  Gb  IEC104.o [1]
+IEC104_DATA_YC          0x10007e54     0x4  Data  Gb  IEC104.o [1]
+IEC104_DATA_YK          0x10007e58     0x4  Data  Gb  IEC104.o [1]
+IEC104_DATA_YX          0x10007e50     0x4  Data  Gb  IEC104.o [1]
+Iec104CommMode          0x0000c625    0x5e  Code  Gb  IEC104.o [1]
+Iec104DT1000Update      0x0000bb5d   0x5a0  Code  Lc  IEC104.o [1]
+Iec104DT1000Update::s_uRecAll
+                        0x10007ee8     0x2  Data  Lc  IEC104.o [1]
+Iec104DT1000Update::s_uRecseq
+                        0x10007ee6     0x2  Data  Lc  IEC104.o [1]
+Iec104DT1000Update::s_uUpdateMark
+                        0x10007f01     0x1  Data  Lc  IEC104.o [1]
+Iec104DT1000Update::uFileStateIO
+                        0x10007f03     0x1  Data  Lc  IEC104.o [1]
+Iec104DT1000Update::uFrameLen
+                        0x10007f02     0x1  Data  Lc  IEC104.o [1]
+Iec104DT1000Update::uUpdateDataAllLen
+                        0x10007e70     0x4  Data  Lc  IEC104.o [1]
+Iec104DevReportAck      0x0000b661    0x36  Code  Gb  IEC104.o [1]
+Iec104HandleDelHwDev    0x0000ccc5    0xe4  Code  Gb  IEC104.o [1]
+Iec104HandleEsn         0x0000c9e5    0x82  Code  Gb  IEC104.o [1]
+Iec104HandleHwEsnRenovate
+                        0x0000cc0b    0x42  Code  Gb  IEC104.o [1]
+Iec104HandleHwSoftRenovate
+                        0x0000cc4d    0x70  Code  Gb  IEC104.o [1]
+Iec104HandleLoggerModel
+                        0x0000cafd    0x82  Code  Gb  IEC104.o [1]
+Iec104HandleLoggerName  0x0000cb89    0x82  Code  Gb  IEC104.o [1]
+Iec104HandleLoggerType  0x0000ca6d    0x82  Code  Gb  IEC104.o [1]
+Iec104HandleModBusBd    0x0000c27d   0x166  Code  Gb  IEC104.o [1]
+Iec104HandleModBusEndian
+                        0x0000c18f    0xc2  Code  Gb  IEC104.o [1]
+Iec104HandleReboot      0x0000ce47    0x80  Code  Gb  IEC104.o [1]
+Iec104HandleReset       0x0000cdc1    0x86  Code  Gb  IEC104.o [1]
+Iec104IP                0x0000c115    0x7a  Code  Gb  IEC104.o [1]
+Iec104InputTable        0x0000a9e5   0x604  Code  Gb  IEC104.o [1]
+Iec104InquireVer        0x0000c473    0x6a  Code  Gb  IEC104.o [1]
+Iec104LogExport         0x0000c7bd   0x214  Code  Gb  IEC104.o [1]
+Iec104LogExport::Iaddr  0x10007e78     0x4  Data  Lc  IEC104.o [1]
+Iec104LogExport::counts
+                        0x10007e7c     0x4  Data  Lc  IEC104.o [1]
+Iec104LogExport::uLogDataFlash
+                        0x10007e74     0x4  Data  Lc  IEC104.o [1]
+Iec104LogExport::uMenLogData
+                        0x1000768c    0xc8  Data  Lc  IEC104.o [1]
+Iec104LoggerRollBack    0x0000c4e1    0xa2  Code  Lc  IEC104.o [1]
+Iec104LoggerUpdate      0x0000b699   0x49a  Code  Lc  IEC104.o [1]
+Iec104LoggerUpdate::s_uRecAll
+                        0x10007ee4     0x2  Data  Lc  IEC104.o [1]
+Iec104LoggerUpdate::s_uRecseq
+                        0x10007ee2     0x2  Data  Lc  IEC104.o [1]
+Iec104LoggerUpdate::s_uUpdateMark
+                        0x10007f00     0x1  Data  Lc  IEC104.o [1]
+Iec104PhoneNum          0x0000c583    0x9a  Code  Gb  IEC104.o [1]
+Iec104PublicAddr        0x0000c3e3    0x90  Code  Gb  IEC104.o [1]
+Iec104ReportMaxDevice   0x0000a74f    0x28  Code  Gb  IEC104.o [1]
+Iec104SD                0x0000d0b5   0x2a2  Code  Gb  IEC104.o [1]
+Iec104ServiceIP         0x0000c683   0x12e  Code  Gb  IEC104.o [1]
+Iec104SouthDevInfo      0x0000b475   0x1c8  Code  Gb  IEC104.o [1]
+Iec104SyncTime          0x0000a815   0x1b8  Code  Gb  IEC104.o [1]
+Iec104SyncTime::uSysTimeMark
+                        0x10007efe     0x1  Data  Lc  IEC104.o [1]
+Iec104TableState        0x0000b001   0x338  Code  Gb  IEC104.o [1]
+Iec104TimeCollectPre    0x0000cec7    0xba  Code  Gb  IEC104.o [1]
+Iec104Yk                0x0000cf99    0xfc  Code  Gb  IEC104.o [1]
+IecAddrConvert          0x0000a791    0x36  Code  Gb  IEC104.o [1]
+IecCollectProcess       0x0000d6c9   0x4cc  Code  Gb  IEC104.o [1]
+IecCollectProcess::s_uIecHead
+                        0x10007eea     0x2  Data  Lc  IEC104.o [1]
+IecCpoyMesAddr          0x0000a777    0x1a  Code  Gb  IEC104.o [1]
+IecCreateFrameI         0x0000a4dd    0x6c  Code  Gb  IEC104.o [1]
+IecInit                 0x0000a261   0x26e  Code  Gb  IEC104.o [1]
+IecProcessFrameI        0x0000d37d   0x22a  Code  Lc  IEC104.o [1]
+IecProcessFrameS        0x0000a62d    0x6c  Code  Lc  IEC104.o [1]
+IecProcessFrameU        0x0000a6b1    0x9e  Code  Lc  IEC104.o [1]
+IecReportLogInfo        0x0000a56d    0xae  Code  Gb  IEC104.o [1]
+IecReportSouthDevice    0x0000b351   0x118  Code  Gb  IEC104.o [1]
+IecReportSouthDevice::uRelAddr
+                        0x10007eff     0x1  Data  Lc  IEC104.o [1]
+IecSubSCollect          0x0000dbb9   0x610  Code  Gb  IEC104.o [1]
+IecSubSCollect::sAllSum
+                        0x10007eee     0x2  Data  Lc  IEC104.o [1]
+IecSubSCollect::uNeedReadFlash
+                        0x10007e80     0x4  Data  Lc  IEC104.o [1]
+IecSubSCollect::uPerDeviceSum
+                        0x10007eec     0x2  Data  Lc  IEC104.o [1]
+IecSubSCollect::uRecord
+                        0x10000414     0x4  Data  Lc  IEC104.o [1]
+InitInRtc               0x00015a09    0x20  Code  Gb  InRtc.o [1]
+IntDelay                0x0000fac3    0x20  Code  Gb  Usart.o [1]
+JudgeFeedback           0x00016ef5    0x60  Code  Gb  CM.o [1]
+LedCtrl                 0x00018b89    0xaa  Code  Gb  LED.o [1]
+LedInit                 0x00018b19    0x70  Code  Gb  LED.o [1]
+LedShow                 0x00018c41   0x23e  Code  Gb  LED.o [1]
+LinkCreateNew           0x00013415    0x50  Code  Lc  DataTransferArea.o [1]
+LinkDeleteAll           0x00013497    0x2a  Code  Lc  DataTransferArea.o [1]
+LinkFree                0x00013485    0x12  Code  Lc  DataTransferArea.o [1]
+LinkGetLen              0x00013405    0x10  Code  Lc  DataTransferArea.o [1]
+LinkReadData            0x000133c9    0x3c  Code  Lc  DataTransferArea.o [1]
+LinkStoreData           0x00013373    0x56  Code  Lc  DataTransferArea.o [1]
+LoadInt                 0x00014683    0x68  Code  Lc  xprintffull.o [3]
+MesQ                    0x10007e38     0x4  Data  Gb  DataTransferArea.o [1]
+MsgGrp                  0x10007b5c    0x5c  Data  Gb  DataTransferArea.o [1]
+NVIC_EnableIRQ          0x0000f9d1     0xe  Code  Lc  Usart.o [1]
+NVIC_SetPriority        0x0001842d    0x84  Code  Lc  main.o [1]
+OSCtxSw                 0x0001393b          Code  Gb  os_cpu_a.o [1]
+OSCtxSwCtr              0x10007e90     0x4  Data  Gb  os_core.o [1]
+OSDebugEn               0x00012a42     0x2  Data  Gb  os_dbg.o [1]
+OSEventFreeList         0x10007e94     0x4  Data  Gb  os_core.o [1]
+OSEventTbl              0x10006b38   0x140  Data  Gb  os_core.o [1]
+OSFlagFreeList          0x10007e98     0x4  Data  Gb  os_core.o [1]
+OSFlagTbl               0x10007c08    0x50  Data  Gb  os_core.o [1]
+OSIdleCtr               0x10007e9c     0x4  Data  Gb  os_core.o [1]
+OSInit                  0x00013a25    0x28  Code  Gb  os_core.o [1]
+OSInitHookBegin         0x00015f25     0x2  Code  Gb  os_cpu_c.o [1]
+OSInitHookEnd           0x00015f27     0x2  Code  Gb  os_cpu_c.o [1]
+OSIntCtxSw              0x000139a3          Code  Gb  os_cpu_a.o [1]
+OSIntExit               0x00013a4d    0x78  Code  Gb  os_core.o [1]
+OSIntNesting            0x10007f04     0x1  Data  Gb  os_core.o [1]
+OSLockNesting           0x10007f05     0x1  Data  Gb  os_core.o [1]
+OSMutexCreate           0x00010391    0x90  Code  Gb  os_mutex.o [1]
+OSMutexPend             0x0001042d   0x246  Code  Gb  os_mutex.o [1]
+OSMutexPost             0x00010673    0xd2  Code  Gb  os_mutex.o [1]
+OSMutex_RdyAtPrio       0x00010759    0x96  Code  Lc  os_mutex.o [1]
+OSPrioCur               0x10007f06     0x1  Data  Gb  os_core.o [1]
+OSPrioHighRdy           0x10007f07     0x1  Data  Gb  os_core.o [1]
+OSQCreate               0x0001270d    0x8c  Code  Gb  os_q.o [1]
+OSQFreeList             0x10007eb0     0x4  Data  Gb  os_core.o [1]
+OSQPend                 0x00012799   0x114  Code  Gb  os_q.o [1]
+OSQPost                 0x000128c1    0x70  Code  Gb  os_q.o [1]
+OSQTbl                  0x10007ae4    0x78  Data  Gb  os_core.o [1]
+OSRdyGrp                0x10007f08     0x1  Data  Gb  os_core.o [1]
+OSRdyTbl                0x10007ef0     0x2  Data  Gb  os_core.o [1]
+OSRunning               0x10007f09     0x1  Data  Gb  os_core.o [1]
+OSStart                 0x00013acd    0x34  Code  Gb  os_core.o [1]
+OSStartHighRdy          0x00013903          Code  Gb  os_cpu_a.o [1]
+OSTCBCur                0x10007ea0     0x4  Data  Gb  os_core.o [1]
+OSTCBFreeList           0x10007ea4     0x4  Data  Gb  os_core.o [1]
+OSTCBHighRdy            0x10007ea8     0x4  Data  Gb  os_core.o [1]
+OSTCBInitHook           0x00015f8f     0x2  Code  Gb  os_cpu_c.o [1]
+OSTCBList               0x10007eac     0x4  Data  Gb  os_core.o [1]
+OSTCBPrioTbl            0x10007c98    0x2c  Data  Gb  os_core.o [1]
+OSTCBTbl                0x100059c0   0x318  Data  Gb  os_core.o [1]
+OSTaskCreateExt         0x00015759    0xac  Code  Gb  os_task.o [1]
+OSTaskCreateHook        0x00015f29     0x2  Code  Gb  os_cpu_c.o [1]
+OSTaskCtr               0x10007f0a     0x1  Data  Gb  os_core.o [1]
+OSTaskIdleHook          0x00015f2b     0x2  Code  Gb  os_cpu_c.o [1]
+OSTaskIdleStk           0x100071b4   0x100  Data  Gb  os_core.o [1]
+OSTaskStkChk            0x00015811    0x7c  Code  Gb  os_task.o [1]
+OSTaskStkInit           0x00015f2d    0x60  Code  Gb  os_cpu_c.o [1]
+OSTaskSwHook            0x00015f8d     0x2  Code  Gb  os_cpu_c.o [1]
+OSTickStepState         0x10007f0b     0x1  Data  Gb  os_core.o [1]
+OSTime                  0x10007eb4     0x4  Data  Gb  os_core.o [1]
+OSTimeDly               0x0000e1f9    0x60  Code  Gb  os_time.o [1]
+OSTimeDlyHMSM           0x0000e259    0x42  Code  Gb  os_time.o [1]
+OSTimeGet               0x0000e29b    0x14  Code  Gb  os_time.o [1]
+OSTimeTick              0x00013b09    0xce  Code  Gb  os_core.o [1]
+OSTimeTickHook          0x00015f91     0x2  Code  Gb  os_cpu_c.o [1]
+OSUnMapTbl              0x000192ac   0x100  Data  Gb  os_core.o [1]
+OS_CPU_SR_Restore       0x000138fd          Code  Gb  os_cpu_a.o [1]
+OS_CPU_SR_Save          0x000138f5          Code  Gb  os_cpu_a.o [1]
+OS_EventTaskRdy         0x00013bdd    0x80  Code  Gb  os_core.o [1]
+OS_EventTaskRemove      0x00013ced    0x2e  Code  Gb  os_core.o [1]
+OS_EventTaskRemoveMulti
+                        0x00013d1b    0x3a  Code  Gb  os_core.o [1]
+OS_EventTaskWait        0x00013c6d    0x74  Code  Gb  os_core.o [1]
+OS_EventWaitListInit    0x00013d55    0x1c  Code  Gb  os_core.o [1]
+OS_FlagInit             0x00015fe9    0x3c  Code  Gb  os_flag.o [1]
+OS_InitEventList        0x00013d71    0x36  Code  Lc  os_core.o [1]
+OS_InitMisc             0x00013db1    0x2c  Code  Lc  os_core.o [1]
+OS_InitRdyList          0x00013de1    0x36  Code  Lc  os_core.o [1]
+OS_InitTCBList          0x00013e49    0x3c  Code  Lc  os_core.o [1]
+OS_InitTaskIdle         0x00013e1d    0x28  Code  Lc  os_core.o [1]
+OS_MemClr               0x00013e89    0x14  Code  Gb  os_core.o [1]
+OS_QInit                0x00012931    0x2c  Code  Gb  os_q.o [1]
+OS_Sched                0x00013e9d    0x5e  Code  Gb  os_core.o [1]
+OS_SchedNew             0x00013efb    0x1e  Code  Lc  os_core.o [1]
+OS_TCBInit              0x00013f79   0x12a  Code  Gb  os_core.o [1]
+OS_TaskIdle             0x00013f19    0x1c  Code  Gb  os_core.o [1]
+OS_TaskStkClr           0x00015899    0x1a  Code  Gb  os_task.o [1]
+OscRateIn               0x0001aff0     0x4  Data  Gb  board.o [1]
+PrintThisInfo           0x00010869   0x17a  Code  Gb  Uart0Process.o [1]
+RTCOscRateIn            0x0001aff4     0x4  Data  Gb  board.o [1]
+RTC_IRQHandler          0x00015a29    0x36  Code  Gb  InRtc.o [1]
+ReAllocateNVIC          0x0001853b    0x22  Code  Gb  main.o [1]
+ReadEepData             0x00012ad7   0x1a4  Code  Gb  GlobalVar.o [1]
+ReadModem               0x00016ebd    0x26  Code  Gb  CM.o [1]
+RealTimeGet             0x000125a3    0x44  Code  Gb  RealTime.o [1]
+RealTimeGetTick         0x0001259d     0x6  Code  Gb  RealTime.o [1]
+RealTimeInit            0x0001258d    0x10  Code  Gb  RealTime.o [1]
+RealTimeSet             0x000125e7    0x48  Code  Gb  RealTime.o [1]
+RealTimeTicktock        0x0001262f    0x16  Code  Gb  RealTime.o [1]
+Reboot                  0x000130b1    0x14  Code  Gb  GlobalVar.o [1]
+RecordHistory           0x00011d2b   0x1ce  Code  Gb  Record.o [1]
+RecordInit              0x00011c8d    0x9e  Code  Gb  Record.o [1]
+Region$$Table$$Base     0x00019d74           --   Gb  - Linker created -
+Region$$Table$$Limit    0x00019da4           --   Gb  - Linker created -
+ReportCtrlClear         0x0000a235     0xc  Code  Gb  IEC104.o [1]
+ReportCtrlRead          0x0000a24d    0x14  Code  Gb  IEC104.o [1]
+ReportCtrlSet           0x0000a241     0xc  Code  Gb  IEC104.o [1]
+ReportSIMID             0x00016f55    0x52  Code  Gb  CM.o [1]
+ResetIecData            0x00009f3b    0xba  Code  Gb  SlaveUnit.o [1]
+RingClear               0x00016d71    0x10  Code  Gb  CM.o [1]
+RingDataIn              0x00016d93    0x50  Code  Lc  CM.o [1]
+RingDataLen             0x00016e7b     0x4  Code  Lc  CM.o [1]
+RingDataOut             0x00016de3    0x4c  Code  Lc  CM.o [1]
+RingDataShow            0x00016e2f    0x4c  Code  Lc  CM.o [1]
+RingDataThrow           0x00016e7f    0x3e  Code  Lc  CM.o [1]
+RingNotEmpty            0x00016d81    0x12  Code  Lc  CM.o [1]
+Rs485DebugMark          0x00010801     0x8  Code  Gb  Uart0Process.o [1]
+Rs485DebugRead          0x00010809     0x6  Code  Gb  Uart0Process.o [1]
+RxBufIsEmpty            0x0000fe59    0x12  Code  Lc  Usart.o [1]
+RxFifoIn                0x0000fe7d    0x2c  Code  Lc  Usart.o [1]
+RxFifoOut               0x0000fea9    0x74  Code  Lc  Usart.o [1]
+SOUTH_DATA_LOG          0x10007e8c     0x4  Data  Gb  log.o [1]
+SPI_Init                0x00015207    0x66  Code  Gb  SPI.o [1]
+SPI_Read                0x0001528d    0x20  Code  Gb  SPI.o [1]
+SPI_Send                0x0001526d    0x20  Code  Gb  SPI.o [1]
+SSP_ReadFrames_Blocking
+                        0x0001516b    0x9c  Code  Gb  SPI.o [1]
+SSP_WriteFrames_Blocking
+                        0x000150cf    0x9c  Code  Gb  SPI.o [1]
+SaveEepData             0x00012ced   0x10c  Code  Gb  GlobalVar.o [1]
+SaveLogInit             0x000123b5   0x1b2  Code  Gb  log.o [1]
+SdContinuousAddr        0x10007efb     0x1  Data  Gb  GlobalVar.o [1]
+SearchRecordLastAddr    0x00011c13    0x7a  Code  Gb  Record.o [1]
+SerchLog                0x00011fbd   0x14c  Code  Gb  log.o [1]
+SetBaudRate             0x00009ed5    0x66  Code  Gb  SlaveUnit.o [1]
+SetInRtcCount           0x00015a69    0x1a  Code  Gb  InRtc.o [1]
+SetLoggerDefInfo        0x00012a55    0x82  Code  Gb  GlobalVar.o [1]
+SetRecordAllow          0x00011bd5     0x6  Code  Gb  Record.o [1]
+ShortDelay              0x0000f409    0x18  Code  Gb  DataFlash.o [1]
+SlaveAddrConvert        0x000060c1    0x36  Code  Gb  SlaveUnit.o [1]
+SlaveDeviceAutoAllocation
+                        0x00006671   0x464  Code  Gb  SlaveUnit.o [1]
+SlaveDeviceAutoAllocation::uDTAddr
+                        0x100005bd     0x1  Data  Lc  SlaveUnit.o [1]
+SouthBroadcastUpdata    0x00007f7d   0x194  Code  Gb  SlaveUnit.o [1]
+SouthDeviceCheck        0x00006375    0x4a  Code  Gb  SlaveUnit.o [1]
+SouthDeviceReport       0x000063c5    0xfc  Code  Gb  SlaveUnit.o [1]
+SouthIecSd              0x00008d41   0x128  Code  Gb  SlaveUnit.o [1]
+SouthInquire            0x000072bd   0x666  Code  Gb  SlaveUnit.o [1]
+SouthInquire::uNextDev  0x10007f11     0x1  Data  Lc  SlaveUnit.o [1]
+SouthInquire::uRelativeAddr
+                        0x10007f10     0x1  Data  Lc  SlaveUnit.o [1]
+SouthInquireAlarm       0x00007a91   0x458  Code  Gb  SlaveUnit.o [1]
+SouthInquireAlarm::uNextDev
+                        0x10007f13     0x1  Data  Lc  SlaveUnit.o [1]
+SouthInquireAlarm::uRelativeAddr
+                        0x10007f12     0x1  Data  Lc  SlaveUnit.o [1]
+SouthLogEnd             0x00008555    0xa6  Code  Gb  SlaveUnit.o [1]
+SouthLogStart           0x000083b1    0x82  Code  Gb  SlaveUnit.o [1]
+SouthLogTransmission    0x0000844d    0xf4  Code  Gb  SlaveUnit.o [1]
+SouthReadSD             0x00008f39   0x7d8  Code  Gb  SlaveUnit.o [1]
+SouthRecDeal            0x00006df1   0x4a6  Code  Lc  SlaveUnit.o [1]
+SouthRecDealAlarm       0x00007929   0x134  Code  Lc  SlaveUnit.o [1]
+SouthSdModbus           0x00008c31    0xf8  Code  Gb  SlaveUnit.o [1]
+SouthSingleUpdata       0x000081b9   0x1ee  Code  Gb  SlaveUnit.o [1]
+SouthSwich              0x10007efa     0x1  Data  Gb  GlobalVar.o [1]
+SouthSynctime           0x00009715    0xe6  Code  Gb  SlaveUnit.o [1]
+SouthUpdataSoftChange   0x0000811d    0x76  Code  Gb  SlaveUnit.o [1]
+SouthWriteSD            0x00008e7d    0x96  Code  Gb  SlaveUnit.o [1]
+SouthWriteYk            0x00008a8d   0x186  Code  Gb  SlaveUnit.o [1]
+Str2UI                  0x0001298f    0x46  Code  Gb  tool.o [1]
+SysMesInit              0x00013205    0x10  Code  Gb  DataTransferArea.o [1]
+SysTick_Config          0x000184b1    0x30  Code  Lc  main.o [1]
+SysTick_Handler         0x00015f93    0x1e  Code  Gb  os_cpu_c.o [1]
+SystemCoreClock         0x10007e1c     0x4  Data  Gb  chip_11u6x.o [1]
+SystemCoreClockUpdate   0x00018aa1     0xc  Code  Gb  chip_11u6x.o [1]
+SystemInit              0x000158b3     0x2  Code  Gb  sysinit.o [1]
+TIMER16_0_IRQHandler    0x000195a9    0x18  Code  Gb  InTIMER.o [1]
+TIMER32_1_IRQHandler    0x00019591    0x18  Code  Gb  InTIMER.o [1]
+TaskIec104Process       0x0000d5ad    0xe8  Code  Gb  IEC104.o [1]
+TaskIec104ProcessStk    0x20000400   0x400  Data  Gb  IEC104.o [1]
+TaskLedCtrl             0x00018e85    0x1e  Code  Gb  LED.o [1]
+TaskLedCtrlStk          0x10006fb4   0x100  Data  Gb  LED.o [1]
+TaskModemProcess        0x00017d55   0x61c  Code  Gb  CM.o [1]
+TaskModemProcess::s_uMainInit
+                        0x100005b7     0x1  Data  Lc  CM.o [1]
+TaskModemProcess::s_uReadStep
+                        0x10007ef9     0x1  Data  Lc  CM.o [1]
+TaskModemProcess::s_uReadTimeMark
+                        0x10007e2c     0x4  Data  Lc  CM.o [1]
+TaskModemProcess::s_uTimeForCsq
+                        0x10007e30     0x4  Data  Lc  CM.o [1]
+TaskModemProcess::s_uWriteStep
+                        0x10007ef8     0x1  Data  Lc  CM.o [1]
+TaskModemProcess::s_uWriteTimeMark
+                        0x10007e28     0x4  Data  Lc  CM.o [1]
+TaskModemProcess::uCmInitStep
+                        0x10007ef7     0x1  Data  Lc  CM.o [1]
+TaskModemProcessStk     0x20000000   0x400  Data  Gb  CM.o [1]
+TaskSouthInquire        0x0000862d   0x430  Code  Gb  SlaveUnit.o [1]
+TaskSouthInquire::uSigleUpdate
+                        0x10007f15     0x1  Data  Lc  SlaveUnit.o [1]
+TaskSouthInquire::uSouthStep
+                        0x10007f14     0x1  Data  Lc  SlaveUnit.o [1]
+TaskSouthInquireStk     0x20004000   0x400  Data  Gb  SlaveUnit.o [1]
+TaskSouthWrite          0x00009801    0x3e  Code  Gb  SlaveUnit.o [1]
+TaskSouthWriteStk       0x100055c0   0x400  Data  Gb  SlaveUnit.o [1]
+TaskUart0ProcesStk      0x20004400   0x200  Data  Gb  Uart0Process.o [1]
+TaskUart0Process        0x00010a01    0xd8  Code  Gb  Uart0Process.o [1]
+TimeGapJudge            0x0000e2c5    0x26  Code  Gb  ModbusMaster.o [1]
+TimeOut                 0x00012969    0x26  Code  Gb  tool.o [1]
+TimeToLong              0x00011be1    0x32  Code  Gb  Record.o [1]
+TimedReboot             0x0000a065    0xb2  Code  Gb  SlaveUnit.o [1]
+TimedReboot::uRandTime  0x100005be     0x1  Data  Lc  SlaveUnit.o [1]
+TimedReboot::uRebotMark
+                        0x10007f16     0x1  Data  Lc  SlaveUnit.o [1]
+TimedReboot::uStartTime
+                        0x10007ed0     0x4  Data  Lc  SlaveUnit.o [1]
+TxBufIsEmpty            0x0000fe6b    0x12  Code  Lc  Usart.o [1]
+TxFifoInMult            0x0000ff1d    0x5e  Code  Lc  Usart.o [1]
+TxTifoOut               0x0000ff7b    0x3e  Code  Lc  Usart.o [1]
+USART0_IRQHandler       0x000102b5    0x60  Code  Gb  Usart.o [1]
+USART1_4_IRQHandler     0x0001033d     0x8  Code  Gb  Usart.o [1]
+USART2_3_IRQHandler     0x00010345     0x8  Code  Gb  Usart.o [1]
+USART_tab               0x100004cc    0x14  Data  Lc  Usart.o [1]
+Uart0Init               0x0000ffb9    0x50  Code  Lc  Usart.o [1]
+Uart0Io                 0x0000fa57     0x2  Code  Gb  Usart.o [1]
+Uart0Rec                0x0000fa7b     0x2  Code  Gb  Usart.o [1]
+Uart0Send               0x0000fa9f     0x2  Code  Gb  Usart.o [1]
+Uart3Io                 0x0000fa59    0x20  Code  Gb  Usart.o [1]
+Uart3Rec                0x0000fa7d    0x20  Code  Gb  Usart.o [1]
+Uart3Send               0x0000faa1    0x20  Code  Gb  Usart.o [1]
+Uart4Io                 0x0000fa79     0x2  Code  Gb  Usart.o [1]
+Uart4Rec                0x0000fa9d     0x2  Code  Gb  Usart.o [1]
+Uart4Send               0x0000fac1     0x2  Code  Gb  Usart.o [1]
+UartClear               0x0000fb3b    0x74  Code  Gb  Usart.o [1]
+UartClearRecBuffer      0x0000fbf9    0x4a  Code  Gb  Usart.o [1]
+UartClearSendBuffer     0x0000fbaf    0x4a  Code  Gb  Usart.o [1]
+UartInit                0x00010011   0x170  Code  Gb  Usart.o [1]
+UartRead                0x0000fd57    0x8e  Code  Gb  Usart.o [1]
+UartRxLen               0x0000fae3    0x2c  Code  Gb  Usart.o [1]
+UartShowBytes           0x0000fded    0x68  Code  Gb  Usart.o [1]
+UartTxLen               0x0000fb0f    0x2c  Code  Gb  Usart.o [1]
+UartUpdate              0x000119b9   0x1e4  Code  Gb  Uart0Process.o [1]
+UartUpdate::uFrameCount
+                        0x10007ef2     0x2  Data  Lc  Uart0Process.o [1]
+UartWrite               0x0000fc49   0x10e  Code  Gb  Usart.o [1]
+Usart3Isr               0x00010181    0x96  Code  Gb  Usart.o [1]
+Usart4Isr               0x00010225    0x90  Code  Gb  Usart.o [1]
+WDEBUGOUT               0x0001080f    0x5a  Code  Gb  Uart0Process.o [1]
+WMemFree                0x0000f8cd    0x4e  Code  Gb  Memory.o [1]
+WMemMalloc              0x0000f835    0x98  Code  Gb  Memory.o [1]
+WriteModem              0x00016ee3    0x12  Code  Gb  CM.o [1]
+YcReport                0x00006bf1   0x1c6  Code  Gb  SlaveUnit.o [1]
+YxReport                0x00006ae5    0xf2  Code  Gb  SlaveUnit.o [1]
+_GenldFull              0x00014c91   0x2aa  Code  Lc  xprintffull.o [3]
+_Getdst                 0x00016a9d   0x140  Code  Gb  xgetdst.o [3]
+_Gettime                0x00015ac7    0x44  Code  Gb  xgettime.o [3]
+_IsdstStr               0x10000578     0x4  Data  Gb  setlocale.o [3]
+_Isdst_olddst           0x100005ac     0x4  Data  Lc  xisdst.o [3]
+_Isdst_rules            0x100005b0     0x4  Data  Gb  xisdstData.o [3]
+_LdtobFull              0x00014819   0x464  Code  Lc  xprintffull.o [3]
+_LitobFull              0x000146eb   0x12a  Code  Lc  xprintffull.o [3]
+_Localtime_oldzone      0x100004e0     0x4  Data  Lc  localtim.o [3]
+_Localtime_tzoff        0x100004e4     0x4  Data  Lc  localtim.o [3]
+_PrintfFull             0x000140cd   0x5b6  Code  Gb  xprintffull.o [3]
+_Prout                  0x0001a3d9    0x16  Code  Gb  xprout.o [3]
+_PutcharsFull           0x00014f3b    0x30  Code  Lc  xprintffull.o [3]
+_Rand_idx               0x100004f0     0x4  Data  Lc  rand.o [3]
+_Rand_rv                0x100004f4    0x80  Data  Lc  rand.o [3]
+_Randinit               0x100004e8     0x1  Data  Gb  rand.o [3]
+_Randseed               0x100004ec     0x4  Data  Gb  rand.o [3]
+_SNProut                0x0001a1c5    0x1c  Code  Gb  xsnprout.o [3]
+_SProut                 0x0000f397     0xa  Code  Gb  xsprout.o [3]
+_Ttotm_ts               0x1000057c    0x2c  Data  Lc  xttotm.o [3]
+_Tzoff                  0x0001264d    0x98  Code  Gb  localtim.o [3]
+_TzoneStr               0x10000574     0x4  Data  Gb  setlocale.o [3]
+__Vectors               0x00006000           --   Gb  iar_startup_lpc11u6x.o [1]
+__Vectors_End           0x000060c0          Data  Gb  iar_startup_lpc11u6x.o [1]
+__Vectors_Size {Abs}    0x000000c0           --   Gb  iar_startup_lpc11u6x.o [1]
+__aeabi_cdcmple         0x000160cb          Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x000160fd          Code  Gb  DblCmpGe.o [4]
+__aeabi_cfcmple         0x00015e29          Code  Gb  FltCmpLe.o [4]
+__aeabi_cfrcmple        0x00015e51          Code  Gb  FltCmpGe.o [4]
+__aeabi_d2f             0x00015dc5          Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x000161b1          Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x000161d5          Code  Gb  DblToI32.o [4]
+__aeabi_ddiv            0x00016565          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x000163e1          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x000162f3          Code  Gb  DblAddSub.o [4]
+__aeabi_errno_addr      0x00016919     0xa  Code  Gb  errno.o [3]
+__aeabi_f2uiz           0x00013581          Code  Gb  FltToU32.o [4]
+__aeabi_fdiv            0x00015e79          Code  Gb  FltDiv.o [4]
+__aeabi_i2d             0x00016205          Code  Gb  I32ToDbl.o [4]
+__aeabi_i2f             0x0000f361          Code  Gb  I32ToFlt.o [4]
+__aeabi_idiv            0x0000f3a1     0xe  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_idivmod         0x0000f3bd    0x1c  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_ldiv0           0x00016a69          Code  Gb  I64DivZer.o [5]
+__aeabi_lmul            0x00016715          Code  Gb  I64Mul.o [5]
+__aeabi_memclr          0x0000a1a9          Code  Gb  ABImemset.o [5]
+__aeabi_memclr4         0x0000a1ad          Code  Gb  ABImemset.o [5]
+__aeabi_memclr8         0x0000a1ad          Code  Gb  ABImemset.o [5]
+__aeabi_memcpy          0x0000a1b1          Code  Gb  ABImemcpy.o [5]
+__aeabi_memset          0x0000a159          Code  Gb  ABImemset.o [5]
+__aeabi_ui2d            0x00016219          Code  Gb  I32ToDbl.o [4]
+__aeabi_ui2f            0x0000f379          Code  Gb  I32ToFlt.o [4]
+__aeabi_uidiv           0x0000f3af     0xe  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_uidivmod        0x0000f3d9    0x1c  Code  Gb  romdiv_11u6x.o [1]
+__aeabi_uldivmod        0x00016061          Code  Gb  I64DivMod.o [5]
+__cmain                 0x0001a1e1          Code  Gb  cmain.o [5]
+__data_Aldata           0x10007e14     0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x00016d21    0x2c  Code  Gb  xgetmemchunk.o [3]
+__data_GetMemChunk::start
+                        0x10007ed8     0x4  Data  Lc  xgetmemchunk.o [3]
+__difftime32            0x00015da9    0x1c  Code  Gb  difftime.o [4]
+__exit                  0x0001a215    0x14  Code  Gb  exit.o [6]
+__getzone               0x00015ac1     0x4  Code  Gb  getzone.o [3]
+__iar_Daysto32          0x00015ba1    0x3a  Code  Gb  xttotm.o [3]
+__iar_Dscale            0x00016131    0x80  Code  Gb  xdscale.o [4]
+__iar_Errno             0x100005a8     0x4  Data  Gb  errno.o [3]
+__iar_Isdst32           0x00016929   0x140  Code  Gb  xisdst.o [3]
+__iar_Memchr            0x00016049    0x18  Code  Gb  memchr.o [5]
+__iar_Memset4_word      0x0000a179          Code  Gb  ABImemset.o [5]
+__iar_Memset_word       0x0000a165          Code  Gb  ABImemset.o [5]
+__iar_Stolx             0x00015b0d    0x94  Code  Gb  xstol.o [3]
+__iar_Stoulx            0x000167a1   0x126  Code  Gb  xstoul.o [3]
+__iar_Strchr            0x00016035    0x14  Code  Gb  strchr.o [5]
+__iar_Strstr            0x00016747    0x38  Code  Gb  strstr.o [3]
+__iar_Ttotm32           0x00015bdd   0x116  Code  Gb  xttotm.o [3]
+__iar_TzoneStr_init     0x00015a95    0x24  Code  Gb  setlocale.o [3]
+__iar_d2uiz             0x000161d9          Code  Gb  DblToI32.o [4]
+__iar_data_init3        0x00019b9d    0x28  Code  Gb  data_init.o [5]
+__iar_dlib_perthread_access
+                        0x00015a91     0x2  Code  Gb  xtls.o [3]
+__iar_packbits_init_single3
+                        0x00019711    0x3c  Code  Gb  packbits_init_single.o [5]
+__iar_program_start     0x0001ae1d          Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x0001621d          Code  Gb  I32ToDbl.o [4]
+__iar_ui2f              0x0000f37d          Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3        0x000196d5    0x3c  Code  Gb  zero_init3.o [5]
+__localtime32           0x000126f5    0x18  Code  Gb  localtim.o [3]
+__low_level_init        0x0001a1fb     0x4  Code  Gb  low_level_init.o [3]
+__mktime32              0x000158b5    0xf8  Code  Gb  mktime.o [3]
+__vector_table          0x00006000          Data  Gb  iar_startup_lpc11u6x.o [1]
+__vector_table_0x1c     0x0000601c          Data  Gb  iar_startup_lpc11u6x.o [1]
+__write                 0x00019611    0x32  Code  Gb  board.o [1]
+_call_main              0x0001a1ed          Code  Gb  cmain.o [5]
+_exit                   0x0001a209          Code  Gb  cexit.o [5]
+_main                   0x0001a1f7          Code  Gb  cmain.o [5]
+auchCRCHi               0x000190ac   0x100  Data  Gb  CRC16.o [1]
+auchCRCLo               0x000191ac   0x100  Data  Gb  CRC16.o [1]
+crc_ta                  0x00018eac   0x200  Data  Lc  CRC16.o [1]
+digits                  0x000168c8    0x28  Data  Lc  xstoul.o [3]
+div                     0x00016627    0x20  Code  Gb  div.o [3]
+exit                    0x0001a1ff     0x8  Code  Gb  exit.o [3]
+free                    0x00016be1    0x82  Code  Gb  xxmemxfree.o [3]
+g_DT1000Updata          0x10007d80    0x1c  Data  Gb  GlobalVar.o [1]
+g_DeviceEsn             0x100075b4    0xd8  Data  Gb  GlobalVar.o [1]
+g_DeviceSoft            0x100079a4    0xb8  Data  Gb  GlobalVar.o [1]
+g_DeviceSouth           0x10006c78   0x13c  Data  Gb  GlobalVar.o [1]
+g_IecRecSeq             0x10007ede     0x2  Data  Gb  IEC104.o [1]
+g_IecSendSeq            0x10007ee0     0x2  Data  Gb  IEC104.o [1]
+g_LoggerAlarm           0x10007e4c     0x4  Data  Gb  GlobalVar.o [1]
+g_LoggerInfo            0x10007a5c    0x88  Data  Gb  GlobalVar.o [1]
+g_LoggerRun             0x10007d3c    0x24  Data  Gb  GlobalVar.o [1]
+g_LoggerUpdate          0x10007db4    0x10  Data  Gb  GlobalVar.o [1]
+g_TimeMarker            0x10007dec     0x8  Data  Gb  IEC104.o [1]
+g_TimeStamp             0x10007eb8     0x4  Data  Gb  RealTime.o [1]
+g_pRegPoint             0x10007cc4    0x28  Data  Gb  GlobalVar.o [1]
+g_psSouthAlarm          0x10007cec    0x28  Data  Gb  GlobalVar.o [1]
+g_psSouthAlarmCopy      0x10007d14    0x28  Data  Gb  GlobalVar.o [1]
+g_sBurst                0x10005cd8   0x2e0  Data  Lc  SlaveUnit.o [1]
+g_sIEC                  0x100061d8   0x200  Data  Gb  IEC104.o [1]
+g_sIecCmSend            0x10006eb4   0x100  Data  Lc  CM.o [1]
+g_sIecPointCount        0x10007bb8    0x50  Data  Gb  IEC104.o [1]
+g_sIecRun               0x10007de4     0x8  Data  Gb  IEC104.o [1]
+g_sIecSend              0x100072b4   0x100  Data  Lc  SlaveUnit.o [1]
+g_sMaster               0x10007d9c    0x18  Data  Gb  SlaveUnit.o [1]
+g_sRingData             0x10000200   0x214  Data  Lc  CM.o [1]
+g_uAlarmReport          0x10007f0e     0x1  Data  Lc  SlaveUnit.o [1]
+g_uClockOld             0x10007e88     0x4  Data  Lc  LED.o [1]
+g_uDataBuffer           0x100069d8   0x160  Data  Lc  CM.o [1]
+g_uDog                  0x10007f1a     0x1  Data  Lc  WatchDog.o [1]
+g_uNowTime              0x10007e68     0x4  Data  Lc  IEC104.o [1]
+g_uRecData              0x1000781c    0xc8  Data  Lc  Uart0Process.o [1]
+g_uReportCtrl           0x10007efd     0x1  Data  Lc  IEC104.o [1]
+g_uSaveRecord           0x10007f0c     0x1  Data  Gb  Record.o [1]
+g_uSendBuffer           0x10006db4   0x100  Data  Lc  CM.o [1]
+g_uSubData              0x100078e4    0xc0  Data  Lc  IEC104.o [1]
+g_uTest                 0x10007e84     0x4  Data  Lc  InRtc.o [1]
+g_uTimeNow              0x10007ec0     0x4  Data  Lc  SlaveUnit.o [1]
+g_uTimerForRecData      0x10007e24     0x4  Data  Lc  CM.o [1]
+g_uTimerForSyncTime     0x10007e20     0x4  Data  Lc  CM.o [1]
+g_uUpdataTime           0x10007e6c     0x4  Data  Lc  IEC104.o [1]
+g_uUpdateBuffer         0x10007ed4     0x4  Data  Lc  Uart0Process.o [1]
+g_uWriteReg             0x100070b4   0x100  Data  Lc  ModbusMaster.o [1]
+getUARTClockID          0x0001566f    0x1a  Code  Lc  uart_n_11u6x.o [1]
+getint                  0x00016a6d    0x30  Code  Lc  xgetdst.o [3]
+hMarkCheck              0x00013623    0x18  Code  Gb  SubCollection.o [1]
+iap_entry               0x00015d41     0x8  Code  Lc  eeprom.o [1]
+lmos                    0x00015d00    0x18  Data  Lc  xttotm.o [3]
+main                    0x0001855d    0xe6  Code  Gb  main.o [1]
+malloc                  0x00016c69    0xb2  Code  Gb  xxmemxmalloc.o [3]
+memcmp                  0x0000a20d    0x28  Code  Gb  memcmp.o [5]
+memory_heap             0x100011c0  0x4400  Data  Lc  Memory.o [1]
+memory_map              0x10005fb8   0x220  Data  Lc  Memory.o [1]
+mos                     0x00015d18    0x18  Data  Lc  xttotm.o [3]
+ndigs                   0x000168f0    0x28  Data  Lc  xstoul.o [3]
+pDFLock                 0x10007e34     0x4  Data  Gb  DataFlash.o [1]
+pLinkRecHead            0x10007e3c     0x4  Data  Lc  DataTransferArea.o [1]
+pLinkRecLock            0x10007e44     0x4  Data  Gb  DataTransferArea.o [1]
+pLinkSendHead           0x10007e40     0x4  Data  Lc  DataTransferArea.o [1]
+pLinkSendLock           0x10007e48     0x4  Data  Gb  DataTransferArea.o [1]
+pRegPointTemp           0x10007e64     0x4  Data  Lc  IEC104.o [1]
+pUartLock               0x10007ebc     0x4  Data  Gb  SlaveUnit.o [1]
+preFrameDataCrc         0x10007edc     0x2  Data  Gb  IEC104.o [1]
+printf                  0x0000f32d    0x24  Code  Gb  printf.o [3]
+putchar                 0x00019d51    0x24  Code  Gb  putchar.o [3]
+rand                    0x00013139    0xcc  Code  Gb  rand.o [3]
+sAlarmSouth             0x10007dd4    0x10  Data  Lc  SlaveUnit.o [1]
+sDateTime               0x10007e04     0x8  Data  Gb  RealTime.o [1]
+sLogData                0x10007dfc     0x8  Data  Gb  log.o [1]
+sRecord                 0x10007e0c     0x8  Data  Gb  Record.o [1]
+sSouth                  0x10007dc4    0x10  Data  Lc  SlaveUnit.o [1]
+sUart0                  0x10000418    0x3c  Data  Lc  Usart.o [1]
+sUart3                  0x10000454    0x3c  Data  Lc  Usart.o [1]
+sUart4                  0x10000490    0x3c  Data  Lc  Usart.o [1]
+s_sPointRecord          0x10007df4     0x8  Data  Lc  IEC104.o [1]
+s_uRs485Debug           0x10007f17     0x1  Data  Lc  Uart0Process.o [1]
+s_uSouthReadSd          0x100005bb     0x1  Data  Lc  IEC104.o [1]
+s_uSouthSd              0x100005b9     0x1  Data  Lc  IEC104.o [1]
+s_uSouthSync            0x100005ba     0x1  Data  Lc  IEC104.o [1]
+s_uSouthYk              0x100005b8     0x1  Data  Lc  IEC104.o [1]
+snprintf                0x000183c9    0x48  Code  Gb  snprintf.o [3]
+srand                   0x00013119    0x20  Code  Gb  srand.o [3]
+strcat                  0x00018411    0x1c  Code  Gb  strcat.o [3]
+strcpy                  0x00015d31          Code  Gb  strcpy.o [5]
+strlen                  0x0000f351    0x10  Code  Gb  strlen.o [5]
+strncpy                 0x0001355d    0x24  Code  Gb  strncpy.o [5]
+strstr                  0x00015751     0x8  Code  Gb  Uart0Process.o [1]
+tMarkCheck              0x000135a9    0x7a  Code  Gb  SubCollection.o [1]
+uAllocation             0x10007754    0xc8  Data  Gb  ModbusMaster.o [1]
+uGetLastRecordAddr      0x00012109   0x118  Code  Gb  log.o [1]
+uNewHWDevCount          0x10007f0d     0x1  Data  Lc  SlaveUnit.o [1]
+uRecBuffer              0x100073b4   0x100  Data  Lc  SlaveUnit.o [1]
+uSaveSouthLog           0x00012231   0x160  Code  Gb  log.o [1]
+uUart0RxBuf             0x10007c58    0x40  Data  Lc  Usart.o [1]
+uUart0TxBuf             0x10007d60    0x20  Data  Lc  Usart.o [1]
+uUart3RxBuf             0x100063d8   0x200  Data  Lc  Usart.o [1]
+uUart3TxBuf             0x100074b4   0x100  Data  Lc  Usart.o [1]
+uUart4RxBuf             0x100067d8   0x200  Data  Lc  Usart.o [1]
+uUart4TxBuf             0x100065d8   0x200  Data  Lc  Usart.o [1]
+uart_3_4_cnt            0x10007f19     0x1  Data  Lc  uart_n_11u6x.o [1]
+vprintf                 0x00015739    0x18  Code  Gb  vprintf.o [3]
+vsprintf                0x0001570d    0x2c  Code  Gb  vsprintf.o [3]
+wdtOSCRate              0x00019654    0x40  Data  Lc  clock_11u6x.o [1]
+
+
+[1] = E:\energy\program-iar-ucos-logger - backup-B31010&B31011 (2)(1)\program-iar-ucos-logger - backup\Debug\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  78 120 bytes of readonly  code memory
+   8 059 bytes of readonly  data memory
+  32 026 bytes of readwrite data memory (+ 3 584 absolute)
+
+Errors: none
+Warnings: none

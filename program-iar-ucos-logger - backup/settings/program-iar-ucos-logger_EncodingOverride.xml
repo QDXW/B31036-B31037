@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<userOverrides>
+  <override>
+    <path>E:\C+_energy_release\B3102A&amp;B3102B\program-iar-ucos-logger - backup(5)\program-iar-ucos-logger - backup\src\APP\GlobalVar.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\C+_energy_release\B3102A&amp;B3102B\program-iar-ucos-logger - backup(5)\program-iar-ucos-logger - backup\src\APP\SlaveUnit.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\APP\GlobalVar.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\APP\IEC104.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\APP\IEC104.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\APP\ModbusMaster.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\APP\Record.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\APP\SlaveUnit.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\APP\SubCollection.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\APP\Uart0Process.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\APP\log.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\DEV\Memory.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\DEV\Usart.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\energy\program-iar-ucos-logger - backup-B31010&amp;B31011 (2)(1)\program-iar-ucos-logger - backup\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+</userOverrides>
+
+

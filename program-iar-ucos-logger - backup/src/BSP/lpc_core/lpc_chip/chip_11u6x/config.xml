@@ -1,0 +1,46 @@
+<LPCOpenCfg>
+	<symbol name="varCPUCore" value="m0plus"/>
+	<module name="core_${varCPUCore}"/>
+	<symbol name="varChipConfigDir"  value="${varChipLibSrcDir}/config_${prjChipFamily}"/>
+	<template section="filelist" name="${varChipLibName}" tool="xpresso">
+		<import src="${varChipConfigDir}" dest="inc">
+			<include>*.h</include>
+		</import>
+	</template>
+	<template section="import" name="${varChipLibName}_inc1" tool="xpresso">
+		<copy>../chip_common/error.h</copy>
+		<copy>../chip_common/stopwatch.h</copy>
+		<copy>../chip_common/iap.h</copy>
+	</template>
+	<template section="filelist" name="${varChipLibName}" tool="xpresso">
+		<import src="${varChipLibSrcDir}/../usbd_rom" dest="inc/usbd">
+			<include>*.h</include>
+		</import>
+	</template>
+	<template section="import" name="${varExampleEnable}_startup" tool="xpresso">
+		<copy>crp.c</copy>
+		<copy>mtb.c</copy>
+		<copy>aeabi_romdiv_patch.s</copy>
+	</template>
+	<template section="setting" name="${varExampleEnable}_cdef" tool="xpresso">
+		<value>__MTB_BUFFER_SIZE=256</value>
+	</template>
+	<template section="cfglist" tool="xpresso">
+		<setting id="compiler.def">
+			<value>__USE_ROMDIVIDE</value>
+		</setting>
+		<setting id="assembler.def">
+			<value>__USE_ROMDIVIDE</value>
+		</setting>
+	</template>
+	<template section="cfglist" name="${varExampleEnable}" tool="xpresso">
+		<setting id="linker.xlinker">
+			<value>--allow-multiple-definition</value>
+		</setting>
+	</template>
+	<template section="cfglist" tool="xpresso" name="${varExampleEnable}">
+		<setting id="linker.crp">
+			<value>true</value>
+		</setting>
+	</template>
+</LPCOpenCfg>

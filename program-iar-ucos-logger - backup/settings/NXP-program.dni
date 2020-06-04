@@ -1,0 +1,128 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[JLinkDriver]
+CStepIntDis=_ 0
+LeaveTargetRunning=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000000
+[DebugChecksum]
+Checksum=-605257198
+[CodeCoverage]
+Enabled=_ 0
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[RegisterFilter]
+FilePath=_ ""
+UseFilter=_ 0
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[struct_types]
+Fmt0=MB_Config_t-frame	4	0
+Fmt1=MB_Config_t-in_count	4	0
+Fmt2=MB_Config_t-out_buf	4	0
+Fmt3=MB_Config_t-out_count	4	0
+Fmt4=MB_Config_t-read_bit	4	0
+Fmt5=MB_Config_t-read_bit_max	4	0
+Fmt6=MB_Config_t-read_event_max	4	0
+Fmt7=MB_Config_t-read_register_max	4	0
+Fmt8=MB_Config_t-slaveID	4	0
+Fmt9=MB_Config_t-write_one_register_max	4	0
+Fmt10=MB_Config_t-write_register_max	4	0
+Fmt11=SUN_RUNNING_T-err	4	0
+Fmt12=SUN_RUNNING_T-moto	4	0
+Fmt13=SUN_STATUS_T-ADDR	3	0
+Fmt14=SUN_STATUS_T-CRC	4	0
+Fmt15=SUN_STATUS_T-manual	4	0
+Fmt16=SYSTEMTIME-Date	3	0
+Fmt17=SYSTEMTIME-Hour	3	0
+Fmt18=SYSTEMTIME-Minute	3	0
+Fmt19=SYSTEMTIME-Month	3	0
+Fmt20=SYSTEMTIME-Second	3	0
+Fmt21=SYSTEMTIME-Week	3	0
+Fmt22=SYSTEMTIME-Year	3	0
+[array_types]
+Fmt0=char[8]	4	0
+Fmt1=uint32_t[5]	4	0
+Fmt2=uint8_t[10]	4	0
+Fmt3=uint8_t[16]	4	0
+Fmt4=uint8_t[256]	4	0
+Fmt5=uint8_t[260]	4	0
+Fmt6=uint8_t[261]	4	0
+Fmt7=uint8_t[262]	4	0
+Fmt8=uint8_t[2]	4	0
+Fmt9=uint8_t[300]	4	0
+Fmt10=uint8_t[4]	4	0
+Fmt11=uint8_t[500]	4	0
+Fmt12=uint8_t[50]	4	0
+Fmt13=uint8_t[512]	4	0
+Fmt14=uint8_t[64]	4	0
+Fmt15=uint8_t[8]	4	0
+[watch_formats]
+Fmt0={W}1:eep	4	0
+Fmt1={W}1:rawSample	4	0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "E:\work\gz\program-iar\src\BSP\lpc_core\lpc_chip\chip_common\ring_buffer.c" "E:\work\Follow\program-iar\src\BSP\lpc_core\lpc_chip\chip_common\ring_buffer.c"
+A1=_ "E:\work\gz\program-iar\src\BSP\lpc_core\lpc_chip\chip_common\ring_buffer.h" ""
+A2=_ "E:\work\gz\program-iar\src\BSP\startup_code\iar_startup_lpc11u6x.s" ""
+Count=3
+SuppressDialog=0

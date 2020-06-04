@@ -1,0 +1,7 @@
+fmc_11u6x.h
+µÚ60ÐÐ£º
+typedef enum {
+	FLASHTIM_1CLK_CPU = 0,		/*!< Flash accesses use 1 CPU clocks */
+	FLASHTIM_2CLK_CPU = 1,		/*!< Flash accesses use 2 CPU clocks */
+    FLASHTIM_3CLK_CPU = 2,		/*!< Flash accesses use 3 CPU clocks */
+} FMC_FLASHTIM_T;
